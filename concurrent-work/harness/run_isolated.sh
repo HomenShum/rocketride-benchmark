@@ -27,7 +27,10 @@ cd "$BR" || exit 1
 restart() {
   bash scripts/stop_engine.sh >/dev/null 2>&1; sleep 2
   ENGINE_DIR="$ED" bash scripts/start_engine.sh >/dev/null 2>&1; sleep 5
-  lsof -nP -iTCP:5565 -sTCP:LISTEN >/dev/null 2>&1 || echo "    [ENGINE DOWN after restart!]"
+  # Confirm the engine is back via HTTP (portable — no lsof; matches start_engine.sh's readiness
+  # probe). /ping returns 401 without auth, which still means "up"; only 000 == not listening.
+  code="$(curl -s -o /dev/null -w '%{http_code}' http://localhost:5565/ping 2>/dev/null || echo 000)"
+  [ "$code" != "000" ] || echo "    [ENGINE DOWN after restart!]"
 }
 
 prime() {  # wake the engine's pipe machinery with one quick reliable single-pipe run

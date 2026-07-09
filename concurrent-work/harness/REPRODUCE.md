@@ -6,12 +6,15 @@ Every number in [`../runs/`](../runs/) comes from the integrity-gated runners un
 included is the engine binary (platform-specific); `provision.sh` downloads the pinned public release.
 
 ## Prereqs
-- macOS arm64/x64 or Linux x64; Python 3.11+; ~2 GB disk for the engine.
+- macOS arm64/x64 or Linux x64; Python 3.10+; ~2 GB disk for the engine.
+- **Fresh Ubuntu/Debian box?** Run `rocketride-bench/scripts/setup-ubuntu.sh` first — it installs the
+  host packages a clean cloud image lacks (`python3-venv`, `python3-pip`, `make`, `curl`, `tar`).
 - Numbers in `../runs/` are from an Apple M5 Pro — the correctness outcomes (0 lost / 0 errors / survives) reproduce **exactly**; wall-clock times and loss magnitude are hardware-dependent (ratios and orderings reproduce, absolute values vary).
 
 ## One-time setup
 ```bash
 cd rocketride-bench
+bash scripts/setup-ubuntu.sh                        # fresh Ubuntu/Debian only: one-time apt prereqs
 bash scripts/provision.sh                          # downloads the pinned engine (v3.2.1) to ./engine
 python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt -r requirements-competitors.txt
