@@ -4,7 +4,8 @@ The SAME per-doc work (sqlite INSERT+SELECT+commit + 100 ms blocking wait — AS
 AST-asserted below) over N=64 docs:
 
   RocketRide:  M warm resident pipes (each its own runtime process; "each pipe is its own
-               data" — the node's module-level connection is per-process by construction).
+               data" — the node uses a per-thread cached connection, so it is robust to the
+               engine's per-pipe thread model on every OS).
   LangChain:   ONE chain object, the three idiomatic ways to run it over 64 inputs:
                  .batch   (shared conn)        -> sqlite3.ProgrammingError   (CRASH)
                  .abatch  (blocking sync work) -> event loop serializes      (SEQUENTIAL)
@@ -39,7 +40,9 @@ from harness.tracesink import TraceSink  # noqa: E402
 N_DOCS = 64
 IO_S = 0.100
 MS = [int(x) for x in os.environ.get("BENCH_MS", "8,16,64").split(",")]  # env-configurable; default = upstream
-DB_DIR = "/tmp/rr_bench_sqlite"
+# OS temp dir (no /tmp on Windows); override with $BENCH_DB_DIR. The harness and the node both
+# read/write these sqlite files, so the path must be valid on the host running both.
+DB_DIR = os.environ.get("BENCH_DB_DIR", os.path.join(tempfile.gettempdir(), "rr_bench_sqlite"))
 PIPE = os.path.join(HERE, "pipeline.pipe")
 TRACE = os.path.join(HERE, "trace")
 
@@ -87,7 +90,7 @@ async def rr_cell(m):
     """N_DOCS through M warm resident pipes; evidence = RRBENCH markers + sqlite rows."""
     _clean_dbs()
     pipes.set_params(mode="sqlite", label="workload", io_ms=IO_S * 1000.0,
-                     db=DB_DIR + "/%d.db", conn="module")
+                     db=DB_DIR + "/%d.db", conn="thread_local")
     sampler = measure.RSSSampler(measure.task_kids, interval=0.05)
     async with TraceSink() as sink:
         sampler.start()
@@ -205,10 +208,14 @@ async def main():
     subprocess.run([sys.executable, os.path.join(REPO, "scripts", "make_diagrams.py"),
                     PIPE, os.path.join(HERE, "canvas")])
     vm = out["verdict_metrics"]
-    print("\nVERDICT @ top M: RR(top M) %.2fs ok | LC .batch(shared) %s (%s) | "
+    # Reflect the ACTUAL RR status (results.json already records rr_topM_ok) instead of a
+    # hardcoded "ok" — on Windows the RR cell can be `check` (see rr64["status"]), and the
+    # console line was the only place that masked it.
+    rr_status = "ok" if vm["rr_topM_ok"] else "CHECK (node errors — see rocketride[].status)"
+    print("\nVERDICT @ top M: RR(top M) %.2fs %s | LC .batch(shared) %s (%s) | "
           "LC .abatch(blocking) %.1fs | LC seq %.1fs"
-          % (vm["rr_topM_wall_s"], vm["lc_batch_shared_status"], vm["lc_batch_shared_error"],
-             vm["lc_abatch_blocking_wall_s"], vm["lc_seq_wall_s"]))
+          % (vm["rr_topM_wall_s"], rr_status, vm["lc_batch_shared_status"],
+             vm["lc_batch_shared_error"], vm["lc_abatch_blocking_wall_s"], vm["lc_seq_wall_s"]))
 
 
 if __name__ == "__main__":

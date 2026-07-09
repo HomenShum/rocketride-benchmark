@@ -30,12 +30,18 @@
 import json
 import os
 import sys
+import tempfile
 import time
 import threading
 
 from rocketlib import IInstanceBase
 
 _PARAMS = None
+# Cross-platform fallbacks (no /tmp on Windows). The harness normally passes explicit paths via
+# $ROCKETRIDE_BENCH_PARAMS and the `db` param, so these only bite the local-binary floor path;
+# kept in sync with harness/config.py so both sides resolve the same file when unset.
+_DEFAULT_PARAMS = os.path.join(tempfile.gettempdir(), "rr_bench_params.json")
+_DEFAULT_DB = os.path.join(tempfile.gettempdir(), "rr_bench_sqlite", "%d.db")
 
 
 def _params():
@@ -43,7 +49,7 @@ def _params():
     if _PARAMS is not None:
         return _PARAMS
     path = os.environ.get("ROCKETRIDE_BENCH_PARAMS") or os.environ.get("BENCH_PARAMS") \
-        or "/tmp/rr_bench_params.json"
+        or _DEFAULT_PARAMS
     p = {}
     try:
         with open(path) as f:
@@ -57,7 +63,7 @@ def _params():
     p.setdefault("url", os.environ.get("BENCH_URL", "http://127.0.0.1:8799/"))
     p.setdefault("label", os.environ.get("BENCH_LABEL", ""))
     # scale-and-concurrency params
-    p.setdefault("db", os.environ.get("BENCH_DB", "/tmp/rr_bench_sqlite/%d.db"))
+    p.setdefault("db", os.environ.get("BENCH_DB", _DEFAULT_DB))
     p.setdefault("io_ms", float(os.environ.get("BENCH_IO_MS", "0") or 0))
     p.setdefault("pdf", os.environ.get("BENCH_PDF", ""))
     p.setdefault("conn", os.environ.get("BENCH_CONN", "module"))  # "module" | "per_call"
@@ -83,7 +89,8 @@ def _sqlite_doc_work(conn, label, io_s):
         time.sleep(io_s)
 
 
-_CONN = None  # the NAIVE module-level connection (conn="module") — one per task process
+_CONN = None  # the NAIVE single shared connection (conn="module") — the LC-trap mirror used by the
+# rr_appendix_threads4 honesty cell; unsafe once a pipe uses >1 thread. The headline uses "thread_local".
 
 
 def _sqlite_conn(p):
@@ -100,6 +107,29 @@ def _sqlite_conn(p):
         _CONN = sqlite3.connect(db)
         _CONN.execute("CREATE TABLE IF NOT EXISTS docs (id INTEGER PRIMARY KEY, content TEXT)")
     return _CONN
+
+
+_CONN_TL = threading.local()  # per-thread cached connection (conn="thread_local"). Each pipe is its
+# own OS process; within a process the connection is cached PER OS THREAD, so it is never used off its
+# creating thread even if the engine dispatches a pipe's (sequential) docs across >1 worker thread
+# (e.g. on Windows) at threads=1. Docs run sequentially per pipe, so there is no lock contention.
+
+
+def _sqlite_conn_tl(p):
+    conn = getattr(_CONN_TL, "conn", None)
+    if conn is None:
+        import sqlite3
+
+        db = p["db"]
+        if "%d" in db:
+            db = db % os.getpid()
+        d = os.path.dirname(db)
+        if d:
+            os.makedirs(d, exist_ok=True)
+        conn = sqlite3.connect(db)
+        conn.execute("CREATE TABLE IF NOT EXISTS docs (id INTEGER PRIMARY KEY, content TEXT)")
+        _CONN_TL.conn = conn
+    return conn
 
 
 _DOC = None  # the NAIVE module-level fitz.Document (conn="module") — one per task process
@@ -195,6 +225,9 @@ class IInstance(IInstanceBase):
                             _sqlite_doc_work(conn, label or "doc", float(p["io_ms"]) / 1000.0)
                         finally:
                             conn.close()
+                    elif p["conn"] == "thread_local":
+                        _sqlite_doc_work(_sqlite_conn_tl(p), label or "doc",
+                                         float(p["io_ms"]) / 1000.0)
                     else:  # "module": the naive shared-connection idiom (the LC-trap mirror)
                         _sqlite_doc_work(_sqlite_conn(p), label or "doc",
                                          float(p["io_ms"]) / 1000.0)

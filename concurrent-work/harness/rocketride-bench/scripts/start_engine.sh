@@ -10,8 +10,11 @@ PORT="${ROCKETRIDE_PORT:-5565}"
 LOG="${ENGINE_LOG:-$REPO_DIR/results/engine.log}"
 PIDFILE="$REPO_DIR/results/engine.pid"
 
-if [ ! -x "$ENGINE_DIR/engine" ]; then
-  echo "RocketRide runtime not found at $ENGINE_DIR/engine" >&2
+# Engine binary name is engine.exe on Windows (git-bash/MSYS), engine elsewhere.
+case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) ENGINE_BIN=engine.exe ;; *) ENGINE_BIN=engine ;; esac
+
+if [ ! -x "$ENGINE_DIR/$ENGINE_BIN" ]; then
+  echo "RocketRide runtime not found at $ENGINE_DIR/$ENGINE_BIN" >&2
   echo "  set \$ENGINE_DIR or run scripts/provision.sh to download the pinned prebuilt." >&2
   exit 1
 fi
@@ -28,8 +31,8 @@ done
 
 mkdir -p "$(dirname "$LOG")"
 cd "$ENGINE_DIR"
-echo "starting: $ENGINE_DIR/engine ai/eaas.py --host=0.0.0.0  (port $PORT)"
-nohup ./engine ai/eaas.py --host=0.0.0.0 >"$LOG" 2>&1 &
+echo "starting: $ENGINE_DIR/$ENGINE_BIN ai/eaas.py --host=0.0.0.0 --port=$PORT"
+nohup "./$ENGINE_BIN" ai/eaas.py --host=0.0.0.0 --port="$PORT" >"$LOG" 2>&1 &
 echo $! > "$PIDFILE"
 
 # Readiness = the HTTP server answers at all. /ping returns 401 without auth (that's still a
@@ -38,7 +41,7 @@ for _ in $(seq 1 60); do
   code="$(curl -s -o /dev/null -w '%{http_code}' "http://localhost:$PORT/ping" 2>/dev/null || echo 000)"
   if [ "$code" != "000" ]; then
     echo "engine healthy on :$PORT (HTTP $code, pid $(cat "$PIDFILE"))"
-    ./engine --version 2>&1 | head -1
+    "./$ENGINE_BIN" --version 2>&1 | head -1
     exit 0
   fi
   sleep 0.5
