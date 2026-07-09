@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # One-time host prerequisites for running these benchmarks on a fresh Ubuntu/Debian box.
-# A clean cloud image is typically missing python3-venv / pip / make, which `make provision`
-# needs. Ubuntu 22.04's system Python 3.10 is sufficient: the pinned harness deps require
-# >=3.10 (rocketride 1.2.0) / >=3.9 (langchain-core 0.3.86), and the engine bundles its own
-# runtime — so no PPA / newer Python is needed.
+# The harness venv needs Python >=3.11 (the rocketride SDK imports typing.NotRequired), but Ubuntu
+# 22.04 ships 3.10 — so this installs 3.11 (via the deadsnakes PPA when it isn't already present)
+# plus the base build tools a clean cloud image lacks. The engine bundles its own runtime; this
+# Python is only for the harness venv.
 #
 #   bash scripts/setup-ubuntu.sh
 set -euo pipefail
@@ -20,8 +20,15 @@ fi
 
 $SUDO apt-get update
 $SUDO apt-get install -y --no-install-recommends \
-  python3 python3-venv python3-pip make curl tar ca-certificates
+  make curl tar ca-certificates software-properties-common
+
+# Python 3.11 for the harness venv. Skip the PPA if a 3.11 is already present (e.g. Debian 12).
+if ! command -v python3.11 >/dev/null 2>&1; then
+  $SUDO add-apt-repository -y ppa:deadsnakes/ppa
+  $SUDO apt-get update
+fi
+$SUDO apt-get install -y --no-install-recommends python3.11 python3.11-venv
 
 echo
-echo "prereqs installed ($(python3 --version 2>&1)). next, from this rocketride-bench/ dir:"
+echo "prereqs installed ($(python3.11 --version 2>&1)). next, from this rocketride-bench/ dir:"
 echo "  make provision && make provision-competitors && make start && make smoke"

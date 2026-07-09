@@ -34,7 +34,15 @@ else
   if [ "$ext" = "zip" ]; then
     unzip -oq "$tmp_asset" -d "$ENGINE_DIR"        # win64.zip: engine.exe at the root
   else
-    tar -xzf "$tmp_asset" -C "$ENGINE_DIR" --strip-components=1
+    # Release tarballs are FLAT — the engine binary + ai/ + lib/ ... sit at the archive root (same
+    # as the win64 zip), so do NOT --strip-components: it silently drops the top-level `engine` file
+    # (a single-component path), leaving a runtime with no launcher. Extract as-is; if a future
+    # release wraps everything in one top dir, flatten that so $ENGINE_DIR/engine still resolves.
+    tar -xzf "$tmp_asset" -C "$ENGINE_DIR"
+    if [ ! -e "$ENGINE_DIR/$ENGINE_BIN" ]; then
+      inner="$(find "$ENGINE_DIR" -mindepth 2 -maxdepth 2 -name "$ENGINE_BIN" 2>/dev/null | head -1)"
+      [ -n "$inner" ] && { d="$(dirname "$inner")"; ( cd "$d" && tar -cf - . ) | ( cd "$ENGINE_DIR" && tar -xf - ); rm -rf "$d"; }
+    fi
   fi
   echo "extracted engine -> $ENGINE_DIR"
 fi
@@ -48,8 +56,12 @@ fi
 case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) VENV_PY="$REPO_DIR/.venv/Scripts/python.exe" ;;
                      *) VENV_PY="$REPO_DIR/.venv/bin/python" ;; esac
 if [ ! -x "$VENV_PY" ]; then
-  echo "creating venv"
-  python3 -m venv "$REPO_DIR/.venv"
+  # The rocketride SDK needs Python >=3.11 (it imports typing.NotRequired). Ubuntu 22.04's default
+  # python3 is 3.10 and fails at import — prefer python3.11 when present; honor an explicit $PYTHON.
+  PYBIN="${PYTHON:-}"
+  [ -n "$PYBIN" ] || { command -v python3.11 >/dev/null 2>&1 && PYBIN=python3.11 || PYBIN=python3; }
+  echo "creating venv with $PYBIN ($("$PYBIN" --version 2>&1))"
+  "$PYBIN" -m venv "$REPO_DIR/.venv"
 fi
 "$VENV_PY" -m pip install --quiet --upgrade pip
 "$VENV_PY" -m pip install --quiet -r "$REPO_DIR/requirements.txt"
