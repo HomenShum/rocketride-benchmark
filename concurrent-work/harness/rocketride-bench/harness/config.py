@@ -13,13 +13,16 @@ import os
 import platform
 import subprocess
 import sys
+import tempfile
 
 HARNESS_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.dirname(HARNESS_DIR)
 
-# Engine: env-first, else the provisioned ./engine inside the repo.
+# Engine: env-first, else the provisioned ./engine inside the repo. The prebuilt binary is
+# `engine.exe` on Windows and `engine` elsewhere — pick the right name so provenance() and
+# engine_version() find it instead of silently recording "unknown".
 ENGINE_DIR = os.environ.get("ENGINE_DIR") or os.path.join(REPO_DIR, "engine")
-ENGINE = os.path.join(ENGINE_DIR, "engine")
+ENGINE = os.path.join(ENGINE_DIR, "engine.exe" if os.name == "nt" else "engine")
 
 # Direct-connect server (the headline product path).
 URI = os.environ.get("ROCKETRIDE_URI", "ws://localhost:5565")
@@ -30,7 +33,11 @@ CATALOG_DIR = os.path.join(REPO_DIR, "catalog", ".rocketride")
 RESULTS_DIR = os.path.join(REPO_DIR, "results")
 DATA_DIR = os.path.join(REPO_DIR, "data")
 NODES_DIR = os.path.join(REPO_DIR, "nodes")
-BENCH_PARAMS = os.environ.get("ROCKETRIDE_BENCH_PARAMS", "/tmp/rr_bench_params.json")
+# Params file the harness writes and the workload node reads. Default to the OS temp dir so it
+# is writable on Windows too (there is no /tmp); keep the node's fallback (nodes/workload/
+# IInstance.py) in sync. Override with $ROCKETRIDE_BENCH_PARAMS to pin an explicit shared path.
+BENCH_PARAMS = os.environ.get("ROCKETRIDE_BENCH_PARAMS",
+                              os.path.join(tempfile.gettempdir(), "rr_bench_params.json"))
 
 
 def engine_present():
