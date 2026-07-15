@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "node.rocketride.environment/v1",
+  "capturedAt": "2026-07-15T09:26:22.398Z",
+  "upstream": {
+    "repository": "rocketride-org/rocketride-benchmark",
+    "fork": "HomenShum/rocketride-benchmark",
+    "commit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+    "branch": "main"
+  },
+  "host": {
+    "operatingSystem": "Microsoft Windows 11 Home",
+    "version": "10.0.26200",
+    "architecture": "64-bit",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13900HX",
+    "physicalCores": 24,
+    "logicalProcessors": 32,
+    "totalVisibleMemoryKiB": 66830688,
+    "workspaceDriveFreeBytesAtCapture": 1878288576512
+  },
+  "tools": {
+    "python": "3.11.5",
+    "pythonPath": "C:/Users/hshum/AppData/Local/Programs/Python/Python311/python.exe",
+    "node": "22.22.2",
+    "npm": "10.9.7",
+    "git": "2.42.0.windows.2",
+    "gitBash": "MINGW64_NT-10.0-26200 3.4.7-25de8b84.x86_64",
+    "curlInGitBash": "8.2.1",
+    "unzipInGitBash": "6.00",
+    "makeInGitBash": null
+  },
+  "benchmarkEnvironmentAtCapture": {},
+  "plannedRunParameters": {
+    "runner": "concurrent-work/harness/run_isolated_windows.py",
+    "repetitions": 10,
+    "maximumAttemptsPerWarmPoolRepetition": 5,
+    "rocketridePort": 5566,
+    "restartBetweenWarmPoolRepetitions": true,
+    "concurrentProcessingPoolSizes": [8, 16],
+    "dataIsolationPoolSize": 32
+  },
+  "notes": [
+    "The upstream repository includes a Windows-specific reproduction path.",
+    "GNU make is absent from Git Bash but is not required by the Windows-specific runner.",
+    "Resolved Python package and RocketRide engine versions are recorded after provisioning."
+  ]
+}

@@ -1,0 +1,4 @@
+branch=main
+status=clean
+captured_before_study_branch=true
+command=git status --porcelain=v1

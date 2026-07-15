@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "node.rocketride.deviations/v1",
+  "generatedAt": "2026-07-15T09:26:22.398Z",
+  "deviations": [
+    {
+      "id": "platform-windows",
+      "track": "baseline",
+      "kind": "documented-platform-path",
+      "description": "The independent run uses the upstream REPRODUCE-WINDOWS.md path and runs on Windows x64 rather than the macOS host used for committed upstream results.",
+      "changesBenchmarkSource": false,
+      "preRegistered": true
+    }
+  ]
+}
