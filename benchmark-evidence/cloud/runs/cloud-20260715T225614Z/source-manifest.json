@@ -1,0 +1,45 @@
+{
+  "capturedAt": "2026-07-15T22:56:14.463186Z",
+  "files": [
+    {
+      "bytes": 3670,
+      "path": "PRE_REGISTRATION.md",
+      "sha256": "333d901c5ef7eedef78029fbf908bc43df725c032a22d6133762dde5444a36a3"
+    },
+    {
+      "bytes": 2065,
+      "path": "SETUP_ATTEMPTS.md",
+      "sha256": "419d0f5ece4d0847fb560ba4b010818db5100ec2d56c8af7f77c10ca7adc1320"
+    },
+    {
+      "bytes": 1119,
+      "path": "README.md",
+      "sha256": "9ac182389578209ab2e1fadeb510032316b6d51b54086caf4886aa0334795614"
+    },
+    {
+      "bytes": 755,
+      "path": "cloud-control.pipe",
+      "sha256": "8ec9b87005830efbb6a18d20bf5dfd7f54eb6fa782c8d22f4cccc549c6ade455"
+    },
+    {
+      "bytes": 36554,
+      "path": "run_cloud_appendix.py",
+      "sha256": "0142e4a5e8a7a1de8629c1df45c4c1854f06a5e1ba5bc5f56d4697516952c1bf"
+    },
+    {
+      "bytes": 9569,
+      "path": "audit_cloud_appendix.py",
+      "sha256": "6eef4c3e42a623f6e5c2c927013ad1db6596cb53a55efcb87e4c7d208bfebbb6"
+    },
+    {
+      "bytes": 2836,
+      "path": "test_cloud_appendix.py",
+      "sha256": "7a6c9ec8c52f7e8eda3bef8841a9e565d4d038ee089a48c6bd8a20f7797c4e4f"
+    },
+    {
+      "bytes": 1172,
+      "path": "upstream-fault-isolation.pipe",
+      "sha256": "93634fda53aacb9ec5569608e76e108e4c36e61cc5c576cfc3d61f2e238caf74"
+    }
+  ]
+}

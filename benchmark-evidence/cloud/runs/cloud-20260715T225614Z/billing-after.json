@@ -1,0 +1,6 @@
+{
+  "capturedAt": "2026-07-15T22:59:31.410420Z",
+  "error": "connected account did not expose an organization",
+  "errorType": "RuntimeError",
+  "label": "after"
+}

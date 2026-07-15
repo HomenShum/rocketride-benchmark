@@ -1,0 +1,7 @@
+2026-07-15T22:56:14.382092Z run_started id=cloud-20260715T225614Z
+2026-07-15T22:56:15.437547Z billing_before_captured
+2026-07-15T22:56:23.415161Z exact_upstream status=blocked_missing_workload_service
+2026-07-15T22:57:25.717337Z repetition=1 complete
+2026-07-15T22:58:28.137110Z repetition=2 complete
+2026-07-15T22:59:30.778340Z repetition=3 complete
+2026-07-15T22:59:31.657399Z run_complete control=failed exact=blocked_missing_workload_service

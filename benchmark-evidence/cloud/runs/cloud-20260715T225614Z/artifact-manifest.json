@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "bytes": 170,
+      "path": "billing-after.json",
+      "sha256": "74be8efc4e978fa9719d6cf2a38a97719b95747d50e8cb85e04a1e32a26ba978"
+    },
+    {
+      "bytes": 171,
+      "path": "billing-before.json",
+      "sha256": "545c733f6ed328b6653653df21eec42e1bbe76e0696b3aea0bfa998fe427afde"
+    },
+    {
+      "bytes": 561,
+      "path": "exact-upstream-attempt.json",
+      "sha256": "c92fc0c4283fbade8ae2ef310d53c1b5c54e76bfc4df41db3f70afa01f74c537"
+    },
+    {
+      "bytes": 9569,
+      "path": "executed-source/audit_cloud_appendix.py",
+      "sha256": "6eef4c3e42a623f6e5c2c927013ad1db6596cb53a55efcb87e4c7d208bfebbb6"
+    },
+    {
+      "bytes": 755,
+      "path": "executed-source/cloud-control.pipe",
+      "sha256": "8ec9b87005830efbb6a18d20bf5dfd7f54eb6fa782c8d22f4cccc549c6ade455"
+    },
+    {
+      "bytes": 3670,
+      "path": "executed-source/PRE_REGISTRATION.md",
+      "sha256": "333d901c5ef7eedef78029fbf908bc43df725c032a22d6133762dde5444a36a3"
+    },
+    {
+      "bytes": 1119,
+      "path": "executed-source/README.md",
+      "sha256": "9ac182389578209ab2e1fadeb510032316b6d51b54086caf4886aa0334795614"
+    },
+    {
+      "bytes": 36554,
+      "path": "executed-source/run_cloud_appendix.py",
+      "sha256": "0142e4a5e8a7a1de8629c1df45c4c1854f06a5e1ba5bc5f56d4697516952c1bf"
+    },
+    {
+      "bytes": 2065,
+      "path": "executed-source/SETUP_ATTEMPTS.md",
+      "sha256": "419d0f5ece4d0847fb560ba4b010818db5100ec2d56c8af7f77c10ca7adc1320"
+    },
+    {
+      "bytes": 2836,
+      "path": "executed-source/test_cloud_appendix.py",
+      "sha256": "7a6c9ec8c52f7e8eda3bef8841a9e565d4d038ee089a48c6bd8a20f7797c4e4f"
+    },
+    {
+      "bytes": 1172,
+      "path": "executed-source/upstream-fault-isolation.pipe",
+      "sha256": "93634fda53aacb9ec5569608e76e108e4c36e61cc5c576cfc3d61f2e238caf74"
+    },
+    {
+      "bytes": 3326,
+      "path": "receipt.json",
+      "sha256": "c749fff360a2b153dca31619f9178493c3c354740120cb9bf5289f92283627f7"
+    },
+    {
+      "bytes": 38013,
+      "path": "repetition-01.json",
+      "sha256": "164294eb7d5a3f75ed1208860dcddc6e75480e77f1a7344af19da0e1798b835e"
+    },
+    {
+      "bytes": 38021,
+      "path": "repetition-02.json",
+      "sha256": "d51e8f1102cd66caa698fc5f486a3a683c18be3cbf06b58e406507f48087b711"
+    },
+    {
+      "bytes": 37999,
+      "path": "repetition-03.json",
+      "sha256": "6bcc04c1f59b5108eeceff916d59e6fe7f358d55ce1b270602b4971947728987"
+    },
+    {
+      "bytes": 1146,
+      "path": "RESULTS.md",
+      "sha256": "d8de44bcf8e18fbec96f093d4c31bb22bf615afafc576c834e327d10816a476f"
+    },
+    {
+      "bytes": 453,
+      "path": "run.log",
+      "sha256": "ced0225de965fe0c2c1b0b501d1c55c232de1fb5cbd5d7358403e9f3a82a4067"
+    },
+    {
+      "bytes": 1350,
+      "path": "source-manifest.json",
+      "sha256": "59c5e7542869fa20e2f14b42e08dd9b0fc2071fe4d33ad5542b05925cf5f009d"
+    }
+  ],
+  "schemaVersion": 1
+}

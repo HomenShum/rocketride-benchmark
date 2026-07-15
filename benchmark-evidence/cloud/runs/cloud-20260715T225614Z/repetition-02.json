@@ -1,0 +1,1083 @@
+{
+  "cleanup": [
+    {
+      "lastStatus": {
+        "completed": true,
+        "completedCount": 2,
+        "completedSize": 190,
+        "currentObject": "webhook://WebHook",
+        "currentSize": 0,
+        "debuggerAttached": false,
+        "endTime": 1784156290.7147725,
+        "errors": [],
+        "exitCode": 0,
+        "exitMessage": "",
+        "failedCount": 0,
+        "failedSize": 0,
+        "metrics": {
+          "avg_cpu_memory_mb": 279.34357144067906,
+          "avg_cpu_percent": 5.307314671057313,
+          "avg_gpu_memory_mb": 0.0,
+          "cpu_memory_mb": 302.390625,
+          "cpu_percent": 0.0,
+          "gpu_memory_mb": 0.0,
+          "peak_cpu_memory_mb": 302.390625,
+          "peak_cpu_percent": 21.05,
+          "peak_gpu_memory_mb": 0.0
+        },
+        "name": "proofloop-cloud-r2-t0.webhook_1",
+        "notes": [],
+        "pipeflow": {
+          "byPipe": {
+            "0": []
+          },
+          "totalPipes": 1
+        },
+        "project_id": "7054f660-da33-4df8-affe-9d92c338cbae",
+        "rateCount": 0,
+        "rateSize": 0,
+        "serviceUp": false,
+        "source": "webhook_1",
+        "startTime": 1784156247.762582,
+        "state": 6,
+        "status": "Stopped",
+        "tokens": "sha256:0861e899bc36f698943efc99d1d5288ec34328abee8d7d69dd331105992e5d11",
+        "totalCount": 2,
+        "totalSize": 190,
+        "warnings": [],
+        "wordsCount": 0,
+        "wordsSize": 0
+      },
+      "taskIndex": 0,
+      "taskTokenHash": "9b058943ab28d1cd4386d5b7de25d80959b08c77c57eacfd582b92ab070f49a4",
+      "terminalStateObserved": true,
+      "terminateCallSucceeded": true
+    },
+    {
+      "lastStatus": {
+        "completed": true,
+        "completedCount": 5,
+        "completedSize": 469,
+        "currentObject": "webhook://WebHook",
+        "currentSize": 0,
+        "debuggerAttached": false,
+        "endTime": 1784156296.7402694,
+        "errors": [],
+        "exitCode": 0,
+        "exitMessage": "",
+        "failedCount": 0,
+        "failedSize": 0,
+        "metrics": {
+          "avg_cpu_memory_mb": 307.74671286450376,
+          "avg_cpu_percent": 5.104936600586703,
+          "avg_gpu_memory_mb": 0.0,
+          "cpu_memory_mb": 315.890625,
+          "cpu_percent": 0.0,
+          "gpu_memory_mb": 0.0,
+          "peak_cpu_memory_mb": 315.890625,
+          "peak_cpu_percent": 17.6,
+          "peak_gpu_memory_mb": 0.0
+        },
+        "name": "proofloop-cloud-r2-t1.webhook_1",
+        "notes": [],
+        "pipeflow": {
+          "byPipe": {
+            "0": []
+          },
+          "totalPipes": 1
+        },
+        "project_id": "4b50fbd2-80df-44ae-a5d0-2bd405b191e8",
+        "rateCount": 20,
+        "rateSize": 1879,
+        "serviceUp": false,
+        "source": "webhook_1",
+        "startTime": 1784156247.547026,
+        "state": 6,
+        "status": "Stopped",
+        "tokens": "sha256:920cf72cf361efc9e05d566860564c3b2f296e235f5aa6f73f6b546f736ceb06",
+        "totalCount": 5,
+        "totalSize": 469,
+        "warnings": [],
+        "wordsCount": 0,
+        "wordsSize": 0
+      },
+      "taskIndex": 1,
+      "taskTokenHash": "7f11a3fc5dcdbf20fe32afd4c8257cc2073fe287362acb3d0c3a711c98f70b41",
+      "terminalStateObserved": true,
+      "terminateCallSucceeded": true
+    },
+    {
+      "lastStatus": {
+        "completed": true,
+        "completedCount": 6,
+        "completedSize": 566,
+        "currentObject": "webhook://WebHook",
+        "currentSize": 0,
+        "debuggerAttached": false,
+        "endTime": 1784156302.3599706,
+        "errors": [],
+        "exitCode": 0,
+        "exitMessage": "",
+        "failedCount": 0,
+        "failedSize": 0,
+        "metrics": {
+          "avg_cpu_memory_mb": 298.8862554971618,
+          "avg_cpu_percent": 4.5252368046160845,
+          "avg_gpu_memory_mb": 0.0,
+          "cpu_memory_mb": 308.43359375,
+          "cpu_percent": 0.0,
+          "gpu_memory_mb": 0.0,
+          "peak_cpu_memory_mb": 308.43359375,
+          "peak_cpu_percent": 15.65,
+          "peak_gpu_memory_mb": 0.0
+        },
+        "name": "proofloop-cloud-r2-t2.webhook_1",
+        "notes": [],
+        "pipeflow": {
+          "byPipe": {
+            "0": []
+          },
+          "totalPipes": 1
+        },
+        "project_id": "be87aba3-b222-461c-9263-a20acc971c96",
+        "rateCount": 20,
+        "rateSize": 1886,
+        "serviceUp": false,
+        "source": "webhook_1",
+        "startTime": 1784156247.7630553,
+        "state": 6,
+        "status": "Stopped",
+        "tokens": "sha256:400dbe58a41532795bd324fcc9d44d2a53bbf9ee170f643d254ae40cc8004f98",
+        "totalCount": 6,
+        "totalSize": 566,
+        "warnings": [],
+        "wordsCount": 0,
+        "wordsSize": 0
+      },
+      "taskIndex": 2,
+      "taskTokenHash": "7234a6b252c86c2705f35b74a9acad60948d41e64a06bf0bc951c8a704f009c8",
+      "terminalStateObserved": true,
+      "terminateCallSucceeded": true
+    },
+    {
+      "lastStatus": {
+        "completed": true,
+        "completedCount": 6,
+        "completedSize": 566,
+        "currentObject": "webhook://WebHook",
+        "currentSize": 0,
+        "debuggerAttached": false,
+        "endTime": 1784156307.954299,
+        "errors": [],
+        "exitCode": 0,
+        "exitMessage": "",
+        "failedCount": 0,
+        "failedSize": 0,
+        "metrics": {
+          "avg_cpu_memory_mb": 295.48655269503877,
+          "avg_cpu_percent": 3.720063740020159,
+          "avg_gpu_memory_mb": 0.0,
+          "cpu_memory_mb": 298.27734375,
+          "cpu_percent": 0.0,
+          "gpu_memory_mb": 0.0,
+          "peak_cpu_memory_mb": 298.27734375,
+          "peak_cpu_percent": 26.6,
+          "peak_gpu_memory_mb": 0.0
+        },
+        "name": "proofloop-cloud-r2-t3.webhook_1",
+        "notes": [],
+        "pipeflow": {
+          "byPipe": {
+            "0": []
+          },
+          "totalPipes": 1
+        },
+        "project_id": "10edd882-f2e5-4f4a-8805-0df52f987c16",
+        "rateCount": 24,
+        "rateSize": 2264,
+        "serviceUp": false,
+        "source": "webhook_1",
+        "startTime": 1784156247.7763426,
+        "state": 6,
+        "status": "Stopped",
+        "tokens": "sha256:b5cf2027d55bc1f07e0ba8d87e0874c2d0a88af59efbaafcebfbb3656fdc4763",
+        "totalCount": 6,
+        "totalSize": 566,
+        "warnings": [],
+        "wordsCount": 0,
+        "wordsSize": 0
+      },
+      "taskIndex": 3,
+      "taskTokenHash": "784628a0f01224742b331db9feab014af85f33ac49248089c682e3f770bd558e",
+      "terminalStateObserved": true,
+      "terminateCallSucceeded": true
+    }
+  ],
+  "documentCount": 16,
+  "failure": [
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "error": "Failed to open a data pipe.\n\nCommon causes:\n- Pipeline isn't running (wrong token or task terminated)\n- Pipeline source is `chat` (use `client.chat()`), not `webhook`/`dropper`\n- MIME type doesn't match the source lane (try `mimetype=\"text/plain\"`)\n",
+      "errorType": "PipeException",
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T00",
+      "latencyMs": 75.42059998377226,
+      "markerPresent": false,
+      "ok": false,
+      "phase": "failure",
+      "repetition": 2,
+      "seenMarkers": [],
+      "taskIndex": 0
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T01",
+      "latencyMs": 376.70590000925586,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "failure",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "a1e37cc93542d7d9e67a61334709b1ad0ef527584f94195bb8587da935f21f67",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T01.txt",
+        "objectId": "3f019e3e-d984-5e1c-bb43-e70d1149b2f9",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T01\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "a1e37cc93542d7d9e67a61334709b1ad0ef527584f94195bb8587da935f21f67",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T01"
+      ],
+      "taskIndex": 1
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T02",
+      "latencyMs": 434.284499991918,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "failure",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "62b23225a9fcb04575262576d06585816d417f7cb8a1f7cfa6a5a0a416ceb5e1",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T02.txt",
+        "objectId": "e867d2b5-7ae6-56ef-aac6-78b6eeb83661",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T02\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "62b23225a9fcb04575262576d06585816d417f7cb8a1f7cfa6a5a0a416ceb5e1",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T02"
+      ],
+      "taskIndex": 2
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T03",
+      "latencyMs": 376.57240001135506,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "failure",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "cc4428e9457e82db1adf8993e97fe9ec1c43995969167b71b7dd15348be8ddba",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T03.txt",
+        "objectId": "16581e2c-5ea9-5c6a-895d-b42a9e2b4396",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T03\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "cc4428e9457e82db1adf8993e97fe9ec1c43995969167b71b7dd15348be8ddba",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_FAIL_T03"
+      ],
+      "taskIndex": 3
+    }
+  ],
+  "normal": [
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 0,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D000",
+      "latencyMs": 720.4907000123058,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "9e1b95021a26fbf8ecebd3542d08ef0cb22af0d4b5876de1fbbdb00f4cb418f8",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D000.txt",
+        "objectId": "f1422df1-02a7-58bf-af95-028aba102847",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D000\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "9e1b95021a26fbf8ecebd3542d08ef0cb22af0d4b5876de1fbbdb00f4cb418f8",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D000"
+      ],
+      "taskIndex": 0
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 1,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D001",
+      "latencyMs": 676.4541000011377,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "fb8dfc98f526853cb91308d3b8d93ac27f16c78d3ebdc023720ffd51dd3bbcd0",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D001.txt",
+        "objectId": "e9290cfb-f2df-55b3-8076-06749b795cf1",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D001\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "fb8dfc98f526853cb91308d3b8d93ac27f16c78d3ebdc023720ffd51dd3bbcd0",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D001"
+      ],
+      "taskIndex": 1
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 2,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D002",
+      "latencyMs": 714.67990000383,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "9e7dd0cd3f3edd77622047ef8d712a9251120e3dac044cf65d9987107ab81398",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D002.txt",
+        "objectId": "247e47c3-7bcc-5637-9894-d7d2847e1739",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D002\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "9e7dd0cd3f3edd77622047ef8d712a9251120e3dac044cf65d9987107ab81398",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D002"
+      ],
+      "taskIndex": 2
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 3,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D003",
+      "latencyMs": 714.3981000117492,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "bd3fa5092f02573d0a6c2f80340cdf5b975d4e1594be8a3319aa19d71bab45ca",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D003.txt",
+        "objectId": "9d1eb154-237a-5377-9277-eb14795bd829",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D003\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "bd3fa5092f02573d0a6c2f80340cdf5b975d4e1594be8a3319aa19d71bab45ca",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D003"
+      ],
+      "taskIndex": 3
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 4,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D004",
+      "latencyMs": 817.2118000220507,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "d12af8820bc179d3b543acb827055604ee435f8eaeda637d507c80e0c715288d",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D004.txt",
+        "objectId": "c9051818-76d1-5ad3-95c2-26ca6043bc67",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D004\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "d12af8820bc179d3b543acb827055604ee435f8eaeda637d507c80e0c715288d",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D004"
+      ],
+      "taskIndex": 0
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 5,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D005",
+      "latencyMs": 811.1657999979798,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "c628aacc5106f4d6051222927ad1c799e1e06b1d1efb55fe0e5f5053a136a344",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D005.txt",
+        "objectId": "96f4d6b5-cbee-5180-a1d1-8bad8e89cd8c",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D005\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "c628aacc5106f4d6051222927ad1c799e1e06b1d1efb55fe0e5f5053a136a344",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D005"
+      ],
+      "taskIndex": 1
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 6,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D006",
+      "latencyMs": 814.5467999856919,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "83b3420e0fc0746c3325b90b3bc006debcd664ca652e88f878ed2cd9d6e52683",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D006.txt",
+        "objectId": "8e7fcbd1-195d-58a1-83bd-9b12e7bcd9ab",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D006\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "83b3420e0fc0746c3325b90b3bc006debcd664ca652e88f878ed2cd9d6e52683",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D006"
+      ],
+      "taskIndex": 2
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 7,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D007",
+      "latencyMs": 814.3435999809299,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "ced0a024517d76c73ad4f512c5a6c4c2f04521bf54d83a800bceb062a66af7a6",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D007.txt",
+        "objectId": "ead615da-6300-514f-8431-7a531bd5cd1e",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D007\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "ced0a024517d76c73ad4f512c5a6c4c2f04521bf54d83a800bceb062a66af7a6",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D007"
+      ],
+      "taskIndex": 3
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 8,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D008",
+      "latencyMs": 658.9371000009123,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "8bd6a0c77bb0ffc3d338742154d8afcb8e8accc9786a985b2f72c89b3d728dbf",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D008.txt",
+        "objectId": "4a079ea1-b19c-5f39-9095-b65776d4a633",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D008\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "8bd6a0c77bb0ffc3d338742154d8afcb8e8accc9786a985b2f72c89b3d728dbf",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D008"
+      ],
+      "taskIndex": 0
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 9,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D009",
+      "latencyMs": 602.482600021176,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "52f63242b1b2c12ef389bef219909b2b44d865d3117d002280b912b38906d6ab",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D009.txt",
+        "objectId": "a7489b8b-c4fe-5de0-87be-cfd1fb5b7886",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D009\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "52f63242b1b2c12ef389bef219909b2b44d865d3117d002280b912b38906d6ab",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D009"
+      ],
+      "taskIndex": 1
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 10,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D010",
+      "latencyMs": 617.9331000021193,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "1db7169ad16362fd859e05e310818a4e277c76d50729d47b7e44b3f3cd64fd2d",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D010.txt",
+        "objectId": "eccc0bbc-8b73-54e8-a574-72684bd53e63",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D010\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "1db7169ad16362fd859e05e310818a4e277c76d50729d47b7e44b3f3cd64fd2d",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D010"
+      ],
+      "taskIndex": 2
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 11,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D011",
+      "latencyMs": 560.8802000060678,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "f1e468f22594614300145521633e6385f433cc9ae1dc70147eb4dbadb3e874c3",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D011.txt",
+        "objectId": "931a9968-877a-5c45-a3dc-45df889255ce",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D011\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "f1e468f22594614300145521633e6385f433cc9ae1dc70147eb4dbadb3e874c3",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D011"
+      ],
+      "taskIndex": 3
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 12,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D012",
+      "latencyMs": 641.1909000016749,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "644e74dc22b325b32f61c37e42ce0a6b6c8c748b22ce6111ee0be6ae585c33e3",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D012.txt",
+        "objectId": "d3cc6e4f-6499-5352-97d1-ec575edeb5c6",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D012\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "644e74dc22b325b32f61c37e42ce0a6b6c8c748b22ce6111ee0be6ae585c33e3",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D012"
+      ],
+      "taskIndex": 0
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 13,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D013",
+      "latencyMs": 716.4155000064056,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "16e1ceef6540698aca1e3b7abf67a29ff9b52cef22dc5d8c01c5221f0504551e",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D013.txt",
+        "objectId": "6fa3a49d-6066-5dcf-97a3-255c3adfea53",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D013\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "16e1ceef6540698aca1e3b7abf67a29ff9b52cef22dc5d8c01c5221f0504551e",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D013"
+      ],
+      "taskIndex": 1
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 14,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D014",
+      "latencyMs": 659.419000003254,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "d614d2ac27f8aee3eb199e1c516dcec0219928cc8b8a30d2576eff33634740a3",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D014.txt",
+        "objectId": "5ccb29fc-e919-5e2b-8a60-41bd736a36f3",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D014\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "d614d2ac27f8aee3eb199e1c516dcec0219928cc8b8a30d2576eff33634740a3",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D014"
+      ],
+      "taskIndex": 2
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": 15,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_D015",
+      "latencyMs": 692.668000003323,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "normal",
+      "repetition": 2,
+      "responseBytes": 351,
+      "responseSha256": "653bb8608ef79d80939d8a658f2da9ad78f03e8750e01a9d52e718203685c0ab",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_D015.txt",
+        "objectId": "66186093-dd02-5719-8b2b-4ef78880905d",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_D015\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "653bb8608ef79d80939d8a658f2da9ad78f03e8750e01a9d52e718203685c0ab",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_D015"
+      ],
+      "taskIndex": 3
+    }
+  ],
+  "poolBringUpMs": 62413.662500010105,
+  "poolSize": 4,
+  "repetition": 2,
+  "targetedTermination": {
+    "lastStatus": {
+      "completed": true,
+      "completedCount": 2,
+      "completedSize": 190,
+      "currentObject": "webhook://WebHook",
+      "currentSize": 0,
+      "debuggerAttached": false,
+      "endTime": 1784156290.7147725,
+      "errors": [],
+      "exitCode": 0,
+      "exitMessage": "",
+      "failedCount": 0,
+      "failedSize": 0,
+      "metrics": {
+        "avg_cpu_memory_mb": 279.34357144067906,
+        "avg_cpu_percent": 5.307314671057313,
+        "avg_gpu_memory_mb": 0.0,
+        "cpu_memory_mb": 302.390625,
+        "cpu_percent": 0.0,
+        "gpu_memory_mb": 0.0,
+        "peak_cpu_memory_mb": 302.390625,
+        "peak_cpu_percent": 21.05,
+        "peak_gpu_memory_mb": 0.0
+      },
+      "name": "proofloop-cloud-r2-t0.webhook_1",
+      "notes": [],
+      "pipeflow": {
+        "byPipe": {
+          "0": []
+        },
+        "totalPipes": 1
+      },
+      "project_id": "7054f660-da33-4df8-affe-9d92c338cbae",
+      "rateCount": 0,
+      "rateSize": 0,
+      "serviceUp": false,
+      "source": "webhook_1",
+      "startTime": 1784156247.762582,
+      "state": 6,
+      "status": "Stopped",
+      "tokens": "sha256:0861e899bc36f698943efc99d1d5288ec34328abee8d7d69dd331105992e5d11",
+      "totalCount": 2,
+      "totalSize": 190,
+      "warnings": [],
+      "wordsCount": 0,
+      "wordsSize": 0
+    },
+    "taskIndex": 0,
+    "taskTokenHash": "9b058943ab28d1cd4386d5b7de25d80959b08c77c57eacfd582b92ab070f49a4",
+    "terminalStateObserved": true,
+    "terminateCallSucceeded": true
+  },
+  "tasks": [
+    {
+      "sanitizedStartResponse": {
+        "id": "adf1d8cf.webhook_1",
+        "projectId": "7054f660-da33-4df8-affe-9d92c338cbae",
+        "provider": "webhook",
+        "publicToken": "sha256:3f32e24743ea79445e93ce6a749edea5cd9c6dce4012dd6d8a83c297a6c08854",
+        "source": "webhook_1",
+        "token": "sha256:7a198a42e2b853a0c3d86e6d866eb342203e58d0133e9f6c62b915061a84515e"
+      },
+      "startMs": 24795.754699996905,
+      "taskIndex": 0,
+      "taskTokenHash": "9b058943ab28d1cd4386d5b7de25d80959b08c77c57eacfd582b92ab070f49a4"
+    },
+    {
+      "sanitizedStartResponse": {
+        "id": "c8e367e5.webhook_1",
+        "projectId": "4b50fbd2-80df-44ae-a5d0-2bd405b191e8",
+        "provider": "webhook",
+        "publicToken": "sha256:1930b61eacb9eca0ad1676f18a2d908416841e03d27323cb8764324d35099e64",
+        "source": "webhook_1",
+        "token": "sha256:07876025531c270c4a39f3c6f9e173c5fb72ededae957c37f34acd5215875693"
+      },
+      "startMs": 32241.43429999822,
+      "taskIndex": 1,
+      "taskTokenHash": "7f11a3fc5dcdbf20fe32afd4c8257cc2073fe287362acb3d0c3a711c98f70b41"
+    },
+    {
+      "sanitizedStartResponse": {
+        "id": "5f290924.webhook_1",
+        "projectId": "be87aba3-b222-461c-9263-a20acc971c96",
+        "provider": "webhook",
+        "publicToken": "sha256:7d239fbd4195590d99ff7fe6a889c458758eaabe9a771793370e9b3415609cc6",
+        "source": "webhook_1",
+        "token": "sha256:b2f536140d8a58fb054a1f1b68830674da75ef24b4bb8653db990091a6559e5e"
+      },
+      "startMs": 30551.084799983073,
+      "taskIndex": 2,
+      "taskTokenHash": "7234a6b252c86c2705f35b74a9acad60948d41e64a06bf0bc951c8a704f009c8"
+    },
+    {
+      "sanitizedStartResponse": {
+        "id": "5bf27a05.webhook_1",
+        "projectId": "10edd882-f2e5-4f4a-8805-0df52f987c16",
+        "provider": "webhook",
+        "publicToken": "sha256:d0dc9ff05433ea82ca46a29deb63d58d93d10f927e8ec28982f06203db79baa5",
+        "source": "webhook_1",
+        "token": "sha256:f56216dbda859863e328b6257caf90da73e817f167524ae7343c876b133e8512"
+      },
+      "startMs": 33299.494100006996,
+      "taskIndex": 3,
+      "taskTokenHash": "784628a0f01224742b331db9feab014af85f33ac49248089c682e3f770bd558e"
+    }
+  ],
+  "warmups": [
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_T00_WARM",
+      "latencyMs": 1649.4674000132363,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "warmup",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "a14d914dcc8c82e1c414294341cd6e941ec97ab2c031aa5644052129d7665032",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_T00_WARM.txt",
+        "objectId": "360c5cc7-8f49-5549-a9d0-8613bff6c7f2",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_T00_WARM\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "a14d914dcc8c82e1c414294341cd6e941ec97ab2c031aa5644052129d7665032",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_T00_WARM"
+      ],
+      "taskIndex": 0
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_T01_WARM",
+      "latencyMs": 1559.0071000042371,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "warmup",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "1aa503c16b55c8cdd50b23bf21298dbe6bed5cd11faeae6ee72401ffb733560a",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_T01_WARM.txt",
+        "objectId": "74f136e1-0db7-5bc9-9dda-7f647ae65d8e",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_T01_WARM\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "1aa503c16b55c8cdd50b23bf21298dbe6bed5cd11faeae6ee72401ffb733560a",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_T01_WARM"
+      ],
+      "taskIndex": 1
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_T02_WARM",
+      "latencyMs": 1558.8753999909386,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "warmup",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "2424a9b99645fb14d55d308c9b0d8729b71401de66b41661766f04e05a2bcf21",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_T02_WARM.txt",
+        "objectId": "8bc76318-d0f6-5cb9-a80e-8d044b3dc36e",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_T02_WARM\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "2424a9b99645fb14d55d308c9b0d8729b71401de66b41661766f04e05a2bcf21",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_T02_WARM"
+      ],
+      "taskIndex": 2
+    },
+    {
+      "crossTaskLeak": false,
+      "documentIndex": null,
+      "expectedMarker": "RR_CLOUD_cloud-20260715T225614Z_R02_T03_WARM",
+      "latencyMs": 1795.6894999952056,
+      "markerPresent": true,
+      "ok": true,
+      "phase": "warmup",
+      "repetition": 2,
+      "responseBytes": 359,
+      "responseSha256": "f9366382d6777c43d46fbf8bb200c70f662d9cffd0bc5efb42cfc025b6afa17f",
+      "sanitizedResponse": {
+        "metadata": {
+          "Content-Encoding": "ISO-8859-1",
+          "Content-Type": "text/plain; charset=ISO-8859-1"
+        },
+        "name": "RR_CLOUD_cloud-20260715T225614Z_R02_T03_WARM.txt",
+        "objectId": "4508aac3-53b4-5c76-8fcc-9c001a5f9ebd",
+        "path": "",
+        "result_types": {
+          "text": "text"
+        },
+        "text": [
+          "proofloop-marker=RR_CLOUD_cloud-20260715T225614Z_R02_T03_WARM\nsynthetic hosted isolation document\n\n\n"
+        ]
+      },
+      "sanitizedResponseSha256": "f9366382d6777c43d46fbf8bb200c70f662d9cffd0bc5efb42cfc025b6afa17f",
+      "seenMarkers": [
+        "RR_CLOUD_cloud-20260715T225614Z_R02_T03_WARM"
+      ],
+      "taskIndex": 3
+    }
+  ]
+}

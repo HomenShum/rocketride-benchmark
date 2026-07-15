@@ -1,0 +1,31 @@
+{
+  "controlAdmissionStatus": "failed",
+  "counts": {
+    "cleanupRecords": 12,
+    "crossTaskLeaks": 0,
+    "normalRequests": 48,
+    "normalSucceededCorrectly": 48,
+    "repetitions": 3,
+    "residentTasksCreated": 12,
+    "targetedTerminatedRequests": 3,
+    "targetedTerminatedRequestsFailed": 3,
+    "terminateCallsSucceeded": 12,
+    "unaffectedFailureRequests": 9,
+    "unaffectedFailureSucceededCorrectly": 9
+  },
+  "evidenceStatus": "invalid",
+  "exactUpstreamCloudStatus": "blocked_missing_workload_service",
+  "integrityIssues": [],
+  "officialStatus": "cloud_operational_appendix_unsubmitted",
+  "receiptSha256": "c749fff360a2b153dca31619f9178493c3c354740120cb9bf5289f92283627f7",
+  "schemaVersion": 1,
+  "semanticIssues": [
+    "promotion code verification is missing",
+    "Starter subscription is not active",
+    "Starter subscription was not verified",
+    "paid renewal remains enabled",
+    "billing gate did not pass",
+    "Cloud control did not pass"
+  ],
+  "status": "failed"
+}

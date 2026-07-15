@@ -1,0 +1,11 @@
+{
+  "durationMs": 7822.677499993006,
+  "error": "The service workload was not found",
+  "errorSha256": "f4d6cbae80865cf389d3fc7fb1c169f3e0cc66177492a65450803781496c2a1a",
+  "errorType": "RuntimeError",
+  "exactUpstreamCloudStatus": "blocked_missing_workload_service",
+  "pipelinePath": "concurrent-work/harness/rocketride-bench/groups/robustness-and-isolation/fault-isolation/pipeline.pipe",
+  "pipelineSha256": "93634fda53aacb9ec5569608e76e108e4c36e61cc5c576cfc3d61f2e238caf74",
+  "startedAt": "2026-07-15T22:56:15.437547Z",
+  "status": "blocked"
+}
