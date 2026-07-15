@@ -1,0 +1,36 @@
+=== fault-isolation x10 (back-to-back, no restart) ===
+  OK   fault-isolation run-01
+  OK   fault-isolation run-02
+  OK   fault-isolation run-03
+  OK   fault-isolation run-04
+  OK   fault-isolation run-05
+  OK   fault-isolation run-06
+  OK   fault-isolation run-07
+  OK   fault-isolation run-08
+  OK   fault-isolation run-09
+  OK   fault-isolation run-10
+=== authoring-effort x1 (static / deterministic — reps N/A) ===
+  OK   authoring-effort
+=== concurrent-processing x10  @ M={8,16}  (restart+prime+retry) ===
+  OK   concurrent-processing run-01 (attempt 1)
+  OK   concurrent-processing run-02 (attempt 1)
+  OK   concurrent-processing run-03 (attempt 1)
+  OK   concurrent-processing run-04 (attempt 1)
+  OK   concurrent-processing run-05 (attempt 1)
+  OK   concurrent-processing run-06 (attempt 1)
+  OK   concurrent-processing run-07 (attempt 1)
+  OK   concurrent-processing run-08 (attempt 1)
+  OK   concurrent-processing run-09 (attempt 1)
+  OK   concurrent-processing run-10 (attempt 1)
+=== data-isolation x10  @ M=32  (restart+prime+retry) ===
+  OK   data-isolation run-01 (attempt 1)
+  OK   data-isolation run-02 (attempt 1)
+  OK   data-isolation run-03 (attempt 1)
+  OK   data-isolation run-04 (attempt 1)
+  OK   data-isolation run-05 (attempt 1)
+  OK   data-isolation run-06 (attempt 1)
+  OK   data-isolation run-07 (attempt 1)
+  OK   data-isolation run-08 (attempt 1)
+  OK   data-isolation run-09 (attempt 1)
+  OK   data-isolation run-10 (attempt 1)
+=== 10x RUN DONE ===

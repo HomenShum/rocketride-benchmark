@@ -1,0 +1,37 @@
+{
+  "fixtureId": "nodeslide-independent-elements-v1",
+  "app": "nodeslide",
+  "workflow": "independent-element-edit",
+  "appCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "delayMs": 20,
+  "baseVersion": 3,
+  "units": [
+    { "id": "slide-1-headline", "scope": "deck-1" },
+    { "id": "slide-1-chart", "scope": "deck-1" },
+    { "id": "slide-2-headline", "scope": "deck-1" },
+    { "id": "deck-validation", "scope": "deck-1" }
+  ],
+  "candidate": {
+    "deckId": "deck-1",
+    "baseDeckVersion": 3,
+    "baseSlideVersions": { "slide-1": 2 },
+    "baseElementVersions": { "headline": 1 },
+    "scope": {
+      "kind": "elements",
+      "deckId": "deck-1",
+      "slideIds": ["slide-1"],
+      "elementIds": ["headline"],
+      "operationMode": "copy"
+    },
+    "operations": [
+      {
+        "op": "replace_text",
+        "slideId": "slide-1",
+        "elementId": "headline",
+        "text": "After"
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "noderoom-conflict-proposal-v1:normal:rep-01:native",
+  "traceId": "trace:noderoom-conflict-proposal-v1:normal:rep-01",
+  "framework": "native",
+  "candidate": {
+    "kind": "semantic_conflict_resolution",
+    "packet": {
+      "conflictId": "conflict-1",
+      "roomId": "room-1",
+      "artifactId": "sheet-1",
+      "artifactKind": "spreadsheet",
+      "draftId": "draft-1",
+      "trigger": "draft_conflict",
+      "conflictKind": "cell_value",
+      "overlap": "same_element",
+      "actor": {
+        "kind": "agent",
+        "id": "room-agent",
+        "name": "Room Agent",
+        "scope": "public"
+      },
+      "targetRefs": [
+        {
+          "kind": "cell",
+          "ref": "r_rev__variance"
+        }
+      ],
+      "base": {
+        "values": {
+          "r_rev__variance": "+24.0%"
+        },
+        "versions": {
+          "r_rev__variance": 3
+        }
+      },
+      "current": {
+        "values": {
+          "r_rev__variance": "+25.0%"
+        },
+        "versions": {
+          "r_rev__variance": 4
+        },
+        "changedBy": {
+          "r_rev__variance": {
+            "kind": "user",
+            "id": "host-1",
+            "name": "Host"
+          }
+        }
+      },
+      "proposed": {
+        "values": {
+          "r_rev__variance": "+30.0%"
+        },
+        "ops": [
+          {
+            "opId": "op-variance-agent",
+            "artifactId": "sheet-1",
+            "elementId": "r_rev__variance",
+            "kind": "set",
+            "value": "+30.0%",
+            "baseVersion": 3
+          }
+        ]
+      },
+      "context": {
+        "userIntent": "Update the forecast variance.",
+        "mergeNote": "Host edited the same forecast cell.",
+        "deterministicConflicts": [
+          {
+            "opId": "op-variance-agent",
+            "elementId": "r_rev__variance",
+            "reason": "base_version_changed",
+            "current": "+25.0%"
+          }
+        ],
+        "openQuestions": []
+      },
+      "policy": {
+        "humanWinsByDefault": true,
+        "formulaOverwriteAllowed": false,
+        "publicPrivateBoundary": "public_only",
+        "autoCommitAllowed": false
+      },
+      "businessImpact": "forecast",
+      "status": "needs_review",
+      "createdAt": 1
+    },
+    "resolution": {
+      "decision": "needs_human_review",
+      "reason": "business assumption impact requires human approval: forecast",
+      "resolvedOps": [
+        {
+          "targetRef": "r_rev__variance",
+          "kind": "create_proposal",
+          "value": "+30.0%",
+          "baseVersion": 4,
+          "comment": "Business-value conflict requires human review before changing the current value.",
+          "status": "needs_review"
+        }
+      ],
+      "reviewerNote": "CRS compared base/current/proposed state. It did not bypass managed writes; every accepted op still needs final CAS.",
+      "openQuestions": [],
+      "confidence": 0.62,
+      "classification": {
+        "tier": "human_review_required",
+        "action": "create_review_proposal",
+        "canAutoCommit": false,
+        "reasons": [
+          "business assumption impact requires human approval: forecast"
+        ],
+        "requiredValidators": [
+          "fresh_final_cas",
+          "policy_check",
+          "evidence_check",
+          "review_tier"
+        ]
+      }
+    }
+  },
+  "inputDigest": "sha256:68e8b7b5a183168a6770ad5602f1952909835c0ddd203b706e86ba62217279f1",
+  "idempotencyKey": "noderoom-conflict-proposal-v1:normal:rep-01",
+  "outputDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "compare-base-current"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "build-review-proposal"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "reason-business-impact"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "classify-review-tier"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 108.197,
+    "warmupMs": 0.0,
+    "executionMs": 73.116,
+    "totalMs": 181.312,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 107433984,
+    "cpuTimeMs": 187.0
+  },
+  "provenance": {
+    "adapter": "node-suite-native",
+    "adapterVersion": "1.0.0",
+    "runtime": "node-worker-threads",
+    "runtimeVersion": "v22.22.2",
+    "appCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
+    "deterministic": true,
+    "location": "local"
+  }
+}

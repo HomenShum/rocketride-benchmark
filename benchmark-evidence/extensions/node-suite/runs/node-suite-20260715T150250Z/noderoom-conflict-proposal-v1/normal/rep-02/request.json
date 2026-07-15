@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "noderoom",
+  "workflow": "compare-reason-swap-conflict",
+  "fixtureId": "noderoom-conflict-proposal-v1",
+  "traceId": "trace:noderoom-conflict-proposal-v1:normal:rep-02",
+  "inputDigest": "sha256:68e8b7b5a183168a6770ad5602f1952909835c0ddd203b706e86ba62217279f1",
+  "idempotencyKey": "noderoom-conflict-proposal-v1:normal:rep-02",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "baseVersion": 3
+}

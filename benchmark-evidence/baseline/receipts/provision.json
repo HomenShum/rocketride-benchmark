@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-provision",
+  "command": [
+    "C:\\Program Files\\Git\\bin\\bash.exe",
+    "scripts/provision.sh",
+    "--competitors"
+  ],
+  "renderedCommand": "\"C:\\Program Files\\Git\\bin\\bash.exe\" scripts/provision.sh --competitors",
+  "cwd": "concurrent-work/harness/rocketride-bench",
+  "environment": {},
+  "startedAt": "2026-07-15T09:30:00.384900Z",
+  "finishedAt": "2026-07-15T09:35:12.609718Z",
+  "durationSeconds": 312.219,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/provision.log",
+  "logSha256": "9d87748de1419d8b2ea3cd6c594a92e26519dc3674226799a04fd6f3d770049e"
+}

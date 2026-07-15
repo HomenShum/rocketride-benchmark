@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "slide-1-chart",
+    "slide-2-headline",
+    "deck-validation"
+  ],
+  "failed": [
+    "slide-1-headline"
+  ],
+  "totalMs": 89.9098,
+  "executionMs": 89.9098,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 69832704,
+  "cpuTimeMs": 297,
+  "runtimeVersion": "v22.22.2"
+}

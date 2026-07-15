@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-smoke-fault-isolation-rerun-1",
+  "command": [
+    "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\.venv\\Scripts\\python.exe",
+    "groups/robustness-and-isolation/fault-isolation/run.py"
+  ],
+  "renderedCommand": "\"D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\.venv\\Scripts\\python.exe\" groups/robustness-and-isolation/fault-isolation/run.py",
+  "cwd": "concurrent-work/harness/rocketride-bench",
+  "environment": {
+    "ROCKETRIDE_URI": "ws://localhost:5566",
+    "ROCKETRIDE_PORT": "5566",
+    "ENGINE_DIR": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\engine",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "startedAt": "2026-07-15T09:40:10.980234Z",
+  "finishedAt": "2026-07-15T09:41:39.970880Z",
+  "durationSeconds": 88.984,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/smoke-fault-isolation-rerun-1.log",
+  "logSha256": "3e8bc4daf8511d6dae5b78306b5ca1256d5364f72c6d7915491271e53493f304"
+}

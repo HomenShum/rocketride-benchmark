@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "node.rocketride.linux-environment/v1",
+  "sourceCommit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "python": "3.11.15",
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "processor": "x86_64",
+  "cpuCount": 32,
+  "wslDistro": "Ubuntu",
+  "benchmarkEnvironment": {
+    "REPS": "10",
+    "MAX_ATTEMPTS": "5",
+    "BENCH_MS": "8,16",
+    "BENCH_M": "32",
+    "ROCKETRIDE_PORT": "5565"
+  },
+  "meminfo": [
+    "MemTotal:       32724676 kB",
+    "MemFree:        30341236 kB",
+    "MemAvailable:   31547716 kB",
+    "Buffers:           54756 kB"
+  ]
+}

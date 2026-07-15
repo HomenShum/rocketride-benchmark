@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-isolated-windows-n10",
+  "command": [
+    "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\.venv\\Scripts\\python.exe",
+    "..\\run_isolated_windows.py"
+  ],
+  "renderedCommand": "\"D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\.venv\\Scripts\\python.exe\" ..\\run_isolated_windows.py",
+  "cwd": "concurrent-work/harness/rocketride-bench",
+  "environment": {
+    "REPS": "10",
+    "MAX_ATTEMPTS": "5",
+    "ROCKETRIDE_PORT": "5566",
+    "RESTART": "1",
+    "ENGINE_DIR": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\engine",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "startedAt": "2026-07-15T09:44:46.770910Z",
+  "finishedAt": "2026-07-15T12:13:17.658404Z",
+  "durationSeconds": 8910.89,
+  "exitCode": 4294967295,
+  "passed": false,
+  "detectedFailureSignals": 16,
+  "log": "benchmark-evidence/baseline/logs/isolated-windows-n10.log",
+  "logSha256": "612f772eb320167f687018f44bed8da462c676c77e5ff0b71dd4d7a531938ac5"
+}

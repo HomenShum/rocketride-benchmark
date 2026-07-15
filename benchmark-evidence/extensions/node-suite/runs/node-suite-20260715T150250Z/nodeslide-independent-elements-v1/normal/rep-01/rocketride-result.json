@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodeslide-independent-elements-v1:normal:rep-01:rocketride",
+  "traceId": "trace:nodeslide-independent-elements-v1:normal:rep-01",
+  "framework": "rocketride",
+  "candidate": {
+    "deckId": "deck-1",
+    "baseDeckVersion": 3,
+    "baseSlideVersions": {
+      "slide-1": 2
+    },
+    "baseElementVersions": {
+      "headline": 1
+    },
+    "scope": {
+      "kind": "elements",
+      "deckId": "deck-1",
+      "slideIds": [
+        "slide-1"
+      ],
+      "elementIds": [
+        "headline"
+      ],
+      "operationMode": "copy"
+    },
+    "operations": [
+      {
+        "op": "replace_text",
+        "slideId": "slide-1",
+        "elementId": "headline",
+        "text": "After"
+      }
+    ]
+  },
+  "inputDigest": "sha256:0b792bf91af3d3796d8b751689177fa22beaeb66bbdda926038cecc00197d2e8",
+  "idempotencyKey": "nodeslide-independent-elements-v1:normal:rep-01",
+  "outputDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "deck-validation"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "slide-1-chart"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "slide-1-headline"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "slide-2-headline"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 21170.067,
+    "executionMs": 6355.653,
+    "totalMs": 31814.868,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 127430656,
+    "cpuTimeMs": 14093.75,
+    "runtimeHealthyAfter": true
+  },
+  "provenance": {
+    "adapter": "node-suite-rocketride",
+    "adapterVersion": "1.0.0",
+    "runtime": "rocketride-engine",
+    "runtimeVersion": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "appCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
+    "deterministic": true,
+    "location": "local"
+  }
+}

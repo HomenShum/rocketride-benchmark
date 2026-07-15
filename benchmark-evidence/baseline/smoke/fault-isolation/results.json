@@ -1,0 +1,43 @@
+{
+  "benchmark": "fault-isolation",
+  "old_id": "D5",
+  "hypothesis": "a hard node crash is isolated to its run; the server + siblings survive",
+  "provenance": {
+    "engine_dir": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\engine",
+    "engine_version": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "uri": "ws://localhost:5566",
+    "cpu_brand": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "machine": "Windows-10-10.0.26200-SP0",
+    "arch": "AMD64",
+    "physical_cores": 24,
+    "logical_cores": 32,
+    "total_ram_gib": 63.73,
+    "python": "3.11.9",
+    "engine_sha256": "b844140ae82cc18e9b5767b44b897aed2f772ea5228cfd053d727324bad7dc5e",
+    "engine_size_bytes": 84793856
+  },
+  "rocketride": {
+    "server_pid_before": 10760,
+    "healthy_before_ok": true,
+    "crash_run_completed": true,
+    "server_survived_crash": true,
+    "healthy_after_ok": true
+  },
+  "in_process_baseline": {
+    "framework": "langchain",
+    "tasks": 4,
+    "lc_version": "0.3.86",
+    "lc_python": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\.venv\\Scripts\\python.exe",
+    "langchain_core_file": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\concurrent-work\\harness\\rocketride-bench\\.venv\\Lib\\site-packages\\langchain_core\\__init__.py",
+    "healthy_completed": 4,
+    "completed": 0,
+    "process_exit_code": 134,
+    "died": true
+  },
+  "verdict_metrics": {
+    "rr_isolation_holds": true,
+    "inproc_framework": "langchain",
+    "inproc_healthy_ok": true,
+    "inproc_lost_all": true
+  }
+}

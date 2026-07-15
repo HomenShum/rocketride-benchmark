@@ -1,6 +1,6 @@
 {
   "schemaVersion": "node.rocketride.deviations/v1",
-  "generatedAt": "2026-07-15T09:26:22.398Z",
+  "generatedAt": "2026-07-15T15:26:18.820879Z",
   "deviations": [
     {
       "id": "platform-windows",
@@ -9,6 +9,138 @@
       "description": "The independent run uses the upstream REPRODUCE-WINDOWS.md path and runs on Windows x64 rather than the macOS host used for committed upstream results.",
       "changesBenchmarkSource": false,
       "preRegistered": true
+    },
+    {
+      "id": "windows-start-script-false-ready",
+      "track": "baseline",
+      "kind": "upstream-harness-anomaly",
+      "description": "scripts/start_engine.sh returned success with HTTP 000000 while no listener existed on port 5566. curl emitted 000 and the fallback appended another 000; the script checks only for equality with 000.",
+      "evidence": "benchmark-evidence/baseline/logs/engine-start.log",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T09:37:15.464Z",
+      "handling": "Preserve the unpatched attempt and use an external HTTP wait. Do not alter the upstream benchmark source for Track A."
+    },
+    {
+      "id": "windows-concurrent-processing-m16-row-retention",
+      "track": "baseline",
+      "kind": "unfavorable-upstream-result",
+      "description": "The unchanged Windows concurrent-processing M=16 cell reported 152 SQLite rows where 80 were expected and set RocketRide status=check. The 152 total equals the preceding M=8 total (72) plus the M=16 expected total (80), which is consistent with Windows retaining open SQLite files when the harness performs its ignore-errors cleanup; this cause is an inference, not a patched finding.",
+      "evidence": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-01/results.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T10:06:00Z",
+      "handling": "Preserve every unchanged result and report the RocketRide correctness and latency losses prominently. Do not patch cleanup, alter pool sizes, or replace these repetitions in Track A."
+    },
+    {
+      "id": "windows-recorder-control-detached",
+      "track": "baseline",
+      "kind": "study-orchestration-timeout",
+      "description": "The Codex shell control channel reached its 7200-second limit after all ten concurrent-processing repetitions completed and while data-isolation run 01 was active. The recorder, benchmark runner, engine, and benchmark child remained alive; no benchmark process or parameter was changed.",
+      "evidence": "benchmark-evidence/failures.jsonl",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T11:44:50Z",
+      "handling": "Record the detached control channel, attach a read-only process monitor, and do not launch a duplicate or replacement benchmark run."
+    },
+    {
+      "id": "windows-data-isolation-bounded-stop",
+      "track": "baseline",
+      "kind": "unsupported-platform-blocker",
+      "description": "Data-isolation repetition 01 timed out at the unchanged 360-second harness limit on all five predeclared attempts. The study stopped the Windows runner at that repetition boundary instead of spending up to five attempts on each of nine additional repetitions after the blocker was established.",
+      "evidence": "benchmark-evidence/baseline/receipts/isolated-windows-n10.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T12:13:14.976298Z",
+      "handling": "Publish the Windows lane as evidence_incomplete, retain all failures and valid earlier results, make no timeout or pool-size adjustment, and run the full unchanged suite on supported Linux."
+    },
+    {
+      "id": "supported-linux-host-prerequisites",
+      "track": "baseline",
+      "kind": "host-setup-repair",
+      "description": "The WSL2 Ubuntu 22.04 host initially had Python 3.10 and a stale Docker apt signing-key reference. The upstream setup script was executed through in-memory CRLF normalization, Docker's key reference was refreshed from its official repository, Python 3.11 was installed, and the study wrapper was configured to invoke python3.11 explicitly.",
+      "evidence": "benchmark-evidence/failures.jsonl",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T12:15:00Z",
+      "handling": "Record both failed pre-benchmark setup attempts. Run the scored suite from a fresh Linux checkout at the frozen SHA; do not alter its benchmark source, fixtures, pools, retries, or timeouts."
+    },
+    {
+      "id": "supported-linux-first-run-provision-failure",
+      "track": "baseline",
+      "kind": "pre-score-environmental-failure",
+      "description": "Linux run linux-20260715T121828Z stopped during provisioning before smoke or scored repetitions. The Windows recorder could not echo a Unicode pip progress line under CP1252, and the downloaded pinned engine identified missing host library libc++.so.1.",
+      "evidence": "benchmark-evidence/baseline/linux/linux-20260715T121828Z/completion.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T12:18:56Z",
+      "handling": "Preserve the exit-2 partial export, make recorder console encoding explicit, install the Ubuntu libc++ runtime package, verify the pinned engine version, and restart with a new run ID. No scored result existed to replace."
+    },
+    {
+      "id": "supported-linux-second-run-engine-lifecycle",
+      "track": "baseline",
+      "kind": "study-wrapper-error",
+      "description": "Linux run linux-20260715T122055Z passed provisioning and smoke, but the study wrapper stopped the engine before invoking upstream run_isolated.sh. The upstream runner intentionally performs fault-isolation repetitions before its first engine restart, so all ten fault repetitions failed immediately.",
+      "evidence": "benchmark-evidence/baseline/linux/linux-20260715T122055Z/completion.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T12:22:10.775742Z",
+      "handling": "Terminate the invalid run before retaining timed concurrency output, preserve its exit-143 export and failure receipt, remove only the wrapper's premature stop, and restart with a new run ID."
+    },
+    {
+      "id": "node-suite-windows-command-shims",
+      "track": "node-extension",
+      "kind": "study-harness-portability-failure",
+      "description": "The first app-verifier launch used logical npm and npx executable names directly with Python subprocess on Windows, where CreateProcess requires the resolved .cmd shim.",
+      "evidence": "benchmark-evidence/extensions/node-suite/app-verification.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T14:25:00Z",
+      "handling": "Preserve the failed launch in failures.jsonl, resolve executables through PATH without a shell, unit-test both shim resolution and fail-closed behavior, then rerun the exact app verifier."
+    },
+    {
+      "id": "node-suite-provider-registration-package",
+      "track": "node-extension",
+      "kind": "study-harness-packaging-failure",
+      "description": "Run node-suite-20260715T142839Z copied IInstance.py but omitted services.json, IGlobal.py, and __init__.py, so the engine could not discover provider nodeworkflow.",
+      "evidence": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T142839Z/harness-failure.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T14:29:20Z",
+      "handling": "Preserve and hash the partial run, add the complete study-only RocketRide node package plus discovery-metadata tests, and rerun under a new ID without changing fixtures or scoring."
+    },
+    {
+      "id": "node-suite-hard-failure-transport-bound",
+      "track": "node-extension",
+      "kind": "study-harness-timeout-failure",
+      "description": "Run node-suite-20260715T143249Z exposed that a RocketRide send awaiting an intentionally crashed worker had no transport bound and could wait indefinitely; the attempt was stopped after preserving partial evidence.",
+      "evidence": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T143249Z/harness-failure.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T14:47:39.736286Z",
+      "handling": "Bound send by the unchanged fixture deadline, bound cleanup separately, add a never-returning fake-client regression, and keep the failed attempt distinct from later runs."
+    },
+    {
+      "id": "node-suite-direct-transport-detach",
+      "track": "node-extension",
+      "kind": "sdk-lifecycle-failure",
+      "description": "Run node-suite-20260715T145036Z completed 16 repetitions before a new WebSocket was rejected with HTTP 403. The SDK compatibility disconnect path performed deauthentication before transport close; direct local clients accumulated lifecycle pressure.",
+      "evidence": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T145036Z/harness-failure.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T15:00:00Z",
+      "handling": "Use the SDK's public detach transport operation after token termination, retain disconnect only as a fallback, preserve the failed run, and rerun the unchanged N=3 matrix."
+    },
+    {
+      "id": "node-suite-post-run-deadline-audit",
+      "track": "node-extension",
+      "kind": "unfavorable-protocol-result",
+      "description": "The orchestration scorecard for node-suite-20260715T150250Z passed completion and isolation gates, but all 30 RocketRide result envelopes exceeded the fixed 10000 ms total deadline and would be rejected by the shared application protocol.",
+      "evidence": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T150250Z/audit.json",
+      "changesBenchmarkSource": false,
+      "preRegistered": false,
+      "discoveredAt": "2026-07-15T15:22:00Z",
+      "handling": "Do not rewrite the original scorecard. Publish the separate immutable audit, mark evidence complete and protocol admission failed, block promotion, and report the negative timing finding with the isolation result."
     }
   ]
 }

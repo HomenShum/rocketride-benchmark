@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "noderoom-independent-writes-v1:normal:rep-01:native",
+  "traceId": "trace:noderoom-independent-writes-v1:normal:rep-01",
+  "framework": "native",
+  "candidate": {
+    "kind": "algorithm_patch_bundle",
+    "bundle": {
+      "schema": 1,
+      "algorithmId": "revenue_variance_pct_v1",
+      "artifactHash": "fnv1a32:7bcf2e10",
+      "status": "passed",
+      "commitPolicy": "patch_bundle_only_runtime_must_cas",
+      "patches": [
+        {
+          "elementId": "r_rev__variance",
+          "baseVersion": 3,
+          "kind": "set",
+          "value": {
+            "value": "+24.0%",
+            "status": "complete",
+            "confidence": 1,
+            "normalizedValue": 0.24,
+            "formula": "(q3 - q2) / q2",
+            "evidence": []
+          }
+        }
+      ],
+      "writeLockedCellResultsArgs": {
+        "reason": "Apply the validated revenue variance candidate.",
+        "ops": [
+          {
+            "elementId": "r_rev__variance",
+            "baseVersion": 3,
+            "value": "+24.0%",
+            "status": "complete",
+            "confidence": 1,
+            "normalizedValue": 0.24,
+            "formula": "(q3 - q2) / q2",
+            "evidence": [],
+            "kind": "set"
+          }
+        ]
+      },
+      "proof": {
+        "runnerVersion": "algorithm-artifact-runner:v1",
+        "deterministic": true,
+        "testsPassed": 1,
+        "inputRefs": [
+          {
+            "id": "q2",
+            "elementId": "r_rev__q2",
+            "version": 1,
+            "valueHash": "fixture:q2"
+          },
+          {
+            "id": "q3",
+            "elementId": "r_rev__q3",
+            "version": 1,
+            "valueHash": "fixture:q3"
+          }
+        ],
+        "outputRefs": [
+          {
+            "id": "variancePct",
+            "elementId": "r_rev__variance",
+            "baseVersion": 3,
+            "expression": "(q3 - q2) / q2",
+            "normalizedValue": 0.24
+          }
+        ]
+      }
+    }
+  },
+  "inputDigest": "sha256:6918b7c6c1d296fcba74baac912730eff2cd08f395e88650e086271e15924f99",
+  "idempotencyKey": "noderoom-independent-writes-v1:normal:rep-01",
+  "outputDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "cell-r_rev__variance"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "notebook-summary"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "cell-r_rev__q3"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "cell-r_rev__q2"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 101.568,
+    "warmupMs": 0.0,
+    "executionMs": 76.702,
+    "totalMs": 178.27,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 108126208,
+    "cpuTimeMs": 157.0
+  },
+  "provenance": {
+    "adapter": "node-suite-native",
+    "adapterVersion": "1.0.0",
+    "runtime": "node-worker-threads",
+    "runtimeVersion": "v22.22.2",
+    "appCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
+    "deterministic": true,
+    "location": "local"
+  }
+}

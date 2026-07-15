@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "node.workflow-source-manifest/v1",
+  "generatedAt": "2026-07-15T15:51:53.430540Z",
+  "runId": "node-suite-20260715T150250Z",
+  "scorecardGeneratedAt": "2026-07-15T15:19:12.580686Z",
+  "scorecardRecordedSourceHashesMatch": true,
+  "scorecardRecordedSourceHashMismatches": [],
+  "executedFiles": [
+    {
+      "path": "PRE_REGISTRATION.md",
+      "bytes": 7386,
+      "physicalLines": 188,
+      "nonBlankLines": 147,
+      "sha256": "8d1e15dab471e5a42db3ee735ab7872e68ebcf62db3f980dbf06bcd26e84ee9d"
+    },
+    {
+      "path": "common/async_utils.py",
+      "bytes": 1126,
+      "physicalLines": 39,
+      "nonBlankLines": 32,
+      "sha256": "d0fb8a63fd9c4842584079c98bb56dccedc2c59b24178db5fc99723a608621f5"
+    },
+    {
+      "path": "common/langchain_executor.py",
+      "bytes": 2220,
+      "physicalLines": 71,
+      "nonBlankLines": 62,
+      "sha256": "665f34cb4789aa5ccc12ec61f3034e93d90a28b2115766122beec5d5643b2894"
+    },
+    {
+      "path": "common/native_executor.mjs",
+      "bytes": 2378,
+      "physicalLines": 80,
+      "nonBlankLines": 76,
+      "sha256": "6ebd90bed9aa4ad449c8b857102f49b986a78e3052d278fed905257ed28da7c2"
+    },
+    {
+      "path": "common/protocol.py",
+      "bytes": 4592,
+      "physicalLines": 138,
+      "nonBlankLines": 126,
+      "sha256": "61c2e873704ef90fc7cf80c8cf9ca61a4051a720d1ebe6b1cedbbd10ac985ca4"
+    },
+    {
+      "path": "common/run_suite.py",
+      "bytes": 28401,
+      "physicalLines": 735,
+      "nonBlankLines": 664,
+      "sha256": "b520821ce7b5e86943d871acaaa45d9ec162379f0b6bcdf2fc0c0bd1d4142396"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/IGlobal.py",
+      "bytes": 188,
+      "physicalLines": 11,
+      "nonBlankLines": 7,
+      "sha256": "51ea5167c1b9060e2106f634d33b4f2fa7cdd86a34f6432ad50077aa28feb9b0"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/IInstance.py",
+      "bytes": 1171,
+      "physicalLines": 42,
+      "nonBlankLines": 36,
+      "sha256": "793b7f137d1e955aad4111bbec0077ca39f86dafc74cdcf03a578493b76bc56a"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/__init__.py",
+      "bytes": 177,
+      "physicalLines": 6,
+      "nonBlankLines": 4,
+      "sha256": "c86dd809099f0c820a1b0776f2c74f2ff5c96de9ab1a0dd8c5b76b1318b2cc47"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/services.json",
+      "bytes": 506,
+      "physicalLines": 23,
+      "nonBlankLines": 23,
+      "sha256": "610bba8884f794ffc8286bae845ba8392343932b2549ffe3ff175154fac2e2a2"
+    },
+    {
+      "path": "fixtures/nodebenchai-frozen-sources.json",
+      "bytes": 1559,
+      "physicalLines": 45,
+      "nonBlankLines": 45,
+      "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+    },
+    {
+      "path": "fixtures/noderoom-conflict-proposal.json",
+      "bytes": 3404,
+      "physicalLines": 101,
+      "nonBlankLines": 101,
+      "sha256": "a4ddaa69ee09ec89315da2aca5ca0f19faba48add50ded8c7b092271f840b0bc"
+    },
+    {
+      "path": "fixtures/noderoom-independent-writes.json",
+      "bytes": 2188,
+      "physicalLines": 74,
+      "nonBlankLines": 74,
+      "sha256": "972829c0c4fc966d57505bfa5f8a7a4d8daa15ff450c46ebd87e44bb3a4324dc"
+    },
+    {
+      "path": "fixtures/nodeslide-independent-elements.json",
+      "bytes": 972,
+      "physicalLines": 37,
+      "nonBlankLines": 37,
+      "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+    },
+    {
+      "path": "fixtures/nodevideo-resume-shots.json",
+      "bytes": 1864,
+      "physicalLines": 62,
+      "nonBlankLines": 62,
+      "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+    }
+  ],
+  "currentFiles": [
+    {
+      "path": "PRE_REGISTRATION.md",
+      "bytes": 7386,
+      "physicalLines": 188,
+      "nonBlankLines": 147,
+      "sha256": "8d1e15dab471e5a42db3ee735ab7872e68ebcf62db3f980dbf06bcd26e84ee9d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3173,
+      "physicalLines": 72,
+      "nonBlankLines": 54,
+      "sha256": "32aaf6b8df13c37e0363cb2f6f0ec5280671b98cdff09e9214718a0084b72f32"
+    },
+    {
+      "path": "common/async_utils.py",
+      "bytes": 1126,
+      "physicalLines": 39,
+      "nonBlankLines": 32,
+      "sha256": "d0fb8a63fd9c4842584079c98bb56dccedc2c59b24178db5fc99723a608621f5"
+    },
+    {
+      "path": "common/langchain_executor.py",
+      "bytes": 2220,
+      "physicalLines": 71,
+      "nonBlankLines": 62,
+      "sha256": "665f34cb4789aa5ccc12ec61f3034e93d90a28b2115766122beec5d5643b2894"
+    },
+    {
+      "path": "common/native_executor.mjs",
+      "bytes": 2378,
+      "physicalLines": 80,
+      "nonBlankLines": 76,
+      "sha256": "6ebd90bed9aa4ad449c8b857102f49b986a78e3052d278fed905257ed28da7c2"
+    },
+    {
+      "path": "common/protocol.py",
+      "bytes": 4793,
+      "physicalLines": 145,
+      "nonBlankLines": 131,
+      "sha256": "7fb833ebeb15e066db41cc189d5ef5962b5392a8504f6a84dc77f61f626a87da"
+    },
+    {
+      "path": "common/run_app_verifiers.py",
+      "bytes": 12038,
+      "physicalLines": 321,
+      "nonBlankLines": 299,
+      "sha256": "7e71bf71d42d81012223986ea0ea021e88f86ff543b875c38a7ad2a96e89d643"
+    },
+    {
+      "path": "common/run_suite.py",
+      "bytes": 29969,
+      "physicalLines": 773,
+      "nonBlankLines": 702,
+      "sha256": "fe8e6529c320faa7314728347c736a514e8495f72b786795089851bb69c8a524"
+    },
+    {
+      "path": "common/test_protocol.py",
+      "bytes": 8116,
+      "physicalLines": 206,
+      "nonBlankLines": 174,
+      "sha256": "0406de171ffc1fe94fe81405609dec0e47b685f7a23c36f33734bde8300c7055"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/IGlobal.py",
+      "bytes": 188,
+      "physicalLines": 11,
+      "nonBlankLines": 7,
+      "sha256": "51ea5167c1b9060e2106f634d33b4f2fa7cdd86a34f6432ad50077aa28feb9b0"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/IInstance.py",
+      "bytes": 1171,
+      "physicalLines": 42,
+      "nonBlankLines": 36,
+      "sha256": "793b7f137d1e955aad4111bbec0077ca39f86dafc74cdcf03a578493b76bc56a"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/__init__.py",
+      "bytes": 177,
+      "physicalLines": 6,
+      "nonBlankLines": 4,
+      "sha256": "c86dd809099f0c820a1b0776f2c74f2ff5c96de9ab1a0dd8c5b76b1318b2cc47"
+    },
+    {
+      "path": "common/rocketride-node/nodeworkflow/services.json",
+      "bytes": 506,
+      "physicalLines": 23,
+      "nonBlankLines": 23,
+      "sha256": "610bba8884f794ffc8286bae845ba8392343932b2549ffe3ff175154fac2e2a2"
+    },
+    {
+      "path": "fixtures/nodebenchai-frozen-sources.json",
+      "bytes": 1559,
+      "physicalLines": 45,
+      "nonBlankLines": 45,
+      "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+    },
+    {
+      "path": "fixtures/noderoom-conflict-proposal.json",
+      "bytes": 3404,
+      "physicalLines": 101,
+      "nonBlankLines": 101,
+      "sha256": "a4ddaa69ee09ec89315da2aca5ca0f19faba48add50ded8c7b092271f840b0bc"
+    },
+    {
+      "path": "fixtures/noderoom-independent-writes.json",
+      "bytes": 2188,
+      "physicalLines": 74,
+      "nonBlankLines": 74,
+      "sha256": "972829c0c4fc966d57505bfa5f8a7a4d8daa15ff450c46ebd87e44bb3a4324dc"
+    },
+    {
+      "path": "fixtures/nodeslide-independent-elements.json",
+      "bytes": 972,
+      "physicalLines": 37,
+      "nonBlankLines": 37,
+      "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+    },
+    {
+      "path": "fixtures/nodevideo-resume-shots.json",
+      "bytes": 1864,
+      "physicalLines": 62,
+      "nonBlankLines": 62,
+      "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+    }
+  ]
+}

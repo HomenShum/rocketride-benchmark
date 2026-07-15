@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "node.rocketride.baseline-aggregate/v1",
+  "generatedAt": "2026-07-15T12:14:21.022282Z",
+  "status": "evidence_incomplete",
+  "officialStatus": "independent_unsubmitted_reproduction",
+  "sourceCommit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+  "completeness": {
+    "fault-isolation": {
+      "expected": 10,
+      "observed": 10,
+      "complete": true
+    },
+    "concurrent-processing": {
+      "expected": 10,
+      "observed": 10,
+      "complete": true
+    },
+    "data-isolation": {
+      "expected": 10,
+      "observed": 0,
+      "complete": false
+    },
+    "authoring-effort": {
+      "expected": 1,
+      "observed": 1,
+      "complete": true
+    }
+  },
+  "gateIssues": [
+    "data-isolation: expected 10 results, observed 0"
+  ],
+  "failureLedger": {
+    "signals": 27,
+    "retriesByBenchmark": {
+      "concurrent-processing": 9,
+      "data-isolation": 5
+    }
+  },
+  "faultIsolation": {
+    "rocketRideIsolationHeld": 10,
+    "langChainLostAll": 10,
+    "repetitions": 10
+  },
+  "concurrentProcessing": {
+    "rocketRideByPool": {
+      "8": {
+        "wallSeconds": {
+          "count": 10,
+          "min": 39.147,
+          "median": 45.514,
+          "p95": 80.232,
+          "max": 85.065
+        },
+        "warmupSeconds": {
+          "count": 10,
+          "min": 21.28,
+          "median": 26.775,
+          "p95": 34.573,
+          "max": 38.6
+        },
+        "p50Milliseconds": {
+          "count": 10,
+          "min": 4845.02,
+          "median": 5562.595,
+          "p95": 9590.239,
+          "max": 9702.28
+        },
+        "p99Milliseconds": {
+          "count": 10,
+          "min": 5446.8,
+          "median": 7421.095,
+          "p95": 15795.41,
+          "max": 19393.7
+        },
+        "cleanRuns": 10,
+        "nodeErrors": 0
+      },
+      "16": {
+        "wallSeconds": {
+          "count": 10,
+          "min": 55.244,
+          "median": 60.821,
+          "p95": 81.444,
+          "max": 83.295
+        },
+        "warmupSeconds": {
+          "count": 10,
+          "min": 53.7,
+          "median": 63.655,
+          "p95": 76.891,
+          "max": 80.9
+        },
+        "p50Milliseconds": {
+          "count": 10,
+          "min": 12868.76,
+          "median": 14567.78,
+          "p95": 19685.505,
+          "max": 19700.0
+        },
+        "p99Milliseconds": {
+          "count": 10,
+          "min": 14503.88,
+          "median": 17591.51,
+          "p95": 26128.718,
+          "max": 29517.33
+        },
+        "cleanRuns": 0,
+        "nodeErrors": 0
+      }
+    },
+    "langChain": {
+      "batch_shared": {
+        "wallSeconds": {
+          "count": 10,
+          "min": 0.035,
+          "median": 0.042,
+          "p95": 0.056,
+          "max": 0.057
+        },
+        "statuses": [
+          "crash"
+        ],
+        "okUnits": {
+          "count": 10,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "errorUnits": {
+          "count": 10,
+          "min": 64.0,
+          "median": 64.0,
+          "p95": 64.0,
+          "max": 64.0
+        }
+      },
+      "abatch_blocking": {
+        "wallSeconds": {
+          "count": 10,
+          "min": 7.253,
+          "median": 7.292,
+          "p95": 7.344,
+          "max": 7.365
+        },
+        "statuses": [
+          "ok"
+        ],
+        "okUnits": {
+          "count": 10,
+          "min": 64.0,
+          "median": 64.0,
+          "p95": 64.0,
+          "max": 64.0
+        },
+        "errorUnits": {
+          "count": 10,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      },
+      "seq": {
+        "wallSeconds": {
+          "count": 10,
+          "min": 7.395,
+          "median": 7.435,
+          "p95": 7.612,
+          "max": 7.653
+        },
+        "statuses": [
+          "ok"
+        ],
+        "okUnits": {
+          "count": 10,
+          "min": 64.0,
+          "median": 64.0,
+          "p95": 64.0,
+          "max": 64.0
+        },
+        "errorUnits": {
+          "count": 10,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "appendixNodeErrors": {
+      "count": 10,
+      "min": 30.0,
+      "median": 30.5,
+      "p95": 31.0,
+      "max": 31.0
+    }
+  },
+  "dataIsolation": {
+    "rocketRideWallSeconds": {
+      "count": 0,
+      "min": null,
+      "median": null,
+      "p95": null,
+      "max": null
+    },
+    "rocketRideWarmupSeconds": {
+      "count": 0,
+      "min": null,
+      "median": null,
+      "p95": null,
+      "max": null
+    },
+    "rocketRideCleanRuns": 0,
+    "rocketRideDocsLost": {
+      "count": 0,
+      "min": null,
+      "median": null,
+      "p95": null,
+      "max": null
+    },
+    "rocketRideDocsDuplicatedOrLeaked": {
+      "count": 0,
+      "min": null,
+      "median": null,
+      "p95": null,
+      "max": null
+    },
+    "langChainLostUpdatesByGap": {}
+  },
+  "authoringEffort": {
+    "rr_imperative_lines": 0,
+    "lc_imperative_lines_min": 14,
+    "lc_imperative_lines_max": 17,
+    "lc_decision_points_correct_version": 5,
+    "lc_natural_idioms_delivering_concurrency": 0,
+    "lc_idiom_outcomes": {
+      "batch": "crashes",
+      "abatch": "silently_serializes",
+      "seq": "slow_correct"
+    }
+  }
+}

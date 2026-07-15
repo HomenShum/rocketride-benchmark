@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "nodeslide",
+  "workflow": "independent-element-edit",
+  "fixtureId": "nodeslide-independent-elements-v1",
+  "traceId": "trace:nodeslide-independent-elements-v1:normal:rep-02",
+  "inputDigest": "sha256:0b792bf91af3d3796d8b751689177fa22beaeb66bbdda926038cecc00197d2e8",
+  "idempotencyKey": "nodeslide-independent-elements-v1:normal:rep-02",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "baseVersion": 3
+}

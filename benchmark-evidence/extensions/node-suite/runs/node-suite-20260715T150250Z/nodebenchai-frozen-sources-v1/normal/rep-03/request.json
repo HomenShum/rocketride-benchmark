@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "nodebenchai",
+  "workflow": "frozen-source-report",
+  "fixtureId": "nodebenchai-frozen-sources-v1",
+  "traceId": "trace:nodebenchai-frozen-sources-v1:normal:rep-03",
+  "inputDigest": "sha256:5489e8c1ac4b53c062b996f11c151fa28c6c5ffd56472d2ff4a763f0754aeed4",
+  "idempotencyKey": "nodebenchai-frozen-sources-v1:normal:rep-03",
+  "concurrency": 4,
+  "deadlineMs": 10000
+}

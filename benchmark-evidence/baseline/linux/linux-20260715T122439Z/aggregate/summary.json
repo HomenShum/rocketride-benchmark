@@ -1,0 +1,433 @@
+{
+  "schemaVersion": "node.rocketride.supported-linux-summary/v1",
+  "generatedAt": "2026-07-15T13:36:46.682510Z",
+  "runId": "linux-20260715T122439Z",
+  "status": "evidence_complete",
+  "officialStatus": "independent_unsubmitted_reproduction",
+  "sourceCommit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+  "environment": {
+    "schemaVersion": "node.rocketride.linux-environment/v1",
+    "sourceCommit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "python": "3.11.15",
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "processor": "x86_64",
+    "cpuCount": 32,
+    "wslDistro": "Ubuntu",
+    "benchmarkEnvironment": {
+      "REPS": "10",
+      "MAX_ATTEMPTS": "5",
+      "BENCH_MS": "8,16",
+      "BENCH_M": "32",
+      "ROCKETRIDE_PORT": "5565"
+    },
+    "meminfo": [
+      "MemTotal:       32724676 kB",
+      "MemFree:        30341236 kB",
+      "MemAvailable:   31547716 kB",
+      "Buffers:           54756 kB"
+    ]
+  },
+  "completeness": {
+    "fault-isolation": {
+      "expected": 10,
+      "observed": 10,
+      "complete": true
+    },
+    "concurrent-processing": {
+      "expected": 10,
+      "observed": 10,
+      "complete": true
+    },
+    "data-isolation": {
+      "expected": 10,
+      "observed": 10,
+      "complete": true
+    },
+    "authoring-effort": {
+      "expected": 1,
+      "observed": 1,
+      "complete": true
+    }
+  },
+  "gateIssues": [],
+  "failureLedger": {
+    "count": 14,
+    "retries": 0,
+    "failures": [
+      {
+        "at": "2026-07-15T12:20:27.611550Z",
+        "benchmark": "not-started",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "recorder_output_failed",
+        "exitCode": 1,
+        "failure": true,
+        "log": "benchmark-evidence/baseline/linux/linux-20260715T121828Z/completion.json",
+        "message": "The Windows evidence recorder raised UnicodeEncodeError while echoing pip progress under a CP1252 console; the Linux trap preserved a partial exit-2 export.",
+        "rerunEligible": true,
+        "rerunReason": "Configure recorder stdout and stderr as UTF-8, then start a fresh pre-score run ID.",
+        "run": "linux-20260715T121828Z",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:20:27.611550Z",
+        "benchmark": "not-started",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "engine_host_dependency_missing",
+        "failure": true,
+        "message": "Pinned engine 3.2.1.30 could not load libc++.so.1 during the first provisioning attempt.",
+        "rerunEligible": true,
+        "rerunReason": "Install Ubuntu libc++1 host runtime and verify the unchanged pinned engine binary before retry.",
+        "run": "linux-20260715T121828Z",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:04.229964Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-01",
+        "run": "run-01",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:04.958789Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-02",
+        "run": "run-02",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:05.644770Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-03",
+        "run": "run-03",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:06.361520Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-04",
+        "run": "run-04",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:07.184227Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-05",
+        "run": "run-05",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:07.891289Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-06",
+        "run": "run-06",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:08.564545Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-07",
+        "run": "run-07",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:09.262844Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-08",
+        "run": "run-08",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:10.054640Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-09",
+        "run": "run-09",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:22:10.775742Z",
+        "benchmark": "fault-isolation",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "runner_failure_signal",
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "message": "FAIL fault-isolation run-10",
+        "run": "run-10",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:23:09.536551Z",
+        "command": [
+          "wsl.exe",
+          "-d",
+          "Ubuntu",
+          "--",
+          "env",
+          "LINUX_RUN_ID=linux-20260715T122055Z",
+          "LINUX_EXPORT_ROOT=/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/baseline/linux",
+          "bash",
+          "/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/tools/run_supported_linux.sh"
+        ],
+        "commandId": "baseline-supported-linux-n10",
+        "cwd": ".",
+        "event": "process_failed",
+        "exitCode": 143,
+        "failure": true,
+        "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+        "schemaVersion": "node.rocketride.failure/v1"
+      },
+      {
+        "at": "2026-07-15T12:23:48.837464Z",
+        "benchmark": "not-scored",
+        "commandId": "baseline-supported-linux-n10",
+        "event": "invalid_run_aborted",
+        "failure": true,
+        "message": "Study wrapper had stopped the engine between smoke and upstream run_isolated.sh; run linux-20260715T122055Z was terminated before accepting timed concurrency output.",
+        "rerunEligible": true,
+        "rerunReason": "Remove the premature wrapper stop and restart from a new frozen-SHA checkout.",
+        "run": "linux-20260715T122055Z",
+        "schemaVersion": "node.rocketride.failure/v1"
+      }
+    ]
+  },
+  "faultIsolation": {
+    "rocketRideIsolationHeld": 10,
+    "langChainLostAll": 10,
+    "repetitions": 10
+  },
+  "concurrentProcessing": {
+    "rocketRideByPool": {
+      "8": {
+        "wallSeconds": {
+          "count": 10,
+          "median": 1.285,
+          "p95": 1.548,
+          "min": 1.231,
+          "max": 1.661
+        },
+        "warmupSeconds": {
+          "count": 10,
+          "median": 9.16,
+          "p95": 11.817,
+          "min": 8.55,
+          "max": 11.83
+        },
+        "p50Milliseconds": {
+          "count": 10,
+          "median": 153.56,
+          "p95": 183.543,
+          "min": 149.78,
+          "max": 195.72
+        },
+        "p99Milliseconds": {
+          "count": 10,
+          "median": 177.435,
+          "p95": 234.797,
+          "min": 160.49,
+          "max": 260.01
+        },
+        "cleanRuns": 10,
+        "nodeErrors": 0
+      },
+      "16": {
+        "wallSeconds": {
+          "count": 10,
+          "median": 0.867,
+          "p95": 1.04,
+          "min": 0.807,
+          "max": 1.049
+        },
+        "warmupSeconds": {
+          "count": 10,
+          "median": 15.59,
+          "p95": 17.359,
+          "min": 14.68,
+          "max": 17.98
+        },
+        "p50Milliseconds": {
+          "count": 10,
+          "median": 203.265,
+          "p95": 239.07,
+          "min": 185.36,
+          "max": 244.42
+        },
+        "p99Milliseconds": {
+          "count": 10,
+          "median": 249.085,
+          "p95": 341.427,
+          "min": 216.08,
+          "max": 371.82
+        },
+        "cleanRuns": 10,
+        "nodeErrors": 0
+      }
+    },
+    "langChain": {
+      "batch_shared": {
+        "wallSeconds": {
+          "count": 10,
+          "median": 0.057,
+          "p95": 0.08,
+          "min": 0.039,
+          "max": 0.086
+        },
+        "statuses": [
+          "crash"
+        ],
+        "okUnits": {
+          "count": 10,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "errorUnits": {
+          "count": 10,
+          "median": 64.0,
+          "p95": 64.0,
+          "min": 64.0,
+          "max": 64.0
+        }
+      },
+      "abatch_blocking": {
+        "wallSeconds": {
+          "count": 10,
+          "median": 7.522,
+          "p95": 7.592,
+          "min": 7.39,
+          "max": 7.626
+        },
+        "statuses": [
+          "ok"
+        ],
+        "okUnits": {
+          "count": 10,
+          "median": 64.0,
+          "p95": 64.0,
+          "min": 64.0,
+          "max": 64.0
+        },
+        "errorUnits": {
+          "count": 10,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "seq": {
+        "wallSeconds": {
+          "count": 10,
+          "median": 7.53,
+          "p95": 7.968,
+          "min": 7.512,
+          "max": 8.013
+        },
+        "statuses": [
+          "ok"
+        ],
+        "okUnits": {
+          "count": 10,
+          "median": 64.0,
+          "p95": 64.0,
+          "min": 64.0,
+          "max": 64.0
+        },
+        "errorUnits": {
+          "count": 10,
+          "median": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "appendixNodeErrors": {
+      "count": 10,
+      "median": 31.0,
+      "p95": 31.0,
+      "min": 31.0,
+      "max": 31.0
+    }
+  },
+  "dataIsolation": {
+    "cleanRuns": 10,
+    "lostDocs": {
+      "count": 10,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "duplicatedOrLeakedDocs": {
+      "count": 10,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "wallSeconds": {
+      "count": 10,
+      "median": 5.508,
+      "p95": 6.612,
+      "min": 4.593,
+      "max": 6.698
+    },
+    "warmupSeconds": {
+      "count": 10,
+      "median": 30.085,
+      "p95": 34.797,
+      "min": 27.53,
+      "max": 37.02
+    }
+  },
+  "authoringEffort": {
+    "rr_imperative_lines": 0,
+    "lc_imperative_lines_min": 14,
+    "lc_imperative_lines_max": 17,
+    "lc_decision_points_correct_version": 5,
+    "lc_natural_idioms_delivering_concurrency": 0,
+    "lc_idiom_outcomes": {
+      "batch": "crashes",
+      "abatch": "silently_serializes",
+      "seq": "slow_correct"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-lines-of-code",
+  "command": [
+    "python",
+    "measure.py"
+  ],
+  "renderedCommand": "python measure.py",
+  "cwd": "lines-of-code",
+  "environment": {},
+  "startedAt": "2026-07-15T09:29:39.938866Z",
+  "finishedAt": "2026-07-15T09:29:45.283194Z",
+  "durationSeconds": 5.343,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/lines-of-code.log",
+  "logSha256": "83c00e994300853d0665d443a7a76d335b6f2528c76f536f408f2ec0e65678dc"
+}

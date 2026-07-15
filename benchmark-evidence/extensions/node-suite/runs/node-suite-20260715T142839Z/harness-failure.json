@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "node.workflow-harness-failure/v1",
+  "runId": "node-suite-20260715T142839Z",
+  "failedAt": "2026-07-15T14:32:36.879159Z",
+  "exceptionType": "RuntimeError",
+  "message": "The service nodeworkflow was not found",
+  "traceback": [],
+  "publicationStatus": "independent_unsubmitted",
+  "modelCostUsd": 0,
+  "cloudCostUsd": 0
+}

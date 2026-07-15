@@ -1,0 +1,16 @@
+{
+  "completed": [
+    "classify-review-tier",
+    "reason-business-impact",
+    "build-review-proposal",
+    "compare-base-current"
+  ],
+  "failed": [],
+  "totalMs": 83.1664,
+  "executionMs": 83.1664,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 108445696,
+  "cpuTimeMs": 203,
+  "runtimeVersion": "v22.22.2"
+}

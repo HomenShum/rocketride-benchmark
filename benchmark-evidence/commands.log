@@ -1,1 +1,46 @@
 2026-07-15T09:26:22.398Z PRE_REGISTER upstream=43be41acb58558dfae8e2e3deb86d8a00cb1b1c8 platform=windows-x64
+2026-07-15T09:29:27.326064Z START id=recorder-self-test cwd=. command=python -c print('recorder-ok')
+2026-07-15T09:29:27.912719Z END id=recorder-self-test exit=0 duration_s=0.578 failure_signals=0 log_sha256=6a44e6b852e43618fd4d27ed3943e28a94e5f950c3ab6df39885e59fc369d108
+2026-07-15T09:29:39.938866Z START id=baseline-lines-of-code cwd=lines-of-code command=python measure.py
+2026-07-15T09:29:45.283194Z END id=baseline-lines-of-code exit=0 duration_s=5.343 failure_signals=0 log_sha256=83c00e994300853d0665d443a7a76d335b6f2528c76f536f408f2ec0e65678dc
+2026-07-15T09:30:00.384900Z START id=baseline-provision cwd=concurrent-work\harness\rocketride-bench command="C:\Program Files\Git\bin\bash.exe" scripts/provision.sh --competitors
+2026-07-15T09:35:12.609718Z END id=baseline-provision exit=0 duration_s=312.219 failure_signals=0 log_sha256=9d87748de1419d8b2ea3cd6c594a92e26519dc3674226799a04fd6f3d770049e
+2026-07-15T09:35:58.826125Z START id=baseline-engine-start cwd=concurrent-work\harness\rocketride-bench command="C:\Program Files\Git\bin\bash.exe" scripts/start_engine.sh
+2026-07-15T09:36:02.556331Z END id=baseline-engine-start exit=0 duration_s=3.735 failure_signals=0 log_sha256=210b0a55fe59193ef07269270da4ab6d5c1bd73feaca5fe525561f33a3fc7629
+2026-07-15T09:37:49.314855Z START id=baseline-engine-external-readiness cwd=. command=python benchmark-evidence/tools/wait_http.py http://127.0.0.1:5566/ping --timeout 300
+2026-07-15T09:38:51.626540Z END id=baseline-engine-external-readiness exit=0 duration_s=62.312 failure_signals=0 log_sha256=951a6c8b7d3293c60888d07a63faaa5d648f701fcee80840948474fdac1f7846
+2026-07-15T09:39:07.970143Z START id=baseline-smoke-fault-isolation cwd=concurrent-work\harness\rocketride-bench command=.venv\Scripts\python.exe groups\robustness-and-isolation\fault-isolation\run.py
+2026-07-15T09:40:10.980234Z START id=baseline-smoke-fault-isolation-rerun-1 cwd=concurrent-work\harness\rocketride-bench command="D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\.venv\Scripts\python.exe" groups/robustness-and-isolation/fault-isolation/run.py
+2026-07-15T09:41:39.970880Z END id=baseline-smoke-fault-isolation-rerun-1 exit=0 duration_s=88.984 failure_signals=0 log_sha256=3e8bc4daf8511d6dae5b78306b5ca1256d5364f72c6d7915491271e53493f304
+2026-07-15T09:44:46.770910Z START id=baseline-isolated-windows-n10 cwd=concurrent-work\harness\rocketride-bench command="D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\.venv\Scripts\python.exe" ..\run_isolated_windows.py
+2026-07-15T12:13:17.658404Z END id=baseline-isolated-windows-n10 exit=4294967295 duration_s=8910.89 failure_signals=16 log_sha256=612f772eb320167f687018f44bed8da462c676c77e5ff0b71dd4d7a531938ac5
+2026-07-15T12:18:28.509149Z START id=baseline-supported-linux-n10 cwd=. command=wsl.exe -d Ubuntu -- env LINUX_RUN_ID=linux-20260715T121828Z "LINUX_EXPORT_ROOT=/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/baseline/linux" bash "/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/tools/run_supported_linux.sh"
+2026-07-15T12:20:55.110245Z START id=baseline-supported-linux-n10 cwd=. command=wsl.exe -d Ubuntu -- env LINUX_RUN_ID=linux-20260715T122055Z "LINUX_EXPORT_ROOT=/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/baseline/linux" bash "/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/tools/run_supported_linux.sh"
+2026-07-15T12:23:09.536551Z END id=baseline-supported-linux-n10 exit=143 duration_s=134.421 failure_signals=11 log_sha256=7f82fd72273c3b9864109150e59593298be07241af2771654b470e14b11f36b6
+2026-07-15T12:24:39.515355Z START id=baseline-supported-linux-n10 cwd=. command=wsl.exe -d Ubuntu -- env LINUX_RUN_ID=linux-20260715T122439Z "LINUX_EXPORT_ROOT=/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/baseline/linux" bash "/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/tools/run_supported_linux.sh"
+2026-07-15T13:36:31.539571Z END id=baseline-supported-linux-n10 exit=0 duration_s=4312.015 failure_signals=0 log_sha256=e38a1712066b29bf7e70e16bbc224c9c42bfa32d19387d6b96d52c54bf0d6ff4
+2026-07-15T14:24:20Z START id=node-suite-evidence-bundle cwd=. command=python benchmark-evidence/tools/build_evidence_bundle.py
+2026-07-15T14:24:27Z END id=node-suite-evidence-bundle exit=0 evidence_status=complete artifacts=518 model_cost_usd=0 cloud_cost_usd=0
+2026-07-15T14:25:00Z END id=node-suite-app-verifier-attempt-1 exit=1 failure=windows_executable_shim_not_resolved
+2026-07-15T14:27:49Z START id=node-suite-app-verifier cwd=. command=python benchmark-evidence/extensions/node-suite/common/run_app_verifiers.py --apps-root ..\rocketride-node-apps --evidence-bundle benchmark-evidence/evidence-bundle.json
+2026-07-15T14:28:09.863604Z END id=node-suite-app-verifier exit=0 status=passed apps=4 protocol_parity=true
+2026-07-15T14:28:39Z START id=node-suite-20260715T142839Z cwd=. command=.venv-python benchmark-evidence/extensions/node-suite/common/run_suite.py --repetitions 3 --run-id node-suite-20260715T142839Z
+2026-07-15T14:32:36.879159Z END id=node-suite-20260715T142839Z exit=1 failure=provider_not_registered
+2026-07-15T14:32:49Z START id=node-suite-20260715T143249Z cwd=. command=.venv-python benchmark-evidence/extensions/node-suite/common/run_suite.py --repetitions 3 --run-id node-suite-20260715T143249Z
+2026-07-15T14:47:39.736286Z END id=node-suite-20260715T143249Z exit=1 failure=unbounded_hard_failure_send_attempt_aborted
+2026-07-15T14:50:36Z START id=node-suite-20260715T145036Z cwd=. command=.venv-python benchmark-evidence/extensions/node-suite/common/run_suite.py --repetitions 3 --run-id node-suite-20260715T145036Z
+2026-07-15T14:58:57.276283Z END id=node-suite-20260715T145036Z exit=1 failure=websocket_403_during_compat_disconnect_lifecycle
+2026-07-15T15:02:50Z START id=node-suite-20260715T150250Z cwd=. command=.venv-python benchmark-evidence/extensions/node-suite/common/run_suite.py --repetitions 3 --run-id node-suite-20260715T150250Z
+2026-07-15T15:19:12.580686Z END id=node-suite-20260715T150250Z exit=0 duration_s=986.6 orchestration_status=passed results=90 traces=30 model_cost_usd=0 cloud_cost_usd=0
+2026-07-15T15:24:50.312565Z AUDIT id=node-suite-20260715T150250Z evidence_status=complete protocol_admission=failed promotion_status=blocked deadline_violations=30 manifest_status=passed
+2026-07-15T15:31:11.664212Z START id=node-suite-app-verifier-post-run cwd=. command=python benchmark-evidence/extensions/node-suite/common/run_app_verifiers.py --apps-root ..\rocketride-node-apps --evidence-bundle benchmark-evidence/evidence-bundle.json --output benchmark-evidence/extensions/node-suite/app-verification-post-run.json --logs-dir benchmark-evidence/extensions/node-suite/app-verification-post-run-logs
+2026-07-15T15:32:35.066363Z END id=node-suite-app-verifier-post-run exit=0 status=passed apps=4 protocol_parity=true evidence_bundle_sha256=21ce90eac44f4c123d97ce064bd98deafecbedcdb8adb40da3aa4c7b851ff99f
+2026-07-15T15:38:05.770924Z AUDIT id=node-suite-20260715T150250Z action=refresh_receipt manifest_status=passed evidence_status=complete protocol_admission=failed promotion_status=blocked executed_source_hashes_match=true
+2026-07-15T15:38:35.441Z GATE id=node-suite-20260715T150250Z mode=require_promotion_ready exit=2 expected=true reason=30_deadline_violations
+2026-07-15T15:38:35.441Z TEST id=node-suite-harness-unit command=python_-m_unittest_test_protocol.py_-v exit=0 tests=8
+2026-07-15T15:43:37.133293Z END id=node-suite-evidence-bundle-refresh exit=0 evidence_status=complete artifacts=518 failure_signals=49 model_cost_usd=0 cloud_cost_usd=0
+2026-07-15T15:43:37.133293Z END id=node-suite-app-verifier-post-run-refresh exit=0 status=passed apps=4 protocol_parity=true evidence_bundle_sha256=9229406698a701457704fb5cece7f59dbed1ddf9c163f7cb2d61a6afbcbc9ee9
+2026-07-15T15:45:42.336420Z TEST id=node-suite-harness-unit-refresh command=python_-m_unittest_test_protocol.py_-v exit=0 tests=9
+2026-07-15T15:45:42.336420Z AUDIT id=node-suite-20260715T150250Z action=refresh_receipt_and_latest_pointer manifest_status=passed evidence_status=complete protocol_admission=failed promotion_status=blocked
+2026-07-15T15:51:53.453205Z TEST id=node-suite-harness-portable-paths command=python_-m_unittest_test_protocol.py_-v exit=0 tests=9
+2026-07-15T15:51:53.453205Z AUDIT id=node-suite-20260715T150250Z action=refresh_portable_receipt manifest_status=passed evidence_status=complete protocol_admission=failed promotion_status=blocked absolute_issue_paths=0

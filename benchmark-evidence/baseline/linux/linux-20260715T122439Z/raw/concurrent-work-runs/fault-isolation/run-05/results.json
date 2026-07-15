@@ -1,0 +1,43 @@
+{
+  "benchmark": "fault-isolation",
+  "old_id": "D5",
+  "hypothesis": "a hard node crash is isolated to its run; the server + siblings survive",
+  "provenance": {
+    "engine_dir": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/engine",
+    "engine_version": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "uri": "ws://localhost:5565",
+    "cpu_brand": "x86_64",
+    "machine": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "arch": "x86_64",
+    "physical_cores": 16,
+    "logical_cores": 32,
+    "total_ram_gib": 31.21,
+    "python": "3.11.15",
+    "engine_sha256": "cf1fbf9ce72d15fef0257daaf0bfef130a263535be08c7160a0e0dada0371316",
+    "engine_size_bytes": 229626976
+  },
+  "rocketride": {
+    "server_pid_before": 945,
+    "healthy_before_ok": true,
+    "crash_run_completed": true,
+    "server_survived_crash": true,
+    "healthy_after_ok": true
+  },
+  "in_process_baseline": {
+    "framework": "langchain",
+    "tasks": 4,
+    "lc_version": "0.3.86",
+    "lc_python": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/bin/python",
+    "langchain_core_file": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/langchain_core/__init__.py",
+    "healthy_completed": 4,
+    "completed": 0,
+    "process_exit_code": 134,
+    "died": true
+  },
+  "verdict_metrics": {
+    "rr_isolation_holds": true,
+    "inproc_framework": "langchain",
+    "inproc_healthy_ok": true,
+    "inproc_lost_all": true
+  }
+}

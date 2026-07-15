@@ -1,0 +1,15 @@
+$ C:\nvm4w\nodejs\npm.CMD test -- --run src/lib/nodeVideoWorkflowCandidate.test.ts
+
+> nodevideo@0.1.0 test
+> vitest run --run src/lib/nodeVideoWorkflowCandidate.test.ts
+
+
+ RUN  v4.1.10 D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-node-apps/NodeVideo
+
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  07:28:08
+   Duration  679ms (transform 121ms, setup 0ms, import 297ms, tests 16ms, environment 0ms)
+
+

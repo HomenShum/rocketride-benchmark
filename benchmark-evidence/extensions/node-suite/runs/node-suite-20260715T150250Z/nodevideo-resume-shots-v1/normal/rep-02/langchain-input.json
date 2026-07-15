@@ -1,0 +1,23 @@
+{
+  "units": [
+    {
+      "id": "shot-1",
+      "scope": "project-1"
+    },
+    {
+      "id": "shot-2",
+      "scope": "project-1"
+    },
+    {
+      "id": "shot-3",
+      "scope": "project-1"
+    },
+    {
+      "id": "shot-4",
+      "scope": "project-1"
+    }
+  ],
+  "concurrency": 4,
+  "delayMs": 20,
+  "failureUnit": null
+}

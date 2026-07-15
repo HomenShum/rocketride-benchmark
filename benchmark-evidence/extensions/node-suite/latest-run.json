@@ -1,0 +1,9 @@
+{
+  "runId": "node-suite-20260715T150250Z",
+  "path": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T150250Z",
+  "status": "passed",
+  "orchestrationStatus": "passed",
+  "protocolAdmissionStatus": "failed",
+  "promotionStatus": "blocked",
+  "auditPath": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T150250Z/audit.json"
+}

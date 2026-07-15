@@ -1,0 +1,23 @@
+{
+  "units": [
+    {
+      "id": "cell-r_rev__q2",
+      "scope": "room-1"
+    },
+    {
+      "id": "cell-r_rev__q3",
+      "scope": "room-1"
+    },
+    {
+      "id": "cell-r_rev__variance",
+      "scope": "room-1"
+    },
+    {
+      "id": "notebook-summary",
+      "scope": "room-1"
+    }
+  ],
+  "concurrency": 4,
+  "delayMs": 20,
+  "failureUnit": null
+}

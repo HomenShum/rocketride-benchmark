@@ -1,0 +1,16 @@
+{
+  "completed": [
+    "shot-4",
+    "shot-3",
+    "shot-2",
+    "shot-1"
+  ],
+  "failed": [],
+  "totalMs": 84.8367,
+  "executionMs": 84.8367,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 108023808,
+  "cpuTimeMs": 266,
+  "runtimeVersion": "v22.22.2"
+}

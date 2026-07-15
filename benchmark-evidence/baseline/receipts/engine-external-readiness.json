@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-engine-external-readiness",
+  "command": [
+    "python",
+    "benchmark-evidence/tools/wait_http.py",
+    "http://127.0.0.1:5566/ping",
+    "--timeout",
+    "300"
+  ],
+  "renderedCommand": "python benchmark-evidence/tools/wait_http.py http://127.0.0.1:5566/ping --timeout 300",
+  "cwd": ".",
+  "environment": {},
+  "startedAt": "2026-07-15T09:37:49.314855Z",
+  "finishedAt": "2026-07-15T09:38:51.626540Z",
+  "durationSeconds": 62.312,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/engine-external-readiness.log",
+  "logSha256": "951a6c8b7d3293c60888d07a63faaa5d648f701fcee80840948474fdac1f7846"
+}

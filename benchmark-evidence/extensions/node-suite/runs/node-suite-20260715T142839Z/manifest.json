@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "node.workflow-extension-manifest/v1",
+  "files": [
+    {
+      "path": "engine.log",
+      "bytes": 1373,
+      "sha256": "27e4bf4bea97259065457d43382e61b173c94d5a58456710fc411942db8afc67"
+    },
+    {
+      "path": "harness-failure.json",
+      "bytes": 357,
+      "sha256": "eb5911a3f4dd06cdee3641677cea25c000722b4312137358467d527b99cdf4cb"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain-execution.json",
+      "bytes": 377,
+      "sha256": "7a1279acbd34ecd83f2f06ea733850fd6d973fd363a5e80c494e8c64d52a8c5d"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native-execution.json",
+      "bytes": 301,
+      "sha256": "14709ebb260df58ec46beab076d9e92fbdf3c8987ae9932c2d4adcd9ef797e14"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/request.json",
+      "bytes": 441,
+      "sha256": "6c817dc0d3f03e1b73a85594aeaefc704a8d5ff40cc3e7a9c1628a2cd1f7aa79"
+    },
+    {
+      "path": "nodeworkflow.pipe",
+      "bytes": 1101,
+      "sha256": "e9ea6ac87f9fe4f65c2e6774b31692edc1e7b3260109d485e9cf5efa56721b53"
+    }
+  ]
+}

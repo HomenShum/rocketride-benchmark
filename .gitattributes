@@ -1,0 +1,5 @@
+/.gitattributes text eol=lf
+benchmark-evidence/** -text diff whitespace=cr-at-eol
+benchmark-evidence/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+benchmark-evidence/**/*.gz -text -diff
+benchmark-evidence/**/*.pyc -text -diff

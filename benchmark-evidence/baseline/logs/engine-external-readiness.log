@@ -1,0 +1,4 @@
+waiting attempt=1 error=URLError: <urlopen error timed out>
+waiting attempt=10 error=URLError: <urlopen error timed out>
+waiting attempt=20 error=URLError: <urlopen error timed out>
+ready status=401 attempts=21

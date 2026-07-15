@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "node.workflow-extension-manifest/v1",
+  "files": [
+    {
+      "path": "engine.log",
+      "bytes": 2969,
+      "sha256": "3862ef7a76ebecc39d5554a327d07eebdf13f69ffe7a7f1fa7a1cfe0aa1fedfc"
+    },
+    {
+      "path": "harness-failure.json",
+      "bytes": 6598,
+      "sha256": "ad7dacc99824b84680aed25d047d3f4f24fc2eae19523434af942efe5e21617a"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/langchain-input.json",
+      "bytes": 424,
+      "sha256": "f3d0e638dc34814c62bbdfe1c012328e84259d81d062f1f9567fff8b092b0118"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/langchain-result.json",
+      "bytes": 3176,
+      "sha256": "d2a78100069ddade504ceb6bcba732ca7b810a97f61349de11be1b1d2052366e"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/langchain.stderr.log",
+      "bytes": 35,
+      "sha256": "3cd3dcae357de9b17cb1767e6f67d3649206503bc128f9db1d2721cd5e97092e"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/langchain.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/native-execution.json",
+      "bytes": 303,
+      "sha256": "c6864d1d5751b228a224d0f69fcd4dc484546e01f10761f0a9c59c44b7ed484c"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/native-input.json",
+      "bytes": 424,
+      "sha256": "f3d0e638dc34814c62bbdfe1c012328e84259d81d062f1f9567fff8b092b0118"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/native-result.json",
+      "bytes": 3161,
+      "sha256": "ecd343e9c8e08b3510eb06ff61345fbcdc4ffbf6a2bed3b3808974fa56117ec2"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/native.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/native.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/request.json",
+      "bytes": 490,
+      "sha256": "02ab49e02b32d6be55560546bb924c2708d25cc5bdc5e19674d650cbbd7881bc"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/rocketride-result.json",
+      "bytes": 3266,
+      "sha256": "46e9da9bf9f9e4f4b7ec749e5ce6bab26370062837f22a7dc52bfc7eb0d76523"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/rocketride-trace.jsonl.gz",
+      "bytes": 15629,
+      "sha256": "e5ea7f451973b88d68296c74321194428183667571e83068677ece68d13022d0"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/langchain-input.json",
+      "bytes": 424,
+      "sha256": "f3d0e638dc34814c62bbdfe1c012328e84259d81d062f1f9567fff8b092b0118"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/langchain.stderr.log",
+      "bytes": 35,
+      "sha256": "3cd3dcae357de9b17cb1767e6f67d3649206503bc128f9db1d2721cd5e97092e"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/langchain.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/native-execution.json",
+      "bytes": 303,
+      "sha256": "d60aae7a914df1fbf9e578f18b4c9844d5301c8a89a26f891a3019eaed49508d"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/native-input.json",
+      "bytes": 424,
+      "sha256": "f3d0e638dc34814c62bbdfe1c012328e84259d81d062f1f9567fff8b092b0118"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/native.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/native.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/request.json",
+      "bytes": 490,
+      "sha256": "5fa60738ee45366ec931dba3e47fcb30851d1faa43398f9153384d1d2a038d38"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain-execution.json",
+      "bytes": 372,
+      "sha256": "25abc0248fc2850086c7ce5661fc13caca193dbd360800a75eb2faf0160a96e4"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain-result.json",
+      "bytes": 3038,
+      "sha256": "8e9bf2598a620d0e6685a3f1ad5372f87999a20d56102e2a8f7e53902e501796"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/langchain.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native-execution.json",
+      "bytes": 301,
+      "sha256": "f3afa3a250d283b0389c326987c6852aaae19ec87ddd3afcd7aab5f2cbed3d88"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native-result.json",
+      "bytes": 3005,
+      "sha256": "63b88437c1648c73fb7f6d243010e51945f106db61d9e677b77eb24785f3f4ca"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/native.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/request.json",
+      "bytes": 441,
+      "sha256": "6c817dc0d3f03e1b73a85594aeaefc704a8d5ff40cc3e7a9c1628a2cd1f7aa79"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/rocketride-result.json",
+      "bytes": 3112,
+      "sha256": "9929c69b7c31a48244013b5ff03d5ba33b14f0b7f30e70020039967480998db5"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/rocketride-trace.jsonl.gz",
+      "bytes": 2955,
+      "sha256": "3f30da6661699998d0e0db2fb46ff9fb0a1025cc69f465dd6a7fd107121ac1ae"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/langchain-execution.json",
+      "bytes": 372,
+      "sha256": "59eca342bcbbebea28d84b3afb55bd1261284a7134cdaaba336c3e20de2d0cd8"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/langchain-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/langchain-result.json",
+      "bytes": 3038,
+      "sha256": "1691380fea38673b83754a626831d2312df4390dc979e612e9417c35bf3fe03d"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/langchain.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/langchain.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/native-execution.json",
+      "bytes": 301,
+      "sha256": "d600972981c2139b5d0df4244190dcd738cb5b5a6779ae95c6a4e51f55ef4862"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/native-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/native-result.json",
+      "bytes": 3003,
+      "sha256": "7cafc41d32ea07915c7a3faf834c9ae38feb9fbd4cdcc98a016254f2aa36a46c"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/native.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/native.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/request.json",
+      "bytes": 441,
+      "sha256": "f257985466f3755e7d79bfe4ff715655307c4c121a4efe8a4e399101f6329e9f"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/rocketride-result.json",
+      "bytes": 3111,
+      "sha256": "dc9ad071956cfac489f4e7b45a41297f5f2675108d69d14ab3154bf566fac259"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/rocketride-trace.jsonl.gz",
+      "bytes": 3308,
+      "sha256": "9b8592181a56645a86fb837b1d255982bc85c341afa903836366f15d6ccde1eb"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/langchain-execution.json",
+      "bytes": 372,
+      "sha256": "00f75f2dc9493e24c50ddd3ebbafb0c4faa50e8d3b693052f86577c00f50fb23"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/langchain-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/langchain-result.json",
+      "bytes": 3038,
+      "sha256": "36c070aa0309cd815c661051ce952792bb97c4c92bea980f8b2505a57af47a2e"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/langchain.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/langchain.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/native-execution.json",
+      "bytes": 299,
+      "sha256": "b477b4003cd74e802d07471b7cce15681933314391e46531166027d0857f6924"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/native-input.json",
+      "bytes": 411,
+      "sha256": "b014a2d3e500e19cc60be51e1920dd5dc8e9b4b34e57d2ea8562b5843eddb1de"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/native-result.json",
+      "bytes": 3005,
+      "sha256": "af491da6ecbdfbb273a4697525f764bc5e4afd98915281096d3cf924b060a17e"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/native.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/native.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/request.json",
+      "bytes": 441,
+      "sha256": "dc596630bdaa998e4ec6a8a24b27a17b05c4b44d9130ea67cf3e7fd9491bed31"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/rocketride-result.json",
+      "bytes": 3109,
+      "sha256": "f5cf652b6b7a42e1740a84a3954693e40f7c362fa29c3727d0a9adba84fd57fb"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/rocketride-trace.jsonl.gz",
+      "bytes": 3273,
+      "sha256": "a434e8cd1718fc8b71c89912cbb2811a8f47a85eccf1575a203ac7df024c9a80"
+    },
+    {
+      "path": "nodeworkflow.pipe",
+      "bytes": 1101,
+      "sha256": "e9ea6ac87f9fe4f65c2e6774b31692edc1e7b3260109d485e9cf5efa56721b53"
+    }
+  ]
+}

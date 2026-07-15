@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-engine-start",
+  "command": [
+    "C:\\Program Files\\Git\\bin\\bash.exe",
+    "scripts/start_engine.sh"
+  ],
+  "renderedCommand": "\"C:\\Program Files\\Git\\bin\\bash.exe\" scripts/start_engine.sh",
+  "cwd": "concurrent-work/harness/rocketride-bench",
+  "environment": {
+    "ROCKETRIDE_PORT": "5566"
+  },
+  "startedAt": "2026-07-15T09:35:58.826125Z",
+  "finishedAt": "2026-07-15T09:36:02.556331Z",
+  "durationSeconds": 3.735,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/engine-start.log",
+  "logSha256": "210b0a55fe59193ef07269270da4ab6d5c1bd73feaca5fe525561f33a3fc7629"
+}

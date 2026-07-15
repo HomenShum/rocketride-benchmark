@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "node.workflow-app-verification/v1",
+  "generatedAt": "2026-07-15T15:43:37.133293Z",
+  "evidenceBundle": {
+    "path": "benchmark-evidence/evidence-bundle.json",
+    "bytes": 132327,
+    "sha256": "9229406698a701457704fb5cece7f59dbed1ddf9c163f7cb2d61a6afbcbc9ee9"
+  },
+  "protocolParity": true,
+  "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+  "status": "passed",
+  "apps": [
+    {
+      "schemaVersion": "node.workflow-app-verifier/v1",
+      "app": "noderoom",
+      "baseCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
+      "adapterCommit": "353ddcce5b4ee791c4a0d70713a47ab302a643b9",
+      "branch": "codex/rocketride-execution-port",
+      "clean": true,
+      "baseCommitIsAncestor": true,
+      "commands": [
+        [
+          "npm",
+          "test",
+          "--",
+          "--run",
+          "tests/nodeWorkflowExecutionPort.test.ts"
+        ]
+      ],
+      "resolvedCommands": [
+        [
+          "C:\\nvm4w\\nodejs\\npm.CMD",
+          "test",
+          "--",
+          "--run",
+          "tests/nodeWorkflowExecutionPort.test.ts"
+        ]
+      ],
+      "startedAt": "2026-07-15T15:43:19.020464Z",
+      "finishedAt": "2026-07-15T15:43:23.993662Z",
+      "exitCodes": [
+        0
+      ],
+      "testPassed": true,
+      "protocol": "src/nodeagent/integrations/workflowExecutionPort.ts",
+      "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+      "fixtures": [
+        {
+          "appFixture": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+          "studyFixture": "noderoom-independent-writes.json",
+          "fixtureSha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de",
+          "studyFixtureSha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de",
+          "parity": true
+        },
+        {
+          "appFixture": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+          "studyFixture": "noderoom-conflict-proposal.json",
+          "fixtureSha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482",
+          "studyFixtureSha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482",
+          "parity": true
+        }
+      ],
+      "fixtureParity": true,
+      "authoring": {
+        "sharedProtocol": {
+          "files": [
+            {
+              "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+              "bytes": 21146,
+              "physicalLines": 666,
+              "nonBlankLines": 628,
+              "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+            }
+          ],
+          "physicalLines": 666,
+          "nonBlankLines": 628,
+          "bytes": 21146
+        },
+        "applicationAdapter": {
+          "files": [
+            {
+              "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+              "bytes": 8528,
+              "physicalLines": 266,
+              "nonBlankLines": 254,
+              "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+            }
+          ],
+          "physicalLines": 266,
+          "nonBlankLines": 254,
+          "bytes": 8528
+        },
+        "verification": {
+          "files": [
+            {
+              "path": "tests/nodeWorkflowExecutionPort.test.ts",
+              "bytes": 12140,
+              "physicalLines": 367,
+              "nonBlankLines": 336,
+              "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+            },
+            {
+              "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+              "bytes": 2304,
+              "physicalLines": 84,
+              "nonBlankLines": 84,
+              "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+            },
+            {
+              "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+              "bytes": 3512,
+              "physicalLines": 113,
+              "nonBlankLines": 113,
+              "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+            }
+          ],
+          "physicalLines": 564,
+          "nonBlankLines": 533,
+          "bytes": 17956
+        },
+        "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+      },
+      "authoringComplete": true,
+      "passed": true,
+      "log": "app-verification-post-run-logs/noderoom.log",
+      "logSha256": "06a139dbfeae47125c0cdbef386ca7e5b318e26acb4f990c15d8ce71b8de11b5"
+    },
+    {
+      "schemaVersion": "node.workflow-app-verifier/v1",
+      "app": "nodebenchai",
+      "baseCommit": "6ed0a58eeda993ff2a937ea4bacc2856756dd521",
+      "adapterCommit": "651020807ed13ea3f36cdf6be601f5a874705b29",
+      "branch": "codex/rocketride-execution-port",
+      "clean": true,
+      "baseCommitIsAncestor": true,
+      "commands": [
+        [
+          "npx",
+          "vitest",
+          "run",
+          "src/shared/nodeBenchWorkflowCandidate.test.ts",
+          "src/shared/rocketRideEvidenceBundle.test.ts"
+        ],
+        [
+          "npx",
+          "tsx",
+          "scripts/verify-rocketride-evidence-bundle.ts",
+          "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\benchmark-evidence\\evidence-bundle.json"
+        ]
+      ],
+      "resolvedCommands": [
+        [
+          "C:\\nvm4w\\nodejs\\npx.CMD",
+          "vitest",
+          "run",
+          "src/shared/nodeBenchWorkflowCandidate.test.ts",
+          "src/shared/rocketRideEvidenceBundle.test.ts"
+        ],
+        [
+          "C:\\nvm4w\\nodejs\\npx.CMD",
+          "tsx",
+          "scripts/verify-rocketride-evidence-bundle.ts",
+          "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\benchmark-evidence\\evidence-bundle.json"
+        ]
+      ],
+      "startedAt": "2026-07-15T15:43:24.322733Z",
+      "finishedAt": "2026-07-15T15:43:31.407845Z",
+      "exitCodes": [
+        0,
+        0
+      ],
+      "testPassed": true,
+      "protocol": "src/shared/workflowExecutionPort.ts",
+      "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+      "fixtures": [
+        {
+          "appFixture": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+          "studyFixture": "nodebenchai-frozen-sources.json",
+          "fixtureSha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83",
+          "studyFixtureSha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83",
+          "parity": true
+        }
+      ],
+      "fixtureParity": true,
+      "authoring": {
+        "sharedProtocol": {
+          "files": [
+            {
+              "path": "src/shared/workflowExecutionPort.ts",
+              "bytes": 21146,
+              "physicalLines": 666,
+              "nonBlankLines": 628,
+              "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+            }
+          ],
+          "physicalLines": 666,
+          "nonBlankLines": 628,
+          "bytes": 21146
+        },
+        "applicationAdapter": {
+          "files": [
+            {
+              "path": "src/shared/nodeBenchWorkflowCandidate.ts",
+              "bytes": 3501,
+              "physicalLines": 114,
+              "nonBlankLines": 107,
+              "sha256": "645275bc4e77d7222528ed11fb3c1cebb7c9133295ffc9ba79c04ddf1bee5d11"
+            },
+            {
+              "path": "src/shared/rocketRideEvidenceBundle.ts",
+              "bytes": 7650,
+              "physicalLines": 255,
+              "nonBlankLines": 244,
+              "sha256": "c137b39f7ecc5da837e5627c6f23635797db00fab572054d4da9304588e5ee2e"
+            },
+            {
+              "path": "scripts/verify-rocketride-evidence-bundle.ts",
+              "bytes": 1759,
+              "physicalLines": 57,
+              "nonBlankLines": 53,
+              "sha256": "628366b0ed85f463f57027f9fd36217e80fb1b5dd950320c89d74056d121607a"
+            }
+          ],
+          "physicalLines": 426,
+          "nonBlankLines": 404,
+          "bytes": 12910
+        },
+        "verification": {
+          "files": [
+            {
+              "path": "src/shared/nodeBenchWorkflowCandidate.test.ts",
+              "bytes": 4877,
+              "physicalLines": 157,
+              "nonBlankLines": 147,
+              "sha256": "36830f97c4f70b7b2b64507334fc9a0159b6605c7d5e2718d909d07a43f424ea"
+            },
+            {
+              "path": "src/shared/rocketRideEvidenceBundle.test.ts",
+              "bytes": 2781,
+              "physicalLines": 81,
+              "nonBlankLines": 74,
+              "sha256": "6b02f50e090f53d543adb260005aed3525f37d4004c00577fb5413ce28baff72"
+            },
+            {
+              "path": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+              "bytes": 1559,
+              "physicalLines": 45,
+              "nonBlankLines": 45,
+              "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+            }
+          ],
+          "physicalLines": 283,
+          "nonBlankLines": 266,
+          "bytes": 9217
+        },
+        "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+      },
+      "authoringComplete": true,
+      "passed": true,
+      "log": "app-verification-post-run-logs/nodebenchai.log",
+      "logSha256": "0e00073794830000653ad48585511d8e13e831f2a73a3b02ec8739bd23e3a653"
+    },
+    {
+      "schemaVersion": "node.workflow-app-verifier/v1",
+      "app": "nodeslide",
+      "baseCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
+      "adapterCommit": "702020d5cdd9785bfb4e6b79a30246a3c88a23b5",
+      "branch": "codex/rocketride-execution-port",
+      "clean": true,
+      "baseCommitIsAncestor": true,
+      "commands": [
+        [
+          "npm",
+          "test",
+          "--",
+          "--run",
+          "convex/lib/nodeslideWorkflowCandidate.test.ts"
+        ]
+      ],
+      "resolvedCommands": [
+        [
+          "C:\\nvm4w\\nodejs\\npm.CMD",
+          "test",
+          "--",
+          "--run",
+          "convex/lib/nodeslideWorkflowCandidate.test.ts"
+        ]
+      ],
+      "startedAt": "2026-07-15T15:43:31.732009Z",
+      "finishedAt": "2026-07-15T15:43:34.660532Z",
+      "exitCodes": [
+        0
+      ],
+      "testPassed": true,
+      "protocol": "shared/workflowExecutionPort.ts",
+      "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+      "fixtures": [
+        {
+          "appFixture": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+          "studyFixture": "nodeslide-independent-elements.json",
+          "fixtureSha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9",
+          "studyFixtureSha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9",
+          "parity": true
+        }
+      ],
+      "fixtureParity": true,
+      "authoring": {
+        "sharedProtocol": {
+          "files": [
+            {
+              "path": "shared/workflowExecutionPort.ts",
+              "bytes": 21146,
+              "physicalLines": 666,
+              "nonBlankLines": 628,
+              "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+            }
+          ],
+          "physicalLines": 666,
+          "nonBlankLines": 628,
+          "bytes": 21146
+        },
+        "applicationAdapter": {
+          "files": [
+            {
+              "path": "convex/lib/nodeslideWorkflowCandidate.ts",
+              "bytes": 1481,
+              "physicalLines": 42,
+              "nonBlankLines": 40,
+              "sha256": "46c412d1dae29af1673602eb8e9d998e9fef7632460012e89c85f68088237376"
+            }
+          ],
+          "physicalLines": 42,
+          "nonBlankLines": 40,
+          "bytes": 1481
+        },
+        "verification": {
+          "files": [
+            {
+              "path": "convex/lib/nodeslideWorkflowCandidate.test.ts",
+              "bytes": 5531,
+              "physicalLines": 188,
+              "nonBlankLines": 178,
+              "sha256": "402f044f7d9f88182beb63cebb6f6af947720401933c33b92fa5fed7bf03a9a8"
+            },
+            {
+              "path": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+              "bytes": 972,
+              "physicalLines": 37,
+              "nonBlankLines": 37,
+              "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+            }
+          ],
+          "physicalLines": 225,
+          "nonBlankLines": 215,
+          "bytes": 6503
+        },
+        "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+      },
+      "authoringComplete": true,
+      "passed": true,
+      "log": "app-verification-post-run-logs/nodeslide.log",
+      "logSha256": "1402044ec1928e168c08ee08f316ba84b6ee328af8ae374bf659bb60e2d9c215"
+    },
+    {
+      "schemaVersion": "node.workflow-app-verifier/v1",
+      "app": "nodevideo",
+      "baseCommit": "bb79bc385de93c90cee89b160fc801d18372d89e",
+      "adapterCommit": "cf2c696e1c0ccea6ebb43617dc81a23f05e785da",
+      "branch": "codex/rocketride-execution-port",
+      "clean": true,
+      "baseCommitIsAncestor": true,
+      "commands": [
+        [
+          "npm",
+          "test",
+          "--",
+          "--run",
+          "src/lib/nodeVideoWorkflowCandidate.test.ts"
+        ]
+      ],
+      "resolvedCommands": [
+        [
+          "C:\\nvm4w\\nodejs\\npm.CMD",
+          "test",
+          "--",
+          "--run",
+          "src/lib/nodeVideoWorkflowCandidate.test.ts"
+        ]
+      ],
+      "startedAt": "2026-07-15T15:43:34.881822Z",
+      "finishedAt": "2026-07-15T15:43:36.877848Z",
+      "exitCodes": [
+        0
+      ],
+      "testPassed": true,
+      "protocol": "src/lib/workflowExecutionPort.ts",
+      "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+      "fixtures": [
+        {
+          "appFixture": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+          "studyFixture": "nodevideo-resume-shots.json",
+          "fixtureSha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3",
+          "studyFixtureSha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3",
+          "parity": true
+        }
+      ],
+      "fixtureParity": true,
+      "authoring": {
+        "sharedProtocol": {
+          "files": [
+            {
+              "path": "src/lib/workflowExecutionPort.ts",
+              "bytes": 21146,
+              "physicalLines": 666,
+              "nonBlankLines": 628,
+              "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+            }
+          ],
+          "physicalLines": 666,
+          "nonBlankLines": 628,
+          "bytes": 21146
+        },
+        "applicationAdapter": {
+          "files": [
+            {
+              "path": "src/lib/nodeVideoWorkflowCandidate.ts",
+              "bytes": 6230,
+              "physicalLines": 169,
+              "nonBlankLines": 159,
+              "sha256": "0aac540d0d03ba729eb72f88887116286b7eabefe2ed473a7ed06d30edaa7cbf"
+            }
+          ],
+          "physicalLines": 169,
+          "nonBlankLines": 159,
+          "bytes": 6230
+        },
+        "verification": {
+          "files": [
+            {
+              "path": "src/lib/nodeVideoWorkflowCandidate.test.ts",
+              "bytes": 5840,
+              "physicalLines": 168,
+              "nonBlankLines": 156,
+              "sha256": "ccfcea3b296f70da144c70402500cbb277e32c5f3211cc0a977ce8b8dbe3f5f2"
+            },
+            {
+              "path": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+              "bytes": 1864,
+              "physicalLines": 62,
+              "nonBlankLines": 62,
+              "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+            }
+          ],
+          "physicalLines": 230,
+          "nonBlankLines": 218,
+          "bytes": 7704
+        },
+        "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+      },
+      "authoringComplete": true,
+      "passed": true,
+      "log": "app-verification-post-run-logs/nodevideo.log",
+      "logSha256": "858faf4326f29e0776051b75bc3fee8ecb9579474170d21c3c0d011feb856b5a"
+    }
+  ]
+}

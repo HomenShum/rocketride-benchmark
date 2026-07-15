@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "source-frozen-2",
+    "claim-extraction",
+    "report-compilation"
+  ],
+  "failed": [
+    "source-frozen-1"
+  ],
+  "totalMs": 91.8322,
+  "executionMs": 91.8322,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 69840896,
+  "cpuTimeMs": 250,
+  "runtimeVersion": "v22.22.2"
+}

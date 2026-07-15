@@ -1,0 +1,183 @@
+Cloning into '/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark'...
+HEAD is now at 43be41a Fix Linux provisioning: engine dropped by strip-components + Python 3.11
+{
+  "n_builds": 5,
+  "workflow": "meeting-notes assistant (transcript -> executive summary + follow-up email)",
+  "rocketride_lines": {
+    "min": 104,
+    "median": 123,
+    "max": 136
+  },
+  "langchain_lines": {
+    "min": 682,
+    "median": 689,
+    "max": 930
+  },
+  "line_ratio_lc_over_rr": {
+    "min": 5.0,
+    "median": 6.0,
+    "max": 7.6
+  },
+  "rocketride_chars_median": 7010,
+  "langchain_chars_median": 25158,
+  "char_ratio_lc_over_rr_median": 3.6
+}
+downloading https://github.com/rocketride-org/rocketride-server/releases/download/server-v3.2.1/rocketride-server-v3.2.1-linux-x64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+ 27  216M   27 58.6M    0     0  44.4M      0  0:00:04  0:00:01  0:00:03 44.4M
+ 57  216M   57  125M    0     0  54.1M      0  0:00:04  0:00:02  0:00:02 66.7M
+ 94  216M   94  203M    0     0  61.5M      0  0:00:03  0:00:03 --:--:-- 72.7M
+100  216M  100  216M    0     0  62.2M      0  0:00:03  0:00:03 --:--:-- 73.1M
+extracted engine -> /home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/engine
+Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z
+creating venv with python3.11 (Python 3.11.15)
+venv ready: /home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv  (rocketride 1.2.0)
+
+provisioned. next:  make start  &&  make smoke
+competitor head-to-heads (optional):  make provision-competitors  &&  make run-competitive
+Collecting langchain-core==0.3.86 (from -r requirements-competitors.txt (line 8))
+  Using cached langchain_core-0.3.86-py3-none-any.whl.metadata (3.2 kB)
+Collecting langchain<0.4,>=0.3 (from -r requirements-competitors.txt (line 9))
+  Using cached langchain-0.3.30-py3-none-any.whl.metadata (6.4 kB)
+Collecting langsmith<1.0.0,>=0.3.45 (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached langsmith-0.10.5-py3-none-any.whl.metadata (22 kB)
+Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting PyYAML<7.0.0,>=5.3.0 (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Requirement already satisfied: typing-extensions<5.0.0,>=4.7.0 in ./.venv/lib/python3.11/site-packages (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8)) (4.16.0)
+Collecting packaging<26.0.0,>=23.2.0 (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: pydantic<3.0.0,>=2.7.4 in ./.venv/lib/python3.11/site-packages (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8)) (2.13.4)
+Collecting uuid-utils<1.0,>=0.12.0 (from langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached uuid_utils-0.17.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.4 kB)
+Collecting langchain-text-splitters<1.0.0,>=0.3.9 (from langchain<0.4,>=0.3->-r requirements-competitors.txt (line 9))
+  Using cached langchain_text_splitters-0.3.11-py3-none-any.whl.metadata (1.8 kB)
+Collecting SQLAlchemy<3.0.0,>=1.4.0 (from langchain<0.4,>=0.3->-r requirements-competitors.txt (line 9))
+  Using cached sqlalchemy-2.0.51-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting requests<3.0.0,>=2.0.0 (from langchain<0.4,>=0.3->-r requirements-competitors.txt (line 9))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached jsonpointer-3.1.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting anyio>=3.5.0 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting distro>=1.7.0 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting httpx<1,>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting orjson>=3.9.14 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached orjson-3.11.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (41 kB)
+Collecting requests-toolbelt>=1.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting sniffio>=1.1 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Requirement already satisfied: websockets>=15.0 in ./.venv/lib/python3.11/site-packages (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8)) (16.1)
+Collecting xxhash>=3.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached xxhash-3.8.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (15 kB)
+Collecting zstandard>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached zstandard-0.25.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.3 kB)
+Collecting certifi (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached certifi-2026.6.17-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core==0.3.86->-r requirements-competitors.txt (line 8))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Requirement already satisfied: annotated-types>=0.6.0 in ./.venv/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.7.4->langchain-core==0.3.86->-r requirements-competitors.txt (line 8)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.46.4 in ./.venv/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.7.4->langchain-core==0.3.86->-r requirements-competitors.txt (line 8)) (2.46.4)
+Requirement already satisfied: typing-inspection>=0.4.2 in ./.venv/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.7.4->langchain-core==0.3.86->-r requirements-competitors.txt (line 8)) (0.4.2)
+Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.0.0->langchain<0.4,>=0.3->-r requirements-competitors.txt (line 9))
+  Using cached charset_normalizer-3.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (41 kB)
+Collecting urllib3<3,>=1.26 (from requests<3.0.0,>=2.0.0->langchain<0.4,>=0.3->-r requirements-competitors.txt (line 9))
+  Using cached urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting greenlet>=1 (from SQLAlchemy<3.0.0,>=1.4.0->langchain<0.4,>=0.3->-r requirements-competitors.txt (line 9))
+  Using cached greenlet-3.5.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Using cached langchain_core-0.3.86-py3-none-any.whl (461 kB)
+Using cached langchain-0.3.30-py3-none-any.whl (1.0 MB)
+Using cached jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Using cached langchain_text_splitters-0.3.11-py3-none-any.whl (33 kB)
+Using cached langsmith-0.10.5-py3-none-any.whl (657 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (221 kB)
+Using cached idna-3.18-py3-none-any.whl (65 kB)
+Using cached sqlalchemy-2.0.51-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+Using cached tenacity-9.1.4-py3-none-any.whl (28 kB)
+Using cached urllib3-2.7.0-py3-none-any.whl (131 kB)
+Using cached uuid_utils-0.17.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (324 kB)
+Using cached anyio-4.14.2-py3-none-any.whl (125 kB)
+Using cached certifi-2026.6.17-py3-none-any.whl (133 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Using cached greenlet-3.5.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (617 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached jsonpointer-3.1.1-py3-none-any.whl (7.7 kB)
+Using cached orjson-3.11.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (133 kB)
+Using cached requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached xxhash-3.8.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (220 kB)
+Using cached zstandard-0.25.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.6 MB)
+Installing collected packages: zstandard, xxhash, uuid-utils, urllib3, tenacity, sniffio, PyYAML, packaging, orjson, jsonpointer, idna, h11, greenlet, distro, charset_normalizer, certifi, SQLAlchemy, requests, jsonpatch, httpcore, anyio, requests-toolbelt, httpx, langsmith, langchain-core, langchain-text-splitters, langchain
+
+Successfully installed PyYAML-6.0.3 SQLAlchemy-2.0.51 anyio-4.14.2 certifi-2026.6.17 charset_normalizer-3.4.9 distro-1.9.0 greenlet-3.5.3 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.18 jsonpatch-1.33 jsonpointer-3.1.1 langchain-0.3.30 langchain-core-0.3.86 langchain-text-splitters-0.3.11 langsmith-0.10.5 orjson-3.11.9 packaging-25.0 requests-2.34.2 requests-toolbelt-1.0.0 sniffio-1.3.1 tenacity-9.1.4 urllib3-2.7.0 uuid-utils-0.17.0 xxhash-3.8.1 zstandard-0.25.0
+starting: /home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/engine/engine ai/eaas.py --host=0.0.0.0 --port=5565
+engine healthy on :5565 (HTTP 000000, pid 945)
+Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z
+external readiness confirmed on :5565 (HTTP 401)
+wrote: canvas.mmd canvas.dot
+RocketRide: healthy-before=True  crash-run-completed=False  server-survived=True  healthy-after=True
+In-process baseline (langchain): healthy 4/4, crash-run 0/4, exit 134 (process DIED)
+VERDICT: RR isolation holds = True ; in-process lost all = True
+=== fault-isolation x10 (back-to-back, no restart) ===
+  OK   fault-isolation run-01
+  OK   fault-isolation run-02
+  OK   fault-isolation run-03
+  OK   fault-isolation run-04
+  OK   fault-isolation run-05
+  OK   fault-isolation run-06
+  OK   fault-isolation run-07
+  OK   fault-isolation run-08
+  OK   fault-isolation run-09
+  OK   fault-isolation run-10
+=== authoring-effort x1 (static / deterministic — reps N/A) ===
+  OK   authoring-effort
+=== concurrent-processing x10  @ M={8,16}  (restart+prime+retry) ===
+  OK   concurrent-processing run-01 (attempt 1)
+  OK   concurrent-processing run-02 (attempt 1)
+  OK   concurrent-processing run-03 (attempt 1)
+  OK   concurrent-processing run-04 (attempt 1)
+  OK   concurrent-processing run-05 (attempt 1)
+  OK   concurrent-processing run-06 (attempt 1)
+  OK   concurrent-processing run-07 (attempt 1)
+  OK   concurrent-processing run-08 (attempt 1)
+  OK   concurrent-processing run-09 (attempt 1)
+  OK   concurrent-processing run-10 (attempt 1)
+=== data-isolation x10  @ M=32  (restart+prime+retry) ===
+  OK   data-isolation run-01 (attempt 1)
+  OK   data-isolation run-02 (attempt 1)
+  OK   data-isolation run-03 (attempt 1)
+  OK   data-isolation run-04 (attempt 1)
+  OK   data-isolation run-05 (attempt 1)
+  OK   data-isolation run-06 (attempt 1)
+  OK   data-isolation run-07 (attempt 1)
+  OK   data-isolation run-08 (attempt 1)
+  OK   data-isolation run-09 (attempt 1)
+  OK   data-isolation run-10 (attempt 1)
+=== 10x RUN DONE ===
+wrote ../README.md
+fault-isolation: 10/10
+concurrent-processing: 10/10
+data-isolation: 10/10
+authoring-effort: 1/1
+supported Linux reproduction complete: linux-20260715T122439Z
