@@ -3,6 +3,10 @@
 This protocol is fixed before implementing or executing any Node application
 adapter. It is separate from the unchanged upstream reproduction.
 
+The V1 run and its unfavorable deadline audit remain immutable. A separate
+resident-runtime experiment is pre-registered in `PRE_REGISTRATION_V2.md` and
+must not be presented as a rerun or replacement of V1.
+
 ## Systems
 
 Every scored fixture compares three systems:
