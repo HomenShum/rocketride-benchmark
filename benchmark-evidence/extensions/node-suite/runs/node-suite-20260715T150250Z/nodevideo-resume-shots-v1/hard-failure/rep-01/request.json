@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "nodevideo",
+  "workflow": "parallel-shot-render",
+  "fixtureId": "nodevideo-resume-shots-v1",
+  "traceId": "trace:nodevideo-resume-shots-v1:hard-failure:rep-01",
+  "inputDigest": "sha256:b5d8ddefed1952e2ff6e74ac6fa1f8f7f96a0b94c45a3e4bb289c23c2cd20397",
+  "idempotencyKey": "nodevideo-resume-shots-v1:hard-failure:rep-01",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "baseVersion": 4,
+  "failureSeed": "shot-1"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "noderoom",
+  "workflow": "independent-cell-enrichment",
+  "fixtureId": "noderoom-independent-writes-v2",
+  "traceId": "trace:noderoom-independent-writes-v2:normal:rep-01",
+  "inputDigest": "sha256:3ce17fa63bab4b300f10f78fe4fb09c95ac9d3384eb84e53de4bb17d87daa863",
+  "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+  "idempotencyKey": "noderoom-independent-writes-v2:normal:rep-01",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "unitTimeoutMs": 2000
+}

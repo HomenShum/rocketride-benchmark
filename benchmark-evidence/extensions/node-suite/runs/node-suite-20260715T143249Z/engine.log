@@ -1,0 +1,64 @@
+
+        _____            _        _   _____  _     _
+       |  __ \          | |      | | |  __ \(_)   | |
+       | |__) |___   ___| | _____| |_| |__) |_  __| | ___
+       |  _  // _ \ / __| |/ / _ \ __|  _  /| |/ _` |/ _ \
+       | | \ \ (_) | (__|   <  __/ |_| | \ \| | (_| |  __/
+       |_|  \_\___/ \___|_|\_\___|\__|_|  \_\_|\__,_|\___|
+
+
+            Copyright (c) 2026 Aparavi Software AG
+                    All rights reserved
+    
+INFO:     Started server process [97488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5567 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60021 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54794 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55573 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:64570 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51044 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51045 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51051 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51053 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60080 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57984 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50300 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50301 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50302 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50303 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60598 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:61862 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55797 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55799 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55800 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55801 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59912 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57497 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59765 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59766 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59767 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59768 - "WebSocket /task/service" [accepted]
+INFO:     connection open

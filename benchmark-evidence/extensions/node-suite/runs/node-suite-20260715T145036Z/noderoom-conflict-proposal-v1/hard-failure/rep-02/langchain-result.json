@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "noderoom-conflict-proposal-v1:hard-failure:rep-02:langchain",
+  "traceId": "trace:noderoom-conflict-proposal-v1:hard-failure:rep-02",
+  "framework": "langchain",
+  "candidate": {
+    "kind": "semantic_conflict_resolution",
+    "packet": {
+      "conflictId": "conflict-1",
+      "roomId": "room-1",
+      "artifactId": "sheet-1",
+      "artifactKind": "spreadsheet",
+      "draftId": "draft-1",
+      "trigger": "draft_conflict",
+      "conflictKind": "cell_value",
+      "overlap": "same_element",
+      "actor": {
+        "kind": "agent",
+        "id": "room-agent",
+        "name": "Room Agent",
+        "scope": "public"
+      },
+      "targetRefs": [
+        {
+          "kind": "cell",
+          "ref": "r_rev__variance"
+        }
+      ],
+      "base": {
+        "values": {
+          "r_rev__variance": "+24.0%"
+        },
+        "versions": {
+          "r_rev__variance": 3
+        }
+      },
+      "current": {
+        "values": {
+          "r_rev__variance": "+25.0%"
+        },
+        "versions": {
+          "r_rev__variance": 4
+        },
+        "changedBy": {
+          "r_rev__variance": {
+            "kind": "user",
+            "id": "host-1",
+            "name": "Host"
+          }
+        }
+      },
+      "proposed": {
+        "values": {
+          "r_rev__variance": "+30.0%"
+        },
+        "ops": [
+          {
+            "opId": "op-variance-agent",
+            "artifactId": "sheet-1",
+            "elementId": "r_rev__variance",
+            "kind": "set",
+            "value": "+30.0%",
+            "baseVersion": 3
+          }
+        ]
+      },
+      "context": {
+        "userIntent": "Update the forecast variance.",
+        "mergeNote": "Host edited the same forecast cell.",
+        "deterministicConflicts": [
+          {
+            "opId": "op-variance-agent",
+            "elementId": "r_rev__variance",
+            "reason": "base_version_changed",
+            "current": "+25.0%"
+          }
+        ],
+        "openQuestions": []
+      },
+      "policy": {
+        "humanWinsByDefault": true,
+        "formulaOverwriteAllowed": false,
+        "publicPrivateBoundary": "public_only",
+        "autoCommitAllowed": false
+      },
+      "businessImpact": "forecast",
+      "status": "needs_review",
+      "createdAt": 1
+    },
+    "resolution": {
+      "decision": "needs_human_review",
+      "reason": "business assumption impact requires human approval: forecast",
+      "resolvedOps": [
+        {
+          "targetRef": "r_rev__variance",
+          "kind": "create_proposal",
+          "value": "+30.0%",
+          "baseVersion": 4,
+          "comment": "Business-value conflict requires human review before changing the current value.",
+          "status": "needs_review"
+        }
+      ],
+      "reviewerNote": "CRS compared base/current/proposed state. It did not bypass managed writes; every accepted op still needs final CAS.",
+      "openQuestions": [],
+      "confidence": 0.62,
+      "classification": {
+        "tier": "human_review_required",
+        "action": "create_review_proposal",
+        "canAutoCommit": false,
+        "reasons": [
+          "business assumption impact requires human approval: forecast"
+        ],
+        "requiredValidators": [
+          "fresh_final_cas",
+          "policy_check",
+          "evidence_check",
+          "review_tier"
+        ]
+      }
+    }
+  },
+  "inputDigest": "sha256:b857c885e05766c9785042057f43b41074304702bd2871ee051d2182c4e7a80c",
+  "idempotencyKey": "noderoom-conflict-proposal-v1:hard-failure:rep-02",
+  "outputDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.failed",
+      "unitId": "compare-base-current"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.failed",
+      "unitId": "reason-business-impact"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.failed",
+      "unitId": "classify-review-tier"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.failed",
+      "unitId": "build-review-proposal"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 0.0,
+    "executionMs": 1217.02,
+    "totalMs": 1217.02,
+    "retryCount": 0,
+    "completedUnits": 0,
+    "failedUnits": 4,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 0,
+    "cpuTimeMs": 0.0
+  },
+  "provenance": {
+    "adapter": "node-suite-langchain",
+    "adapterVersion": "1.0.0",
+    "runtime": "python-langchain",
+    "runtimeVersion": "python=unknown;langchain-core=0.3.86",
+    "appCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
+    "deterministic": true,
+    "location": "local"
+  },
+  "error": {
+    "code": "injected_hard_failure",
+    "message": "A pre-registered work unit hard-failed.",
+    "retryable": false
+  }
+}

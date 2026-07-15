@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "shot-1",
+    "shot-2",
+    "shot-3",
+    "shot-4"
+  ],
+  "failed": [],
+  "totalMs": 25.781599993933924,
+  "executionMs": 25.781599993933924,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 59772928,
+  "cpuTimeMs": 15.625,
+  "runtimeVersion": "3.11.9",
+  "langchainCoreVersion": "0.3.86"
+}

@@ -1,0 +1,23 @@
+{
+  "units": [
+    {
+      "id": "source-frozen-1",
+      "scope": "research-run-1"
+    },
+    {
+      "id": "source-frozen-2",
+      "scope": "research-run-1"
+    },
+    {
+      "id": "claim-extraction",
+      "scope": "research-run-1"
+    },
+    {
+      "id": "report-compilation",
+      "scope": "research-run-1"
+    }
+  ],
+  "concurrency": 4,
+  "delayMs": 20,
+  "failureUnit": "source-frozen-1"
+}

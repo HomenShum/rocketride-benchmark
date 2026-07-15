@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodebenchai-frozen-sources-v2:hard-failure:rep-03:langchain",
+  "traceId": "trace:nodebenchai-frozen-sources-v2:hard-failure:rep-03",
+  "framework": "langchain",
+  "candidate": {
+    "kind": "answer-report-packet",
+    "outputs": [
+      {
+        "id": "report-1",
+        "l1": "generated_artifact",
+        "l2": "meeting_brief",
+        "l3": "artifact.team_meeting_summary",
+        "target": {
+          "artifactId": "candidate-report-1",
+          "traceId": "trace-1"
+        },
+        "visibility": "workspace",
+        "sourceRefs": [
+          "source:frozen-1",
+          "source:frozen-2"
+        ],
+        "citationRefs": [
+          "source:frozen-1",
+          "source:frozen-2"
+        ],
+        "traceRef": "trace-1",
+        "producedBy": {
+          "runId": "nodebenchai-study",
+          "skill": "frozen-source-report",
+          "toolChain": [
+            "retrieve_frozen_source",
+            "compile_report"
+          ]
+        },
+        "version": {},
+        "output": {
+          "summary": "The frozen sources support the benchmark finding.",
+          "actionItems": [
+            "Review the evidence bindings before persistence."
+          ]
+        }
+      }
+    ],
+    "evidenceBindings": [
+      {
+        "claimId": "claim-1",
+        "sourceRefs": [
+          "source:frozen-1"
+        ]
+      },
+      {
+        "claimId": "claim-2",
+        "sourceRefs": [
+          "source:frozen-2"
+        ]
+      }
+    ]
+  },
+  "inputDigest": "sha256:68cc780616989889f0f2eb5c35319e65a248b95925d2f59f5c8cc5f478533ca7",
+  "idempotencyKey": "nodebenchai-frozen-sources-v2:hard-failure:rep-03",
+  "outputDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.failed",
+      "unitId": "source-frozen-1"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.failed",
+      "unitId": "source-frozen-2"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.failed",
+      "unitId": "claim-extraction"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.failed",
+      "unitId": "report-compilation"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 0.0,
+    "executionMs": 746.131,
+    "totalMs": 746.131,
+    "retryCount": 0,
+    "completedUnits": 0,
+    "failedUnits": 4,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 0,
+    "cpuTimeMs": 0.0
+  },
+  "provenance": {
+    "adapter": "node-suite-langchain",
+    "adapterVersion": "2.0.0",
+    "runtime": "python-langchain",
+    "runtimeVersion": "python=unknown;langchain-core=0.3.86",
+    "appCommit": "259d78150fd6bf0d670557707af3ddfefcc4fdc5",
+    "deterministic": true,
+    "location": "local",
+    "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+    "servingProfile": "resident-local-v2"
+  },
+  "error": {
+    "code": "injected_hard_failure",
+    "message": "A pre-registered work unit hard-failed.",
+    "retryable": false
+  },
+  "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+  "runtimeLifecycle": {
+    "profile": "resident-local-v2",
+    "startupExcludedFromTotalMs": false,
+    "poolId": null,
+    "poolLifecycle": "subprocess_per_request",
+    "unitTimeoutMs": 2000
+  }
+}

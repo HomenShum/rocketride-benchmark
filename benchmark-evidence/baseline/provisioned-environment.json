@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "node.rocketride.provisioned-environment/v1",
+  "capturedAt": "2026-07-15T09:44:00Z",
+  "sourceCommit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+  "provisionCommandReceipt": "benchmark-evidence/baseline/receipts/provision.json",
+  "python": {
+    "version": "3.11.9",
+    "requirements": "benchmark-evidence/baseline/requirements-resolved.txt"
+  },
+  "packages": {
+    "rocketride": "1.2.0",
+    "langchain": "0.3.30",
+    "langchain-core": "0.3.86"
+  },
+  "engine": {
+    "version": "3.2.1.30",
+    "hash": "114509c6",
+    "buildStamp": "2026-05-29T19:19:06Z",
+    "sha256": "b844140ae82cc18e9b5767b44b897aed2f772ea5228cfd053d727324bad7dc5e",
+    "sizeBytes": 84793856,
+    "artifact": "server-v3.2.1-win64.zip"
+  },
+  "evidence": {
+    "provisionLog": "benchmark-evidence/baseline/logs/provision.log",
+    "smokeResult": "benchmark-evidence/baseline/smoke/fault-isolation/results.json",
+    "smokeReceipt": "benchmark-evidence/baseline/receipts/smoke-fault-isolation-rerun-1.json"
+  }
+}

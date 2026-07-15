@@ -1,0 +1,2058 @@
+{
+  "schemaVersion": "node.workflow-extension-scorecard/v1",
+  "generatedAt": "2026-07-15T15:19:12.580686Z",
+  "status": "passed",
+  "officialStatus": "separate_application_study_unsubmitted",
+  "engineColdStartMs": 3153.453,
+  "environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "cpuCount": 32,
+    "memoryBytes": 68434624512,
+    "python": "3.11.9",
+    "node": "v22.22.2",
+    "rocketrideSdk": "1.2.0",
+    "langchainCore": "0.3.86",
+    "engineVersion": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "engineBytes": 84793856,
+    "engineSha256": "b844140ae82cc18e9b5767b44b897aed2f772ea5228cfd053d727324bad7dc5e",
+    "enginePort": 5567
+  },
+  "conditions": {
+    "deterministic": true,
+    "paidModelCalls": 0,
+    "cloudRuns": 0,
+    "sameCandidateDigestRequired": true,
+    "finalWritesAttempted": 0
+  },
+  "rows": [
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v1",
+      "app": "nodebenchai",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 203.795,
+        "p95": 209.231,
+        "min": 202.317,
+        "max": 209.835
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 90.488,
+        "p95": 91.571,
+        "min": 90.053,
+        "max": 91.691
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v1",
+      "app": "nodebenchai",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 27890.281,
+        "p95": 28829.475,
+        "min": 22901.926,
+        "max": 28933.83
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 4774.843,
+        "p95": 5549.265,
+        "min": 3694.513,
+        "max": 5635.312
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 18096.814,
+        "p95": 20499.052,
+        "min": 15858.151,
+        "max": 20765.967
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v1",
+      "app": "nodebenchai",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1300.084,
+        "p95": 1339.62,
+        "min": 1224.184,
+        "max": 1344.013
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 34.895,
+        "p95": 37.032,
+        "min": 34.458,
+        "max": 37.269
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v1",
+      "app": "nodebenchai",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 194.193,
+        "p95": 201.38,
+        "min": 190.903,
+        "max": 202.178
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 95.252,
+        "p95": 97.295,
+        "min": 86.79,
+        "max": 97.522
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v1",
+      "app": "nodebenchai",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 33572.497,
+        "p95": 35197.145,
+        "min": 29573.603,
+        "max": 35377.662
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 11014.593,
+        "p95": 11025.146,
+        "min": 10996.04,
+        "max": 11026.319
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 20015.996,
+        "p95": 20998.49,
+        "min": 16140.604,
+        "max": 21107.656
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v1",
+      "app": "nodebenchai",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1139.453,
+        "p95": 1152.603,
+        "min": 1130.416,
+        "max": 1154.064
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 1139.453,
+        "p95": 1152.603,
+        "min": 1130.416,
+        "max": 1154.064
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v1",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 196.81,
+        "p95": 200.27,
+        "min": 181.312,
+        "max": 200.655
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 83.166,
+        "p95": 94.847,
+        "min": 73.116,
+        "max": 96.145
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v1",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 25966.952,
+        "p95": 31353.016,
+        "min": 25604.498,
+        "max": 31951.467
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 5748.832,
+        "p95": 7373.653,
+        "min": 4875.433,
+        "max": 7554.189
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 18205.906,
+        "p95": 21371.487,
+        "min": 17447.697,
+        "max": 21723.218
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v1",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1278.346,
+        "p95": 1402.813,
+        "min": 1165.362,
+        "max": 1416.643
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 29.841,
+        "p95": 38.763,
+        "min": 29.472,
+        "max": 39.754
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v1",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 202.053,
+        "p95": 227.869,
+        "min": 177.625,
+        "max": 230.737
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 96.038,
+        "p95": 106.3,
+        "min": 77.859,
+        "max": 107.44
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v1",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 31934.275,
+        "p95": 34343.774,
+        "min": 31139.096,
+        "max": 34611.496
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 11013.512,
+        "p95": 11031.693,
+        "min": 11011.158,
+        "max": 11033.713
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 18043.553,
+        "p95": 20057.006,
+        "min": 17426.465,
+        "max": 20280.723
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v1",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1066.724,
+        "p95": 1102.285,
+        "min": 1044.025,
+        "max": 1106.236
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 1066.724,
+        "p95": 1102.285,
+        "min": 1044.025,
+        "max": 1106.236
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v1",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 190.836,
+        "p95": 197.205,
+        "min": 178.27,
+        "max": 197.913
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 89.304,
+        "p95": 89.554,
+        "min": 76.702,
+        "max": 89.582
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v1",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 29586.421,
+        "p95": 31716.471,
+        "min": 27075.736,
+        "max": 31953.143
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 6809.971,
+        "p95": 7317.576,
+        "min": 5843.659,
+        "max": 7373.977
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 20191.251,
+        "p95": 20856.467,
+        "min": 16840.456,
+        "max": 20930.38
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v1",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1353.289,
+        "p95": 1395.582,
+        "min": 1194.933,
+        "max": 1400.281
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 36.806,
+        "p95": 39.485,
+        "min": 30.676,
+        "max": 39.783
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v1",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 176.464,
+        "p95": 229.921,
+        "min": 166.427,
+        "max": 235.861
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 85.709,
+        "p95": 106.563,
+        "min": 76.033,
+        "max": 108.88
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v1",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 37909.386,
+        "p95": 38717.674,
+        "min": 37342.213,
+        "max": 38807.484
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 11015.479,
+        "p95": 11023.507,
+        "min": 11009.212,
+        "max": 11024.399
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 22938.415,
+        "p95": 23772.677,
+        "min": 22903.354,
+        "max": 23865.373
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v1",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1057.141,
+        "p95": 1275.969,
+        "min": 1013.753,
+        "max": 1300.283
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 1057.141,
+        "p95": 1275.969,
+        "min": 1013.753,
+        "max": 1300.283
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v1",
+      "app": "nodeslide",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 200.23,
+        "p95": 215.663,
+        "min": 192.36,
+        "max": 217.378
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 87.948,
+        "p95": 92.758,
+        "min": 84.542,
+        "max": 93.292
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v1",
+      "app": "nodeslide",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 31814.868,
+        "p95": 32349.741,
+        "min": 26298.047,
+        "max": 32409.171
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 6355.653,
+        "p95": 7600.483,
+        "min": 4454.222,
+        "max": 7738.797
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 21170.067,
+        "p95": 21388.024,
+        "min": 18321.482,
+        "max": 21412.242
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v1",
+      "app": "nodeslide",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1390.712,
+        "p95": 1397.297,
+        "min": 1155.219,
+        "max": 1398.029
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 32.333,
+        "p95": 33.84,
+        "min": 32.202,
+        "max": 34.007
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v1",
+      "app": "nodeslide",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 222.259,
+        "p95": 225.162,
+        "min": 193.256,
+        "max": 225.484
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 90.091,
+        "p95": 100.128,
+        "min": 89.91,
+        "max": 101.243
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v1",
+      "app": "nodeslide",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 34287.676,
+        "p95": 35839.943,
+        "min": 30554.299,
+        "max": 36012.417
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 11018.467,
+        "p95": 11023.691,
+        "min": 11011.35,
+        "max": 11024.271
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 20002.825,
+        "p95": 21159.089,
+        "min": 16273.704,
+        "max": 21287.563
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v1",
+      "app": "nodeslide",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1135.858,
+        "p95": 1207.565,
+        "min": 1131.887,
+        "max": 1215.533
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 1135.858,
+        "p95": 1207.565,
+        "min": 1131.887,
+        "max": 1215.533
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v1",
+      "app": "nodevideo",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 203.875,
+        "p95": 215.058,
+        "min": 180.661,
+        "max": 216.3
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 84.837,
+        "p95": 90.907,
+        "min": 80.605,
+        "max": 91.582
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v1",
+      "app": "nodevideo",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 26099.987,
+        "p95": 27879.021,
+        "min": 17337.722,
+        "max": 28076.692
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 2719.904,
+        "p95": 5963.544,
+        "min": 2295.343,
+        "max": 6323.949
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 18688.817,
+        "p95": 20920.439,
+        "min": 11867.553,
+        "max": 21168.397
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v1",
+      "app": "nodevideo",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1220.388,
+        "p95": 1351.645,
+        "min": 1132.85,
+        "max": 1366.229
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 27.943,
+        "p95": 35.747,
+        "min": 27.005,
+        "max": 36.614
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v1",
+      "app": "nodevideo",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 200.311,
+        "p95": 201.472,
+        "min": 177.391,
+        "max": 201.601
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 92.832,
+        "p95": 94.142,
+        "min": 79.382,
+        "max": 94.287
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v1",
+      "app": "nodevideo",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 32593.96,
+        "p95": 36694.823,
+        "min": 27014.821,
+        "max": 37150.474
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 11025.097,
+        "p95": 11033.477,
+        "min": 11016.546,
+        "max": 11034.408
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 18276.309,
+        "p95": 22026.792,
+        "min": 13125.558,
+        "max": 22443.512
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v1",
+      "app": "nodevideo",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1067.634,
+        "p95": 1086.447,
+        "min": 998.93,
+        "max": 1088.537
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 1067.634,
+        "p95": 1086.447,
+        "min": 998.93,
+        "max": 1088.537
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    }
+  ],
+  "authoring": {
+    "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores.",
+    "sharedHarness": {
+      "files": [
+        {
+          "path": "common/protocol.py",
+          "bytes": 4592,
+          "physicalLines": 138,
+          "nonBlankLines": 126,
+          "sha256": "61c2e873704ef90fc7cf80c8cf9ca61a4051a720d1ebe6b1cedbbd10ac985ca4"
+        },
+        {
+          "path": "common/run_suite.py",
+          "bytes": 28401,
+          "physicalLines": 735,
+          "nonBlankLines": 664,
+          "sha256": "b520821ce7b5e86943d871acaaa45d9ec162379f0b6bcdf2fc0c0bd1d4142396"
+        }
+      ],
+      "physicalLines": 873,
+      "nonBlankLines": 790,
+      "bytes": 32993
+    },
+    "native": {
+      "files": [
+        {
+          "path": "common/native_executor.mjs",
+          "bytes": 2378,
+          "physicalLines": 80,
+          "nonBlankLines": 76,
+          "sha256": "6ebd90bed9aa4ad449c8b857102f49b986a78e3052d278fed905257ed28da7c2"
+        }
+      ],
+      "physicalLines": 80,
+      "nonBlankLines": 76,
+      "bytes": 2378
+    },
+    "rocketride": {
+      "files": [
+        {
+          "path": "common/rocketride-node/nodeworkflow/IInstance.py",
+          "bytes": 1171,
+          "physicalLines": 42,
+          "nonBlankLines": 36,
+          "sha256": "793b7f137d1e955aad4111bbec0077ca39f86dafc74cdcf03a578493b76bc56a"
+        }
+      ],
+      "physicalLines": 42,
+      "nonBlankLines": 36,
+      "bytes": 1171
+    },
+    "langchain": {
+      "files": [
+        {
+          "path": "common/langchain_executor.py",
+          "bytes": 2220,
+          "physicalLines": 71,
+          "nonBlankLines": 62,
+          "sha256": "665f34cb4789aa5ccc12ec61f3034e93d90a28b2115766122beec5d5643b2894"
+        }
+      ],
+      "physicalLines": 71,
+      "nonBlankLines": 62,
+      "bytes": 2220
+    }
+  },
+  "appVerification": {
+    "schemaVersion": "node.workflow-app-verification/v1",
+    "generatedAt": "2026-07-15T14:28:09.863604Z",
+    "protocolParity": true,
+    "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+    "status": "passed",
+    "apps": [
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "noderoom",
+        "baseCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
+        "adapterCommit": "353ddcce5b4ee791c4a0d70713a47ab302a643b9",
+        "branch": "codex/rocketride-execution-port",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npm",
+            "test",
+            "--",
+            "--run",
+            "tests/nodeWorkflowExecutionPort.test.ts"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npm.CMD",
+            "test",
+            "--",
+            "--run",
+            "tests/nodeWorkflowExecutionPort.test.ts"
+          ]
+        ],
+        "startedAt": "2026-07-15T14:27:50.979727Z",
+        "finishedAt": "2026-07-15T14:27:54.535217Z",
+        "exitCodes": [
+          0
+        ],
+        "testPassed": true,
+        "protocol": "src/nodeagent/integrations/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+            "studyFixture": "noderoom-independent-writes.json",
+            "fixtureSha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de",
+            "studyFixtureSha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de",
+            "parity": true
+          },
+          {
+            "appFixture": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+            "studyFixture": "noderoom-conflict-proposal.json",
+            "fixtureSha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482",
+            "studyFixtureSha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+                "bytes": 8528,
+                "physicalLines": 266,
+                "nonBlankLines": 254,
+                "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+              }
+            ],
+            "physicalLines": 266,
+            "nonBlankLines": 254,
+            "bytes": 8528
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "tests/nodeWorkflowExecutionPort.test.ts",
+                "bytes": 12140,
+                "physicalLines": 367,
+                "nonBlankLines": 336,
+                "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+              },
+              {
+                "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+                "bytes": 2304,
+                "physicalLines": 84,
+                "nonBlankLines": 84,
+                "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+              },
+              {
+                "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+                "bytes": 3512,
+                "physicalLines": 113,
+                "nonBlankLines": 113,
+                "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+              }
+            ],
+            "physicalLines": 564,
+            "nonBlankLines": 533,
+            "bytes": 17956
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-logs/noderoom.log",
+        "logSha256": "4c8e31e7fb0784cdd4b3bfab4ed90c7c95465a1cb2fb3359e862b7fc7ff22631"
+      },
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "nodebenchai",
+        "baseCommit": "6ed0a58eeda993ff2a937ea4bacc2856756dd521",
+        "adapterCommit": "651020807ed13ea3f36cdf6be601f5a874705b29",
+        "branch": "codex/rocketride-execution-port",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npx",
+            "vitest",
+            "run",
+            "src/shared/nodeBenchWorkflowCandidate.test.ts",
+            "src/shared/rocketRideEvidenceBundle.test.ts"
+          ],
+          [
+            "npx",
+            "tsx",
+            "scripts/verify-rocketride-evidence-bundle.ts",
+            "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\benchmark-evidence\\evidence-bundle.json"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npx.CMD",
+            "vitest",
+            "run",
+            "src/shared/nodeBenchWorkflowCandidate.test.ts",
+            "src/shared/rocketRideEvidenceBundle.test.ts"
+          ],
+          [
+            "C:\\nvm4w\\nodejs\\npx.CMD",
+            "tsx",
+            "scripts/verify-rocketride-evidence-bundle.ts",
+            "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\benchmark-evidence\\evidence-bundle.json"
+          ]
+        ],
+        "startedAt": "2026-07-15T14:27:54.797240Z",
+        "finishedAt": "2026-07-15T14:28:03.197270Z",
+        "exitCodes": [
+          0,
+          0
+        ],
+        "testPassed": true,
+        "protocol": "src/shared/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+            "studyFixture": "nodebenchai-frozen-sources.json",
+            "fixtureSha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83",
+            "studyFixtureSha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "src/shared/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "src/shared/nodeBenchWorkflowCandidate.ts",
+                "bytes": 3501,
+                "physicalLines": 114,
+                "nonBlankLines": 107,
+                "sha256": "645275bc4e77d7222528ed11fb3c1cebb7c9133295ffc9ba79c04ddf1bee5d11"
+              },
+              {
+                "path": "src/shared/rocketRideEvidenceBundle.ts",
+                "bytes": 7650,
+                "physicalLines": 255,
+                "nonBlankLines": 244,
+                "sha256": "c137b39f7ecc5da837e5627c6f23635797db00fab572054d4da9304588e5ee2e"
+              },
+              {
+                "path": "scripts/verify-rocketride-evidence-bundle.ts",
+                "bytes": 1759,
+                "physicalLines": 57,
+                "nonBlankLines": 53,
+                "sha256": "628366b0ed85f463f57027f9fd36217e80fb1b5dd950320c89d74056d121607a"
+              }
+            ],
+            "physicalLines": 426,
+            "nonBlankLines": 404,
+            "bytes": 12910
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "src/shared/nodeBenchWorkflowCandidate.test.ts",
+                "bytes": 4877,
+                "physicalLines": 157,
+                "nonBlankLines": 147,
+                "sha256": "36830f97c4f70b7b2b64507334fc9a0159b6605c7d5e2718d909d07a43f424ea"
+              },
+              {
+                "path": "src/shared/rocketRideEvidenceBundle.test.ts",
+                "bytes": 2781,
+                "physicalLines": 81,
+                "nonBlankLines": 74,
+                "sha256": "6b02f50e090f53d543adb260005aed3525f37d4004c00577fb5413ce28baff72"
+              },
+              {
+                "path": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+                "bytes": 1559,
+                "physicalLines": 45,
+                "nonBlankLines": 45,
+                "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+              }
+            ],
+            "physicalLines": 283,
+            "nonBlankLines": 266,
+            "bytes": 9217
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-logs/nodebenchai.log",
+        "logSha256": "ecf0c1597881a5eb6171624008a7254d83326fe7191148a67a56b0b1ad1360e5"
+      },
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "nodeslide",
+        "baseCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
+        "adapterCommit": "702020d5cdd9785bfb4e6b79a30246a3c88a23b5",
+        "branch": "codex/rocketride-execution-port",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npm",
+            "test",
+            "--",
+            "--run",
+            "convex/lib/nodeslideWorkflowCandidate.test.ts"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npm.CMD",
+            "test",
+            "--",
+            "--run",
+            "convex/lib/nodeslideWorkflowCandidate.test.ts"
+          ]
+        ],
+        "startedAt": "2026-07-15T14:28:03.487362Z",
+        "finishedAt": "2026-07-15T14:28:06.680482Z",
+        "exitCodes": [
+          0
+        ],
+        "testPassed": true,
+        "protocol": "shared/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+            "studyFixture": "nodeslide-independent-elements.json",
+            "fixtureSha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9",
+            "studyFixtureSha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "shared/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "convex/lib/nodeslideWorkflowCandidate.ts",
+                "bytes": 1481,
+                "physicalLines": 42,
+                "nonBlankLines": 40,
+                "sha256": "46c412d1dae29af1673602eb8e9d998e9fef7632460012e89c85f68088237376"
+              }
+            ],
+            "physicalLines": 42,
+            "nonBlankLines": 40,
+            "bytes": 1481
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "convex/lib/nodeslideWorkflowCandidate.test.ts",
+                "bytes": 5531,
+                "physicalLines": 188,
+                "nonBlankLines": 178,
+                "sha256": "402f044f7d9f88182beb63cebb6f6af947720401933c33b92fa5fed7bf03a9a8"
+              },
+              {
+                "path": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+                "bytes": 972,
+                "physicalLines": 37,
+                "nonBlankLines": 37,
+                "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+              }
+            ],
+            "physicalLines": 225,
+            "nonBlankLines": 215,
+            "bytes": 6503
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-logs/nodeslide.log",
+        "logSha256": "b47afe0a304ecb4bb030a65681e957d8f08227aedfea7af3dd1c2b5e88f48352"
+      },
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "nodevideo",
+        "baseCommit": "bb79bc385de93c90cee89b160fc801d18372d89e",
+        "adapterCommit": "cf2c696e1c0ccea6ebb43617dc81a23f05e785da",
+        "branch": "codex/rocketride-execution-port",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npm",
+            "test",
+            "--",
+            "--run",
+            "src/lib/nodeVideoWorkflowCandidate.test.ts"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npm.CMD",
+            "test",
+            "--",
+            "--run",
+            "src/lib/nodeVideoWorkflowCandidate.test.ts"
+          ]
+        ],
+        "startedAt": "2026-07-15T14:28:07.026769Z",
+        "finishedAt": "2026-07-15T14:28:09.410645Z",
+        "exitCodes": [
+          0
+        ],
+        "testPassed": true,
+        "protocol": "src/lib/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+            "studyFixture": "nodevideo-resume-shots.json",
+            "fixtureSha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3",
+            "studyFixtureSha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "src/lib/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "src/lib/nodeVideoWorkflowCandidate.ts",
+                "bytes": 6230,
+                "physicalLines": 169,
+                "nonBlankLines": 159,
+                "sha256": "0aac540d0d03ba729eb72f88887116286b7eabefe2ed473a7ed06d30edaa7cbf"
+              }
+            ],
+            "physicalLines": 169,
+            "nonBlankLines": 159,
+            "bytes": 6230
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "src/lib/nodeVideoWorkflowCandidate.test.ts",
+                "bytes": 5840,
+                "physicalLines": 168,
+                "nonBlankLines": 156,
+                "sha256": "ccfcea3b296f70da144c70402500cbb277e32c5f3211cc0a977ce8b8dbe3f5f2"
+              },
+              {
+                "path": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+                "bytes": 1864,
+                "physicalLines": 62,
+                "nonBlankLines": 62,
+                "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+              }
+            ],
+            "physicalLines": 230,
+            "nonBlankLines": 218,
+            "bytes": 7704
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-logs/nodevideo.log",
+        "logSha256": "989661ab93a210fbe298029fb867394e2cdddd14b2622279487d949c13cfd3a5"
+      }
+    ]
+  },
+  "gateIssues": []
+}

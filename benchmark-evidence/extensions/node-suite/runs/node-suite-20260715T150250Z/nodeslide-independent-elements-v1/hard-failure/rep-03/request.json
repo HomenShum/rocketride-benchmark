@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "nodeslide",
+  "workflow": "independent-element-edit",
+  "fixtureId": "nodeslide-independent-elements-v1",
+  "traceId": "trace:nodeslide-independent-elements-v1:hard-failure:rep-03",
+  "inputDigest": "sha256:778ceaa103b7f2f745e85c3765640f09e4ada5ba6b15dbf02cf5967a1e6978cb",
+  "idempotencyKey": "nodeslide-independent-elements-v1:hard-failure:rep-03",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "baseVersion": 3,
+  "failureSeed": "slide-1-headline"
+}

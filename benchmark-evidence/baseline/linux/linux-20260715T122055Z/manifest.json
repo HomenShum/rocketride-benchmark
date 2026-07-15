@@ -1,0 +1,495 @@
+{
+  "schemaVersion": "node.rocketride.linux-manifest/v1",
+  "files": [
+    {
+      "path": "completion.json",
+      "bytes": 155,
+      "sha256": "9f9735e98809a9333f45721ecc2971e0bddea2afe2df8537c5720a67ae9e6081"
+    },
+    {
+      "path": "engine-sha256.txt",
+      "bytes": 213,
+      "sha256": "900fd6350f5fef88f41cf2a2cb129cc62f5deb46eacba23db967bd84fc256386"
+    },
+    {
+      "path": "engine-version.txt",
+      "bytes": 61,
+      "sha256": "9b846d616d7cfb30ddae59c496376253aff2683f1862e3ecdc460d857d82d181"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 676,
+      "sha256": "a2f794827b42839848fb048f4b5791186419176e137cbabe09f698926debf5d6"
+    },
+    {
+      "path": "logs/full-run.log",
+      "bytes": 514,
+      "sha256": "956cf4696cc4427caa89d934c43518a7c8e75ff4268ca7a227bb918724461a14"
+    },
+    {
+      "path": "logs/lines-of-code.log",
+      "bytes": 463,
+      "sha256": "83c00e994300853d0665d443a7a76d335b6f2528c76f536f408f2ec0e65678dc"
+    },
+    {
+      "path": "logs/smoke.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "post-run-status.txt",
+      "bytes": 4474,
+      "sha256": "39d829a3c2859a9f80fdd31e2edbd3ac384b98d8da263fbcb32429c69904cf54"
+    },
+    {
+      "path": "pre-run-status.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "raw/concurrent-work-runs/authoring-effort/results.json",
+      "bytes": 3067,
+      "sha256": "b19ba82af8ea2beb3fa5bf5dab002a4d888cacf485c6d7c5ac8f15b71230b4d5"
+    },
+    {
+      "path": "raw/concurrent-work-runs/authoring-effort/run.log",
+      "bytes": 594,
+      "sha256": "b05b77f0352ff90c244ebfdb9195824057a8f0fe37ef03ae73eba9a988622af1"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-01/run.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-01/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-02/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-03/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-04/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-05/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-06/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-07/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-08/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-09/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-10/run.log",
+      "bytes": 4516,
+      "sha256": "e929f23143a463fff9d17af17bc4beef45114f9210e0f07952f3aa90215e309b"
+    },
+    {
+      "path": "raw/lines-of-code/.gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "raw/lines-of-code/README.md",
+      "bytes": 3413,
+      "sha256": "1a97dbfa828d5fd90c9497810af570fc40f6b58840b9a2cd5026806aa01e270d"
+    },
+    {
+      "path": "raw/lines-of-code/__pycache__/artifact_size.cpython-311.pyc",
+      "bytes": 7364,
+      "sha256": "28934fe7cf2a51a44e4fc0d715935ecc79e035fcf54f0eb4da3e0131369206e5"
+    },
+    {
+      "path": "raw/lines-of-code/artifact_size.py",
+      "bytes": 4067,
+      "sha256": "b5d96adb70d8df2837e78cfb6f2f62bec89ac200daa56d3ae90c3f19120975d8"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/.env.example",
+      "bytes": 464,
+      "sha256": "d07c5e4e051906011372a2dda1ed71f972fa904b90c4d21b5aba2f1b9bb54246"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/README.md",
+      "bytes": 2782,
+      "sha256": "d97e9ce49fef4965a578fc50935ffc11d7bd14df9f118d6ce0a9d3162e4b8f26"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/__init__.py",
+      "bytes": 677,
+      "sha256": "5f14d8df60f8f2b374127c91fe0ec4b684a2aa1586cafbf0d72dd2e7338ee09f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/__main__.py",
+      "bytes": 123,
+      "sha256": "5978bd89144ccd6cf75e747404e47539f89555c4074482163f177020a9b0fa2f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/agents.py",
+      "bytes": 2771,
+      "sha256": "8c665bee2c60055a284529935215d37285fdbf85c921df2c33ef0c7742d7db92"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/cli.py",
+      "bytes": 2392,
+      "sha256": "125875f7c07a36691d83a85d3600393d0a8b0e3dbacf9916efb5ea4be5fd1fe2"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/config.py",
+      "bytes": 3612,
+      "sha256": "92c420f0ca274e8f5ec1999e140925613305a761573365aea5c4e90ecc88f36c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/observability.py",
+      "bytes": 3595,
+      "sha256": "9d876110ebdce7d9750ab95130a3e6823a2b51cf83e6e732fae5775cb4f89a69"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/pipeline.py",
+      "bytes": 6208,
+      "sha256": "ce31566d08f8839060094599e25d0ffb47d2915372b4bdd16ce7684e0fc7d471"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/prompts.py",
+      "bytes": 3723,
+      "sha256": "6915c3ce0fa78af33d565626e240c4638b7900f560a7c7d9f90736f9f142005d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/sample.py",
+      "bytes": 2079,
+      "sha256": "09b0ca804494fd1f4e38d21ceed6de6c4b04bca4ff4117b03fdf354b7304fdeb"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/requirements.txt",
+      "bytes": 244,
+      "sha256": "ec54539aedf3ab255743f9d21caaa4ae096049fc1791362d41f6e34fc955a16d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/.env.example",
+      "bytes": 541,
+      "sha256": "f6f4526e8bf5a4d3dd0b50e6f0858289b3c4c4c464e0c94d6f295f106efda81c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/README.md",
+      "bytes": 2879,
+      "sha256": "e2b702418422a98802b7b8fa02fb4969ef90a10509244c69434ea2ffaa1823d9"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/__init__.py",
+      "bytes": 668,
+      "sha256": "9f91fca361f1f1be8c8eb0133ab7fe4a269cfaec0ae47b54c99b4d04bf77e720"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/__main__.py",
+      "bytes": 2157,
+      "sha256": "d3112e2d33f093284b25bd87e07cc7f1f2487a26aeed0539b1375c34dafd1e72"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/config.py",
+      "bytes": 2961,
+      "sha256": "d8fe7e9df3f67c3d20545ac9d8e7d7204856aa3e1ee43f1c7baeb4d3eeb1e0fa"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/models.py",
+      "bytes": 896,
+      "sha256": "451b3131c1826f3b726eed7572f30e80f8d575ece3269a0f004fb96d9a3d5f3a"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/observability.py",
+      "bytes": 5565,
+      "sha256": "77558e3b73f860bfeb6cefd3d708bf26d53adb27b8121ebfe61f738cf9e539d7"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/pipeline.py",
+      "bytes": 7168,
+      "sha256": "eb0c56ad1b2f60d885049c3106700c4370c865c5a3784e690a69a92ce934edab"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/prompts.py",
+      "bytes": 4646,
+      "sha256": "00ebea36eba51e8eba73ee1241241c08cee3da5d00feb0aca73caa5dc9c1e8fd"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/schemas.py",
+      "bytes": 1216,
+      "sha256": "7b3bd922a74ac08e47428568c87604dd2bffa70f1fa89afdcdbbd7de99b4641f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/requirements.txt",
+      "bytes": 500,
+      "sha256": "92c3b081e821c9d170a794d2e42f6bf19987dfe258ab2bd73d489bce81002839"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/.env.example",
+      "bytes": 707,
+      "sha256": "318422373cd0db45de6b9ea4ad0f85cba093c63446f94a5038e52b667092b256"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/README.md",
+      "bytes": 3745,
+      "sha256": "a1c76118416247c58f061db416f67275f17c40e5697a5eea3f1250500a7838ad"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/__init__.py",
+      "bytes": 872,
+      "sha256": "87b5f11846e2efd8d73d69a7fbcb8c92c397bf9209aaffacf63979fa03bbc7e4"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/__main__.py",
+      "bytes": 121,
+      "sha256": "dcf352b03fd827fa8061c8b3455e6e71b63b017dff2d932739d49d7e79a31547"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/agents.py",
+      "bytes": 2080,
+      "sha256": "43dd2606c6e7a7ae41ad920ebf00829f188ea2ea8d9db2bbc124d32eaf76eade"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/cli.py",
+      "bytes": 1998,
+      "sha256": "a78c79ad30c411cdef9e6e0390c3f82233dc39b400f505fc45b1c4a6a645786f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/config.py",
+      "bytes": 4149,
+      "sha256": "76c15011fce0199155ac309cbdff3803eb59b04382cc4207c66dcccb8facbb4c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/exceptions.py",
+      "bytes": 1492,
+      "sha256": "756f834340b5696065fda3966c3808dd7679fb91a2d7b91830a2a08b9f02fef2"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/llm.py",
+      "bytes": 994,
+      "sha256": "c259637883ceb669724df2aebb3025a9bc285cb609472df4c1da701cce05582a"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/orchestrator.py",
+      "bytes": 5419,
+      "sha256": "6fcd5c04f39dfe21164691c0b761e9149303eb05b0c933fcc59f9fb753434d23"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/prompts.py",
+      "bytes": 4947,
+      "sha256": "d8e62b8e309b683300f95e5df2d9b36afb83e4b2168f41fba1ab0549243240b0"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/tracing.py",
+      "bytes": 6341,
+      "sha256": "0840bd5dc852cd2d5816237da7d6963c3fe5255aa2c21c7490e7f361ed34091d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/validation.py",
+      "bytes": 3670,
+      "sha256": "094a3d09b771ddd5d4dcf0c3f2ea83ed9f2d43658f7a1c2e7caa5dac61359e61"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/requirements.txt",
+      "bytes": 281,
+      "sha256": "61150222ca002c3b53c89c8df7c9c7328057902e24ef121a9794624f16648baa"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/.env.example",
+      "bytes": 807,
+      "sha256": "493ba6cadd6c5de0951ebf192cda7f3e6872090b5dcb2a2d5e8b384b782f1919"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/README.md",
+      "bytes": 2777,
+      "sha256": "861e17e3ae57aefe0fe42ddb602552754c30c196b8073c1801996a9be8aa28da"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/__init__.py",
+      "bytes": 562,
+      "sha256": "3003ce0530c0d824028dc4fc6611c8ed910779e7c12948966d99cc7018034cff"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/__main__.py",
+      "bytes": 2438,
+      "sha256": "2c4609298a7e39a754d444fb65fd6d2217c05cec32db1c1db67892ca6061212c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/agents.py",
+      "bytes": 2505,
+      "sha256": "4795e3eb61e72535b45bc2c42c33db5840a8be94944d3057a96b4d33a1aec51b"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/config.py",
+      "bytes": 3582,
+      "sha256": "57f7f48db7d858a6e891d46164a1f75b523fbf3e905d862e14ed30e4bf01d24c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/formatting.py",
+      "bytes": 3101,
+      "sha256": "fd84c11677c2b804fdbe514597ef27a389e46d45a08592ec0e004c41da4ac4cd"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/observability.py",
+      "bytes": 6626,
+      "sha256": "6763ba525961ef7218860b585a8ec629d61b593a4bfcbd7a89151e8afb721963"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/pipeline.py",
+      "bytes": 4373,
+      "sha256": "95bf71a579842b9b0cd98480e2bc7763a2b4d573b184572ec64b0f19401bb138"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/prompts.py",
+      "bytes": 4265,
+      "sha256": "27b6841fa515f8d1213042ebccac52d54cbca477abe4be75104b509aa863cac1"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/requirements.txt",
+      "bytes": 254,
+      "sha256": "2ca8d2ee988f54a26b4d89f3b534724a81e24e3b18e0a0d4f84e8b2bd320f9df"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/.env.example",
+      "bytes": 1207,
+      "sha256": "2d18c5441438398f17b4a53e12eb46a59168dc136a5a760c56bb9f145ac8e7ef"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/README.md",
+      "bytes": 3289,
+      "sha256": "ef8aa6262dfd598f7a600e58584373e2c2fc57bec1134f8fef32ca5d50ed2c48"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/__init__.py",
+      "bytes": 790,
+      "sha256": "f1bb12b00ad1ddb63200fa599d9cf3d9d4d07e9b0125cfceb0dd8b61b3664f69"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/__main__.py",
+      "bytes": 1946,
+      "sha256": "b18fbc2147535a47aaf5e377fc7399f28eefa8008bfb9b66db52f00ba4f81de6"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/chains.py",
+      "bytes": 3475,
+      "sha256": "b4a0ce4e8b805726baa9ce71e2c3a44dcaccfa5ad6ba84c86174b2e1cd4f1c78"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/config.py",
+      "bytes": 3004,
+      "sha256": "7bc8cb04a90da8f40c9e15ed18ddb67c5641251bdf2b27afffb841d4022066b4"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/errors.py",
+      "bytes": 525,
+      "sha256": "e74b870bec43926ee710091fc5c2a96f860ca36981ea748e559d12f16a279ac8"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/llms.py",
+      "bytes": 1022,
+      "sha256": "8068cc5c1b2480aebcb01054285e65876b36ecd111bea6ea2ad7d91f506d8520"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/pipeline.py",
+      "bytes": 2733,
+      "sha256": "a3430e414397d885deab8844f64d980347eb9a9e207fec9c3f54019ef7cbc771"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/prompts.py",
+      "bytes": 4439,
+      "sha256": "57a787501dabe1cae2dc94a50d8ab241c04e77959a80280f816602804707eb5c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/tracing.py",
+      "bytes": 3996,
+      "sha256": "d77badf2e426195c605de284bcd47362cde4fcff7e9dd9f6ff666ee108514fb0"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/validation.py",
+      "bytes": 2590,
+      "sha256": "0a811deb8aaf9bbb857fc7253eaa690153d10f50ba01ddb6c0a7967f6b3ad85d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/requirements.txt",
+      "bytes": 407,
+      "sha256": "7594aa22a9f774ee604e3a44fb093a2ebd5e588b58dc15cdfdd5a6b6d2f38fe9"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-01/meeting-notes-assistant.pipe",
+      "bytes": 6285,
+      "sha256": "91ed5e444dccacabc1243779d5a277c228213532baaaef0b8f4125427e9cab09"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-02/meeting-notes-assistant.pipe",
+      "bytes": 8196,
+      "sha256": "49b50762a7819f8a40886f2b5fa06dd26c2ebb9dbcfca4e22b50a247f51af721"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-03/meeting-notes-assistant.pipe",
+      "bytes": 7289,
+      "sha256": "adc3d45e5a4296c16388b00d83263f81618d0d4e06a8adba3028e0d4acc7c2af"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-04/meeting-notes-assistant.pipe",
+      "bytes": 7022,
+      "sha256": "7edcbcb6212d235a3c04d1d4b8a41fd60d0a939dff3606bf112b632cb7767ea2"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-05/meeting-notes-assistant.pipe",
+      "bytes": 6281,
+      "sha256": "005464acabd0b99a5c1de893fd794a1c33744de0c380e847995992260bf14668"
+    },
+    {
+      "path": "raw/lines-of-code/measure.py",
+      "bytes": 2890,
+      "sha256": "4bdb8cdb2071de5915081dd829c38eb1534d437f1f9acdee370a7bea140e032c"
+    },
+    {
+      "path": "raw/lines-of-code/results.json",
+      "bytes": 2527,
+      "sha256": "021eb1c6177e8d62fbed92e4372938d3150310f07eeed87ff23c6200aab7b00a"
+    },
+    {
+      "path": "requirements-resolved.txt",
+      "bytes": 696,
+      "sha256": "e2b7f7c281f6bc92522895eee5897d573046e30110539ac6aba5ee2284dc65b1"
+    },
+    {
+      "path": "tracked-files-changed.txt",
+      "bytes": 4053,
+      "sha256": "f4b4201d876842846db2b0c953ce43fef8adff3bc725455d028f35515bb6227a"
+    },
+    {
+      "path": "upstream-aggregate.md",
+      "bytes": 4083,
+      "sha256": "10b01913ccd1502eca5f84001a0680af9e6456962d1b023c9ade827f44cbdc22"
+    },
+    {
+      "path": "upstream-sha.txt",
+      "bytes": 41,
+      "sha256": "62ae534504783a5639cdf85e9a24b386d241311faf7ee0dbf841c124035f6f44"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "n_builds": 5,
+  "workflow": "meeting-notes assistant (transcript -> executive summary + follow-up email)",
+  "rocketride_lines": {
+    "min": 104,
+    "median": 123,
+    "max": 136
+  },
+  "langchain_lines": {
+    "min": 682,
+    "median": 689,
+    "max": 930
+  },
+  "line_ratio_lc_over_rr": {
+    "min": 5.0,
+    "median": 6.0,
+    "max": 7.6
+  },
+  "rocketride_chars_median": 7010,
+  "langchain_chars_median": 25158,
+  "char_ratio_lc_over_rr_median": 3.6
+}

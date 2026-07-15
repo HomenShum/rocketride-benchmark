@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "noderoom-independent-writes-v2:normal:rep-01:rocketride",
+  "traceId": "trace:noderoom-independent-writes-v2:normal:rep-01",
+  "framework": "rocketride",
+  "candidate": {
+    "kind": "algorithm_patch_bundle",
+    "bundle": {
+      "schema": 1,
+      "algorithmId": "revenue_variance_pct_v1",
+      "artifactHash": "fnv1a32:7bcf2e10",
+      "status": "passed",
+      "commitPolicy": "patch_bundle_only_runtime_must_cas",
+      "patches": [
+        {
+          "elementId": "r_rev__variance",
+          "baseVersion": 3,
+          "kind": "set",
+          "value": {
+            "value": "+24.0%",
+            "status": "complete",
+            "confidence": 1,
+            "normalizedValue": 0.24,
+            "formula": "(q3 - q2) / q2",
+            "evidence": []
+          }
+        }
+      ],
+      "writeLockedCellResultsArgs": {
+        "reason": "Apply the validated revenue variance candidate.",
+        "ops": [
+          {
+            "elementId": "r_rev__variance",
+            "baseVersion": 3,
+            "value": "+24.0%",
+            "status": "complete",
+            "confidence": 1,
+            "normalizedValue": 0.24,
+            "formula": "(q3 - q2) / q2",
+            "evidence": [],
+            "kind": "set"
+          }
+        ]
+      },
+      "proof": {
+        "runnerVersion": "algorithm-artifact-runner:v1",
+        "deterministic": true,
+        "testsPassed": 1,
+        "inputRefs": [
+          {
+            "id": "q2",
+            "elementId": "r_rev__q2",
+            "version": 1,
+            "valueHash": "fixture:q2"
+          },
+          {
+            "id": "q3",
+            "elementId": "r_rev__q3",
+            "version": 1,
+            "valueHash": "fixture:q3"
+          }
+        ],
+        "outputRefs": [
+          {
+            "id": "variancePct",
+            "elementId": "r_rev__variance",
+            "baseVersion": 3,
+            "expression": "(q3 - q2) / q2",
+            "normalizedValue": 0.24
+          }
+        ]
+      }
+    }
+  },
+  "inputDigest": "sha256:3ce17fa63bab4b300f10f78fe4fb09c95ac9d3384eb84e53de4bb17d87daa863",
+  "idempotencyKey": "noderoom-independent-writes-v2:normal:rep-01",
+  "outputDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "cell-r_rev__q2"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "cell-r_rev__q3"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "cell-r_rev__variance"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "notebook-summary"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 7098.088,
+    "executionMs": 87.357,
+    "totalMs": 1090.228,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 580251648,
+    "cpuTimeMs": 3875.0,
+    "runtimeHealthyAfter": true
+  },
+  "provenance": {
+    "adapter": "node-suite-rocketride",
+    "adapterVersion": "2.0.0",
+    "runtime": "rocketride-engine",
+    "runtimeVersion": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "appCommit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+    "deterministic": true,
+    "location": "local",
+    "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+    "servingProfile": "resident-local-v2"
+  },
+  "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+  "runtimeLifecycle": {
+    "profile": "resident-local-v2",
+    "startupExcludedFromTotalMs": true,
+    "poolId": "noderoom-independent-writes-v2:normal:resident",
+    "poolLifecycle": "fixture_variant_resident",
+    "unitTimeoutMs": 2000,
+    "sendDurationsMs": {
+      "cell-r_rev__q3": 85.26610000990331,
+      "cell-r_rev__q2": 85.31819999916479,
+      "cell-r_rev__variance": 85.25260000897106,
+      "notebook-summary": 87.18250000674743
+    }
+  }
+}

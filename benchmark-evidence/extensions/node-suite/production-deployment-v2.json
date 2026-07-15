@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "node.workflow-production-deployment/v1",
+  "generatedAt": "2026-07-15T17:46:49.701007Z",
+  "benchmarkRunId": "node-suite-v2-20260715T173434Z",
+  "status": "passed",
+  "sourcePolicy": {
+    "branch": "main",
+    "trackedApplicationFilesMatchCommit": true,
+    "cliDeploymentLocalMetadataExcluded": true,
+    "notes": "Vercel link metadata and its temporary .gitignore entries were not application source and were removed after deployment. All four local main worktrees are clean."
+  },
+  "apps": [
+    {
+      "app": "noderoom",
+      "repository": "HomenShum/NodeRoom",
+      "commit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+      "mergePullRequest": "https://github.com/HomenShum/NodeRoom/pull/201",
+      "deploymentProvider": "vercel",
+      "deploymentId": "dpl_DmBcQysgyh5GHYoxRQGBVZSriXPh",
+      "deploymentUrl": "https://noderoom-pkpeh2x8a-hshum2018-gmailcoms-projects.vercel.app",
+      "productionUrl": "https://noderoom.live",
+      "deploymentStatus": "ready",
+      "httpStatus": 200,
+      "sourceCheck": "github-production-deployment-5461181471",
+      "postMergeChecks": [
+        "https://github.com/HomenShum/NodeRoom/actions/runs/29435712126",
+        "https://github.com/HomenShum/NodeRoom/actions/runs/29435712221",
+        "https://github.com/HomenShum/NodeRoom/actions/runs/29435712609"
+      ]
+    },
+    {
+      "app": "nodebenchai",
+      "repository": "HomenShum/NodeBenchAI",
+      "commit": "259d78150fd6bf0d670557707af3ddfefcc4fdc5",
+      "mergePullRequest": "https://github.com/HomenShum/NodeBenchAI/pull/537",
+      "deploymentProvider": "vercel",
+      "deploymentId": "dpl_DnNTUr6duK7PYERRnwn5twRs7EJi",
+      "deploymentUrl": "https://nodebench-99x894pzh-hshum2018-gmailcoms-projects.vercel.app",
+      "productionUrl": "https://www.nodebenchai.com",
+      "deploymentStatus": "ready",
+      "httpStatus": 200,
+      "postMergeChecks": [
+        "https://github.com/HomenShum/NodeBenchAI/actions/runs/29435712634",
+        "https://github.com/HomenShum/NodeBenchAI/actions/runs/29435712407",
+        "https://github.com/HomenShum/NodeBenchAI/actions/runs/29436083650",
+        "https://github.com/HomenShum/NodeBenchAI/actions/runs/29436083665"
+      ]
+    },
+    {
+      "app": "nodeslide",
+      "repository": "HomenShum/NodeSlide",
+      "commit": "81e0e512cfd4a3d80d24f371bc690810d4f65dd5",
+      "mergePullRequest": "https://github.com/HomenShum/NodeSlide/pull/3",
+      "deploymentProvider": "vercel",
+      "deploymentId": "dpl_GAx5EnBxXALBcL7oYSayLzm2Zsoh",
+      "deploymentUrl": "https://nodeslide-lq1rmv7p3-hshum2018-gmailcoms-projects.vercel.app",
+      "productionUrl": "https://nodeslide.vercel.app",
+      "deploymentStatus": "ready",
+      "httpStatus": 200,
+      "productionBinding": {
+        "type": "convex",
+        "verifiedInServedBundle": true,
+        "source": "current parity-studio NodeSlide production bundle"
+      },
+      "postMergeChecks": [
+        "https://github.com/HomenShum/NodeSlide/actions/runs/29435712905",
+        "https://github.com/HomenShum/NodeSlide/actions/runs/29435713031"
+      ]
+    },
+    {
+      "app": "nodevideo",
+      "repository": "HomenShum/NodeVideo",
+      "commit": "88fab347f853a0d5834eb7559986176ac953d9f8",
+      "mergePullRequest": "https://github.com/HomenShum/NodeVideo/pull/7",
+      "deploymentProvider": "vercel",
+      "deploymentId": "dpl_FZn2XmhE4j714wk7YTpCypZjT2Ts",
+      "deploymentUrl": "https://nodevideo-d2cn3cahz-hshum2018-gmailcoms-projects.vercel.app",
+      "productionUrl": "https://nodevideo-pi.vercel.app",
+      "deploymentStatus": "ready",
+      "httpStatus": 200,
+      "servedBundleChecks": {
+        "nodeVideoMarkerPresent": true,
+        "authorizedV2ManifestMarkerPresent": true
+      },
+      "postMergeChecks": [
+        "https://github.com/HomenShum/NodeVideo/actions/runs/29435712291",
+        "https://github.com/HomenShum/NodeVideo/actions/runs/29435712514"
+      ]
+    }
+  ],
+  "checks": {
+    "allPullRequestsMerged": true,
+    "allPostMergeChecksPassed": true,
+    "allProductionDeploymentsReady": true,
+    "allProductionUrlsReturnedHttp200": true,
+    "allLocalAppWorktreesCleanOnMain": true
+  },
+  "costs": {
+    "paidModelApiUsd": 0,
+    "paidCloudBenchmarkApiUsd": 0,
+    "hostingBillingNotMeasured": true
+  }
+}

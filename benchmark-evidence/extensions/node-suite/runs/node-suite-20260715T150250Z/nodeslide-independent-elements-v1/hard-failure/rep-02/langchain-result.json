@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodeslide-independent-elements-v1:hard-failure:rep-02:langchain",
+  "traceId": "trace:nodeslide-independent-elements-v1:hard-failure:rep-02",
+  "framework": "langchain",
+  "candidate": {
+    "deckId": "deck-1",
+    "baseDeckVersion": 3,
+    "baseSlideVersions": {
+      "slide-1": 2
+    },
+    "baseElementVersions": {
+      "headline": 1
+    },
+    "scope": {
+      "kind": "elements",
+      "deckId": "deck-1",
+      "slideIds": [
+        "slide-1"
+      ],
+      "elementIds": [
+        "headline"
+      ],
+      "operationMode": "copy"
+    },
+    "operations": [
+      {
+        "op": "replace_text",
+        "slideId": "slide-1",
+        "elementId": "headline",
+        "text": "After"
+      }
+    ]
+  },
+  "inputDigest": "sha256:778ceaa103b7f2f745e85c3765640f09e4ada5ba6b15dbf02cf5967a1e6978cb",
+  "idempotencyKey": "nodeslide-independent-elements-v1:hard-failure:rep-02",
+  "outputDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.failed",
+      "unitId": "slide-1-headline"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.failed",
+      "unitId": "slide-1-chart"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.failed",
+      "unitId": "slide-2-headline"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.failed",
+      "unitId": "deck-validation"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 0.0,
+    "executionMs": 1131.887,
+    "totalMs": 1131.887,
+    "retryCount": 0,
+    "completedUnits": 0,
+    "failedUnits": 4,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 0,
+    "cpuTimeMs": 0.0
+  },
+  "provenance": {
+    "adapter": "node-suite-langchain",
+    "adapterVersion": "1.0.0",
+    "runtime": "python-langchain",
+    "runtimeVersion": "python=unknown;langchain-core=0.3.86",
+    "appCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
+    "deterministic": true,
+    "location": "local"
+  },
+  "error": {
+    "code": "injected_hard_failure",
+    "message": "A pre-registered work unit hard-failed.",
+    "retryable": false
+  }
+}

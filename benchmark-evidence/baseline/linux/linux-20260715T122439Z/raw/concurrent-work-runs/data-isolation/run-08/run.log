@@ -1,0 +1,12 @@
+real LangChain proven: 0.3.86
+
+RR: 256 named docs → 32 warm pipes (instance data = per-pipe local copy):
+  pipes=32/32 clean partitions=32 lost=0 leaked=0 [ok] wall=4.59s
+
+LangChain: ONE shared dict, 32 workers, non-atomic read→busy(gap)→write:
+  LC shared dict gap=20000   expected=256 observed=67 lost=189 (wall 0.39s)
+  LC shared dict gap=50000   expected=256 observed=61 lost=195 (wall 0.66s)
+  LC shared dict gap=100000  expected=256 observed=40 lost=216 (wall 1.34s)
+wrote: canvas.mmd canvas.dot
+
+VERDICT: RR 64 pipes — 0 lost / 0 leaked (ok). LangChain shared dict — up to 216/256 updates silently lost (gap=100000).

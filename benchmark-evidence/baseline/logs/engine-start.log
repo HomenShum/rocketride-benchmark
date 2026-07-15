@@ -1,0 +1,3 @@
+starting: /d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/concurrent-work/harness/rocketride-bench/engine/engine.exe ai/eaas.py --host=0.0.0.0 --port=5566
+engine healthy on :5566 (HTTP 000000, pid 9622)
+Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z

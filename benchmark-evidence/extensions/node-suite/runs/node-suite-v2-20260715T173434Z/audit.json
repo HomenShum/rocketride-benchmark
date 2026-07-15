@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "node.workflow-post-run-audit/v2",
+  "generatedAt": "2026-07-15T17:40:55.787952Z",
+  "runId": "node-suite-v2-20260715T173434Z",
+  "profile": "resident-local-v2",
+  "evidenceStatus": "complete",
+  "orchestrationGateStatus": "passed",
+  "protocolAdmissionStatus": "passed",
+  "promotionStatus": "eligible_for_external_submission",
+  "officialStatus": "separate_application_study_unsubmitted",
+  "preAuditManifestSha256": "a26810207e134950ce2100da95f15735a491a4c9365699a6b039376a0ed3483a",
+  "sourceManifestSha256": "7dc708e5881ee9be32586e9cb7db7a6adfa0977ed7726ce544ecd43aaf801366",
+  "integrityIssues": [],
+  "protocolIssues": [],
+  "counts": {
+    "fixtures": 5,
+    "repetitionCells": 30,
+    "requests": 30,
+    "results": 90,
+    "resultsByFramework": {
+      "native": 30,
+      "rocketride": 30,
+      "langchain": 30
+    },
+    "rocketrideTraces": 30,
+    "aggregateRows": 30,
+    "rocketridePools": 20
+  },
+  "observations": {
+    "rocketrideNormalMedianTotalMsRange": [
+      1043.073,
+      1090.228
+    ],
+    "rocketrideHardFailureMedianTotalMsRange": [
+      3008.731,
+      3025.511
+    ],
+    "rocketridePoolWarmupMsRange": [
+      6976.188,
+      11940.908
+    ],
+    "engineWebsocket403Count": 0,
+    "v1DeadlineIssueCount": 30
+  },
+  "negativeFindings": [
+    "V1 remains protocol-blocked by 30 RocketRide request deadline overruns.",
+    "V2 RocketRide pool warmup ranged from 6976.188 to 11940.908 ms and is a real standing or recovery cost.",
+    "Native and LangChain V2 totals conservatively retain subprocess startup time.",
+    "V2 local eligibility is not an official or accepted RocketRide result."
+  ],
+  "costs": {
+    "modelUsd": 0,
+    "cloudUsd": 0
+  }
+}

@@ -1,0 +1,755 @@
+{
+  "schemaVersion": "node.rocketride.linux-manifest/v1",
+  "files": [
+    {
+      "path": "completion.json",
+      "bytes": 153,
+      "sha256": "53f338744e44614cfb60d2c61357d06f6398a28dd2d5ca039127ef9f35714174"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 676,
+      "sha256": "a2c2e4d5576adabf1dd9979f481a2166212ab977e153d4b29311ec463f5b844a"
+    },
+    {
+      "path": "logs/lines-of-code.log",
+      "bytes": 463,
+      "sha256": "83c00e994300853d0665d443a7a76d335b6f2528c76f536f408f2ec0e65678dc"
+    },
+    {
+      "path": "post-run-status.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pre-run-status.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "raw/concurrent-work-runs/authoring-effort/REPORT.md",
+      "bytes": 4570,
+      "sha256": "dd752ca021662baf56d6f6a2a16af5c333648bb78c597149441ec3ee4248736d"
+    },
+    {
+      "path": "raw/concurrent-work-runs/authoring-effort/results.json",
+      "bytes": 2812,
+      "sha256": "9c10f592b4fe5ac744dda4b27d1650719fe9976e8c6778e7525d3acff041a6f9"
+    },
+    {
+      "path": "raw/concurrent-work-runs/authoring-effort/run.log",
+      "bytes": 604,
+      "sha256": "c6c74e3b6342f1327c02ad613360d8a3abbde8eb8d9d3bf2f44bdc16f2a44a0e"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/REPORT.md",
+      "bytes": 5664,
+      "sha256": "e1a9ea3462c4660f0bd2f02f7c4c847efc7f6f129ac54487ada4bbc2a287a99e"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-01/results.json",
+      "bytes": 4113,
+      "sha256": "07a4ddd84135eba5acdce147e6ad2220448921cafe4899919f606cd142e8756a"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-01/run.log",
+      "bytes": 845,
+      "sha256": "85e477ebc01729be99a2994dafa39080d46e7e261c5d68af94c3cd5d3b5c4ef4"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-01/trace/rr.appendix_t4.jsonl.gz",
+      "bytes": 16160,
+      "sha256": "0613ee2303f4ab2a6de5b0e562384b30eb13df4b80ff39fae6cbfd5da5abdcc9"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-01/trace/rr.m16.jsonl.gz",
+      "bytes": 206704,
+      "sha256": "930ebfa15e4d97936f545a23425054b63552d3988df184975088c7bf893154df"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-01/trace/rr.m8.jsonl.gz",
+      "bytes": 83655,
+      "sha256": "673ac8bf0ab4fff02c7616c59dadcac7b642b4aede71ca7db40e65492c4305b3"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-02/results.json",
+      "bytes": 4112,
+      "sha256": "88fdc0b472fdd009d667d922a203b7c0fd8f104bc548bc1055fe20703cd8b795"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-02/run.log",
+      "bytes": 845,
+      "sha256": "7b3ea67097c9e077bea57e19f8f4df750f509819d135d0d723b1a48c6fc3eca7"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-03/results.json",
+      "bytes": 4110,
+      "sha256": "ab34a4e9b1b72038ee001908b864be3357523d0dc374d3621a5d7450e33752cf"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-03/run.log",
+      "bytes": 845,
+      "sha256": "5faedb87d98b06f5a6cefb36f1615ca3907bc70288fdd5fb09a744fef96016c7"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-04/results.json",
+      "bytes": 4113,
+      "sha256": "34c1cf6cc3f0b4b72922fa9f4f21060775b6330a4194196b895bd2a83e05388a"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-04/run.log",
+      "bytes": 845,
+      "sha256": "d65ff3eb276dd94afd86d35c8c7b3162c713bf7fad0d7abb0532fe2ed6acd9fd"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-05/results.json",
+      "bytes": 4113,
+      "sha256": "7f77a003891d25e3bf7cd3fd5e19e5ffbcee2a4d4bcf1aa4f3fe09fc5f3944b3"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-05/run.log",
+      "bytes": 845,
+      "sha256": "f6f588bd3a2fd87d58ead8f77703107c7cabb962170585fca36621c72e1c21f3"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-06/results.json",
+      "bytes": 4112,
+      "sha256": "49b626dcd0910474269222ada0028a3b5e8725ba98478c0d5c798f844f2aa9c3"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-06/run.log",
+      "bytes": 845,
+      "sha256": "b8e8d38540e6d28f897afd393e78672d1245b2014492904dbc3fc465b49f0b9e"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-07/results.json",
+      "bytes": 4114,
+      "sha256": "521f5ec21de06f6aec27890cf63438af7b704601f77478f2c4f4675684205abc"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-07/run.log",
+      "bytes": 845,
+      "sha256": "9140a18a950dd689ecb110893d365023c4bd804b81083c620dd41c01964e745e"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-08/results.json",
+      "bytes": 4111,
+      "sha256": "328d75418545e8046f26c85f01e8a407b1e800a9497075a54b80b5e6f79a2083"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-08/run.log",
+      "bytes": 845,
+      "sha256": "140f3ea80d75094e71bbc27141d8fe12d69f5a0b87225166c096041bf8a77324"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-09/results.json",
+      "bytes": 4112,
+      "sha256": "ba8e2b68f92abe71edb1035c4349d174642612bbd871dc41207bc176f8e98155"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-09/run.log",
+      "bytes": 845,
+      "sha256": "60684416de1fcaf3fecab4059df0c0b71a6742c4247f9b23fe35229f3a19d294"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-10/results.json",
+      "bytes": 4113,
+      "sha256": "4d80e12c503f8a51f761c5347b7aa28dc180945c579fbb6320a8f04fb8a6f0ea"
+    },
+    {
+      "path": "raw/concurrent-work-runs/concurrent-processing/run-10/run.log",
+      "bytes": 845,
+      "sha256": "5c3fc99f397e209683f4e01db95a17ab65f24d655c6d3ff1b635d36a11db4109"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/REPORT.md",
+      "bytes": 4723,
+      "sha256": "24a615b829844535d0ed9082528a9196f6ca5406f63442e9343a4cb82caaf364"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-01/results.json",
+      "bytes": 3067,
+      "sha256": "82674aa5efe62f62530c83d2842cb0352ea40a89f5a324dbf35b44df294accc0"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-01/run.log",
+      "bytes": 639,
+      "sha256": "f28d740eb4427b1db4cbac71056d3340b3c027770baba4ae21fb28114594a16a"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-01/trace/rr.iso.jsonl.gz",
+      "bytes": 527888,
+      "sha256": "ef4c89fec69e45a88d0b32e26607651e09cad6e6fb7d7faa2cc3eac49756d8e7"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-02/results.json",
+      "bytes": 3068,
+      "sha256": "aed81d87662e64b20f1638e3a14eb324271d53b12458f9f49bc8bd269520ac11"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-02/run.log",
+      "bytes": 640,
+      "sha256": "97d7b483391e776795fedc282be4cd3803c05eadc9734f646b2740f0a22e3d33"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-03/results.json",
+      "bytes": 3067,
+      "sha256": "de524350cd9ff17b1e60156fe4b3364a78cfbc33eed8771fc27ba98236763f8d"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-03/run.log",
+      "bytes": 639,
+      "sha256": "ec02b2df889dc46e671cfb4049d7eb72917c1bcf9bdfe36bd6519f5e3bfd9704"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-04/results.json",
+      "bytes": 3068,
+      "sha256": "4984bc51a8973192c0c174adf462f3c5030d5357b9bc56746a60bdd257567b68"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-04/run.log",
+      "bytes": 640,
+      "sha256": "28544a4a489b7fa8ef584b4b11b2c43697b46fc30f82071b871fa33c324f1065"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-05/results.json",
+      "bytes": 3068,
+      "sha256": "adb04b78985b6c94a75bd37e526e51be3853b60186de098323b0244f307ac1cf"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-05/run.log",
+      "bytes": 640,
+      "sha256": "bee50ac7ae88a3d801aea0336cfe50cc36c0bb6a96449807ba1236c097456099"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-06/results.json",
+      "bytes": 3066,
+      "sha256": "5511098b580bff727ba1956d14912e09775e1621d1b3e496775c4ce84f0dab54"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-06/run.log",
+      "bytes": 639,
+      "sha256": "4aecef1510bd5349400ddd83fdb6a7915cb39831f8ea1c1feb09a451a08d683a"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-07/results.json",
+      "bytes": 3068,
+      "sha256": "5db372685a8915f99e42c7f9092401705db646a9ff319b0cf08d258d428258b9"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-07/run.log",
+      "bytes": 640,
+      "sha256": "f3b087e789af066c47d7d2b06e29a39d6203fbfe07c5e465c1207c9de2c9ca69"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-08/results.json",
+      "bytes": 3067,
+      "sha256": "f6816b5690b2c5306a48fccafb53e50b438d2068b9b2ba9eed1a618e437e0dbe"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-08/run.log",
+      "bytes": 640,
+      "sha256": "f1ba5f5ea33175b39891466b85537614afaa21a1bc05606c1d0192ab6005c7cb"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-09/results.json",
+      "bytes": 3069,
+      "sha256": "7711dc78288d30056a71eb4e0d63d41dc255fc96a936b9bef4dafc85828213da"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-09/run.log",
+      "bytes": 640,
+      "sha256": "5ecea106f915695b573f205f379713f69d81de72e17bbbfd78f8206f762f1949"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-10/results.json",
+      "bytes": 3067,
+      "sha256": "097e30a937447228118d95d88e798d63e14219bb6acddcef207745f3bfecc63c"
+    },
+    {
+      "path": "raw/concurrent-work-runs/data-isolation/run-10/run.log",
+      "bytes": 640,
+      "sha256": "7c2b889c10c7daadf93ea1e0f8f3267271a2197f022a1a647492b946a7ccd4b9"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/REPORT.md",
+      "bytes": 3718,
+      "sha256": "de8c682437d8ab0e5ea0c3e2e2c1ec7e57b3539c2a9f4b3e182b97a5c2ed5c83"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-01/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-01/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-02/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-02/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-03/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-03/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-04/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-04/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-05/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-05/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-06/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-06/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-07/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-07/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-08/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-08/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-09/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-09/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-10/results.json",
+      "bytes": 1378,
+      "sha256": "d952eb76034f931396fc8271a979d0238cb63d62fb088eecf845ed05a769bc18"
+    },
+    {
+      "path": "raw/concurrent-work-runs/fault-isolation/run-10/run.log",
+      "bytes": 279,
+      "sha256": "357f2189d89ba0f0fe53a32f309424e423d87b5c9bf84a68ec653c94027cc34f"
+    },
+    {
+      "path": "raw/lines-of-code/.gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "raw/lines-of-code/README.md",
+      "bytes": 3413,
+      "sha256": "1a97dbfa828d5fd90c9497810af570fc40f6b58840b9a2cd5026806aa01e270d"
+    },
+    {
+      "path": "raw/lines-of-code/__pycache__/artifact_size.cpython-311.pyc",
+      "bytes": 7364,
+      "sha256": "b12412849c2519ebfb10bf4fe3617a91e67cdbd982ea8599bb35d0b23fd9021e"
+    },
+    {
+      "path": "raw/lines-of-code/artifact_size.py",
+      "bytes": 4067,
+      "sha256": "b5d96adb70d8df2837e78cfb6f2f62bec89ac200daa56d3ae90c3f19120975d8"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/.env.example",
+      "bytes": 464,
+      "sha256": "d07c5e4e051906011372a2dda1ed71f972fa904b90c4d21b5aba2f1b9bb54246"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/README.md",
+      "bytes": 2782,
+      "sha256": "d97e9ce49fef4965a578fc50935ffc11d7bd14df9f118d6ce0a9d3162e4b8f26"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/__init__.py",
+      "bytes": 677,
+      "sha256": "5f14d8df60f8f2b374127c91fe0ec4b684a2aa1586cafbf0d72dd2e7338ee09f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/__main__.py",
+      "bytes": 123,
+      "sha256": "5978bd89144ccd6cf75e747404e47539f89555c4074482163f177020a9b0fa2f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/agents.py",
+      "bytes": 2771,
+      "sha256": "8c665bee2c60055a284529935215d37285fdbf85c921df2c33ef0c7742d7db92"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/cli.py",
+      "bytes": 2392,
+      "sha256": "125875f7c07a36691d83a85d3600393d0a8b0e3dbacf9916efb5ea4be5fd1fe2"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/config.py",
+      "bytes": 3612,
+      "sha256": "92c420f0ca274e8f5ec1999e140925613305a761573365aea5c4e90ecc88f36c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/observability.py",
+      "bytes": 3595,
+      "sha256": "9d876110ebdce7d9750ab95130a3e6823a2b51cf83e6e732fae5775cb4f89a69"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/pipeline.py",
+      "bytes": 6208,
+      "sha256": "ce31566d08f8839060094599e25d0ffb47d2915372b4bdd16ce7684e0fc7d471"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/prompts.py",
+      "bytes": 3723,
+      "sha256": "6915c3ce0fa78af33d565626e240c4638b7900f560a7c7d9f90736f9f142005d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/meeting_notes/sample.py",
+      "bytes": 2079,
+      "sha256": "09b0ca804494fd1f4e38d21ceed6de6c4b04bca4ff4117b03fdf354b7304fdeb"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-01/requirements.txt",
+      "bytes": 244,
+      "sha256": "ec54539aedf3ab255743f9d21caaa4ae096049fc1791362d41f6e34fc955a16d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/.env.example",
+      "bytes": 541,
+      "sha256": "f6f4526e8bf5a4d3dd0b50e6f0858289b3c4c4c464e0c94d6f295f106efda81c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/README.md",
+      "bytes": 2879,
+      "sha256": "e2b702418422a98802b7b8fa02fb4969ef90a10509244c69434ea2ffaa1823d9"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/__init__.py",
+      "bytes": 668,
+      "sha256": "9f91fca361f1f1be8c8eb0133ab7fe4a269cfaec0ae47b54c99b4d04bf77e720"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/__main__.py",
+      "bytes": 2157,
+      "sha256": "d3112e2d33f093284b25bd87e07cc7f1f2487a26aeed0539b1375c34dafd1e72"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/config.py",
+      "bytes": 2961,
+      "sha256": "d8fe7e9df3f67c3d20545ac9d8e7d7204856aa3e1ee43f1c7baeb4d3eeb1e0fa"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/models.py",
+      "bytes": 896,
+      "sha256": "451b3131c1826f3b726eed7572f30e80f8d575ece3269a0f004fb96d9a3d5f3a"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/observability.py",
+      "bytes": 5565,
+      "sha256": "77558e3b73f860bfeb6cefd3d708bf26d53adb27b8121ebfe61f738cf9e539d7"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/pipeline.py",
+      "bytes": 7168,
+      "sha256": "eb0c56ad1b2f60d885049c3106700c4370c865c5a3784e690a69a92ce934edab"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/prompts.py",
+      "bytes": 4646,
+      "sha256": "00ebea36eba51e8eba73ee1241241c08cee3da5d00feb0aca73caa5dc9c1e8fd"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/meeting_notes/schemas.py",
+      "bytes": 1216,
+      "sha256": "7b3bd922a74ac08e47428568c87604dd2bffa70f1fa89afdcdbbd7de99b4641f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-02/requirements.txt",
+      "bytes": 500,
+      "sha256": "92c3b081e821c9d170a794d2e42f6bf19987dfe258ab2bd73d489bce81002839"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/.env.example",
+      "bytes": 707,
+      "sha256": "318422373cd0db45de6b9ea4ad0f85cba093c63446f94a5038e52b667092b256"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/README.md",
+      "bytes": 3745,
+      "sha256": "a1c76118416247c58f061db416f67275f17c40e5697a5eea3f1250500a7838ad"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/__init__.py",
+      "bytes": 872,
+      "sha256": "87b5f11846e2efd8d73d69a7fbcb8c92c397bf9209aaffacf63979fa03bbc7e4"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/__main__.py",
+      "bytes": 121,
+      "sha256": "dcf352b03fd827fa8061c8b3455e6e71b63b017dff2d932739d49d7e79a31547"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/agents.py",
+      "bytes": 2080,
+      "sha256": "43dd2606c6e7a7ae41ad920ebf00829f188ea2ea8d9db2bbc124d32eaf76eade"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/cli.py",
+      "bytes": 1998,
+      "sha256": "a78c79ad30c411cdef9e6e0390c3f82233dc39b400f505fc45b1c4a6a645786f"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/config.py",
+      "bytes": 4149,
+      "sha256": "76c15011fce0199155ac309cbdff3803eb59b04382cc4207c66dcccb8facbb4c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/exceptions.py",
+      "bytes": 1492,
+      "sha256": "756f834340b5696065fda3966c3808dd7679fb91a2d7b91830a2a08b9f02fef2"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/llm.py",
+      "bytes": 994,
+      "sha256": "c259637883ceb669724df2aebb3025a9bc285cb609472df4c1da701cce05582a"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/orchestrator.py",
+      "bytes": 5419,
+      "sha256": "6fcd5c04f39dfe21164691c0b761e9149303eb05b0c933fcc59f9fb753434d23"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/prompts.py",
+      "bytes": 4947,
+      "sha256": "d8e62b8e309b683300f95e5df2d9b36afb83e4b2168f41fba1ab0549243240b0"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/tracing.py",
+      "bytes": 6341,
+      "sha256": "0840bd5dc852cd2d5816237da7d6963c3fe5255aa2c21c7490e7f361ed34091d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/meeting_notes/validation.py",
+      "bytes": 3670,
+      "sha256": "094a3d09b771ddd5d4dcf0c3f2ea83ed9f2d43658f7a1c2e7caa5dac61359e61"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-03/requirements.txt",
+      "bytes": 281,
+      "sha256": "61150222ca002c3b53c89c8df7c9c7328057902e24ef121a9794624f16648baa"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/.env.example",
+      "bytes": 807,
+      "sha256": "493ba6cadd6c5de0951ebf192cda7f3e6872090b5dcb2a2d5e8b384b782f1919"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/README.md",
+      "bytes": 2777,
+      "sha256": "861e17e3ae57aefe0fe42ddb602552754c30c196b8073c1801996a9be8aa28da"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/__init__.py",
+      "bytes": 562,
+      "sha256": "3003ce0530c0d824028dc4fc6611c8ed910779e7c12948966d99cc7018034cff"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/__main__.py",
+      "bytes": 2438,
+      "sha256": "2c4609298a7e39a754d444fb65fd6d2217c05cec32db1c1db67892ca6061212c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/agents.py",
+      "bytes": 2505,
+      "sha256": "4795e3eb61e72535b45bc2c42c33db5840a8be94944d3057a96b4d33a1aec51b"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/config.py",
+      "bytes": 3582,
+      "sha256": "57f7f48db7d858a6e891d46164a1f75b523fbf3e905d862e14ed30e4bf01d24c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/formatting.py",
+      "bytes": 3101,
+      "sha256": "fd84c11677c2b804fdbe514597ef27a389e46d45a08592ec0e004c41da4ac4cd"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/observability.py",
+      "bytes": 6626,
+      "sha256": "6763ba525961ef7218860b585a8ec629d61b593a4bfcbd7a89151e8afb721963"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/pipeline.py",
+      "bytes": 4373,
+      "sha256": "95bf71a579842b9b0cd98480e2bc7763a2b4d573b184572ec64b0f19401bb138"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/meeting_notes/prompts.py",
+      "bytes": 4265,
+      "sha256": "27b6841fa515f8d1213042ebccac52d54cbca477abe4be75104b509aa863cac1"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-04/requirements.txt",
+      "bytes": 254,
+      "sha256": "2ca8d2ee988f54a26b4d89f3b534724a81e24e3b18e0a0d4f84e8b2bd320f9df"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/.env.example",
+      "bytes": 1207,
+      "sha256": "2d18c5441438398f17b4a53e12eb46a59168dc136a5a760c56bb9f145ac8e7ef"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/README.md",
+      "bytes": 3289,
+      "sha256": "ef8aa6262dfd598f7a600e58584373e2c2fc57bec1134f8fef32ca5d50ed2c48"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/__init__.py",
+      "bytes": 790,
+      "sha256": "f1bb12b00ad1ddb63200fa599d9cf3d9d4d07e9b0125cfceb0dd8b61b3664f69"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/__main__.py",
+      "bytes": 1946,
+      "sha256": "b18fbc2147535a47aaf5e377fc7399f28eefa8008bfb9b66db52f00ba4f81de6"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/chains.py",
+      "bytes": 3475,
+      "sha256": "b4a0ce4e8b805726baa9ce71e2c3a44dcaccfa5ad6ba84c86174b2e1cd4f1c78"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/config.py",
+      "bytes": 3004,
+      "sha256": "7bc8cb04a90da8f40c9e15ed18ddb67c5641251bdf2b27afffb841d4022066b4"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/errors.py",
+      "bytes": 525,
+      "sha256": "e74b870bec43926ee710091fc5c2a96f860ca36981ea748e559d12f16a279ac8"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/llms.py",
+      "bytes": 1022,
+      "sha256": "8068cc5c1b2480aebcb01054285e65876b36ecd111bea6ea2ad7d91f506d8520"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/pipeline.py",
+      "bytes": 2733,
+      "sha256": "a3430e414397d885deab8844f64d980347eb9a9e207fec9c3f54019ef7cbc771"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/prompts.py",
+      "bytes": 4439,
+      "sha256": "57a787501dabe1cae2dc94a50d8ab241c04e77959a80280f816602804707eb5c"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/tracing.py",
+      "bytes": 3996,
+      "sha256": "d77badf2e426195c605de284bcd47362cde4fcff7e9dd9f6ff666ee108514fb0"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/meeting_notes/validation.py",
+      "bytes": 2590,
+      "sha256": "0a811deb8aaf9bbb857fc7253eaa690153d10f50ba01ddb6c0a7967f6b3ad85d"
+    },
+    {
+      "path": "raw/lines-of-code/builds/langchain/lc-05/requirements.txt",
+      "bytes": 407,
+      "sha256": "7594aa22a9f774ee604e3a44fb093a2ebd5e588b58dc15cdfdd5a6b6d2f38fe9"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-01/meeting-notes-assistant.pipe",
+      "bytes": 6285,
+      "sha256": "91ed5e444dccacabc1243779d5a277c228213532baaaef0b8f4125427e9cab09"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-02/meeting-notes-assistant.pipe",
+      "bytes": 8196,
+      "sha256": "49b50762a7819f8a40886f2b5fa06dd26c2ebb9dbcfca4e22b50a247f51af721"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-03/meeting-notes-assistant.pipe",
+      "bytes": 7289,
+      "sha256": "adc3d45e5a4296c16388b00d83263f81618d0d4e06a8adba3028e0d4acc7c2af"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-04/meeting-notes-assistant.pipe",
+      "bytes": 7022,
+      "sha256": "7edcbcb6212d235a3c04d1d4b8a41fd60d0a939dff3606bf112b632cb7767ea2"
+    },
+    {
+      "path": "raw/lines-of-code/builds/rocketride/run-05/meeting-notes-assistant.pipe",
+      "bytes": 6281,
+      "sha256": "005464acabd0b99a5c1de893fd794a1c33744de0c380e847995992260bf14668"
+    },
+    {
+      "path": "raw/lines-of-code/measure.py",
+      "bytes": 2890,
+      "sha256": "4bdb8cdb2071de5915081dd829c38eb1534d437f1f9acdee370a7bea140e032c"
+    },
+    {
+      "path": "raw/lines-of-code/results.json",
+      "bytes": 2527,
+      "sha256": "021eb1c6177e8d62fbed92e4372938d3150310f07eeed87ff23c6200aab7b00a"
+    },
+    {
+      "path": "tracked-files-changed.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "upstream-aggregate.md",
+      "bytes": 4083,
+      "sha256": "10b01913ccd1502eca5f84001a0680af9e6456962d1b023c9ade827f44cbdc22"
+    },
+    {
+      "path": "upstream-sha.txt",
+      "bytes": 41,
+      "sha256": "62ae534504783a5639cdf85e9a24b386d241311faf7ee0dbf841c124035f6f44"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+$ C:\nvm4w\nodejs\npx.CMD vitest run src/shared/nodeBenchWorkflowCandidate.test.ts src/shared/rocketRideEvidenceBundle.test.ts
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-node-apps/NodeBenchAI[39m
+
+ [32m✓[39m src/shared/nodeBenchWorkflowCandidate.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m src/shared/rocketRideEvidenceBundle.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 8[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m5 passed[39m[22m[90m (5)[39m
+[2m   Start at [22m 08:43:26
+[2m   Duration [22m 2.78s[2m (transform 226ms, setup 485ms, collect 522ms, tests 17ms, environment 2.55s, prepare 478ms)[22m
+
+
+
+$ C:\nvm4w\nodejs\npx.CMD tsx scripts/verify-rocketride-evidence-bundle.ts "D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\benchmark-evidence\evidence-bundle.json"
+{
+  "schemaVersion": "node.rocketride.evidence-ingestion-receipt/v1",
+  "status": "candidate_validated",
+  "studyId": "rocketride-node-study-20260715",
+  "publicationStatus": "independent_unsubmitted",
+  "failureSignals": 49,
+  "negativeFindings": [
+    "Windows: RocketRide M=16 wall median 60.821s exceeded LangChain abatch 7.292s.",
+    "Windows: RocketRide M=16 was clean in 0/10 repetitions.",
+    "Windows: RocketRide M=8 wall median 45.514s exceeded LangChain abatch 7.292s."
+  ],
+  "evidenceGaps": [
+    "RocketRide has not externally accepted or published this independent reproduction.",
+    "The exploratory Windows evidence bundle is incomplete."
+  ],
+  "sourceRefs": 518,
+  "finalWriteAuthority": "nodebench_application_review"
+}
+

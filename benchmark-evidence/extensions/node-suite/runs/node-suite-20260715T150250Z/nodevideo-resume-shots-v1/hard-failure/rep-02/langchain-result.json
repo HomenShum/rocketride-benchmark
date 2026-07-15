@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodevideo-resume-shots-v1:hard-failure:rep-02:langchain",
+  "traceId": "trace:nodevideo-resume-shots-v1:hard-failure:rep-02",
+  "framework": "langchain",
+  "candidate": {
+    "kind": "edit-decision-and-render-manifest",
+    "projectId": "project-1",
+    "recipeId": "recipe-1",
+    "baseRecipeVersion": 4,
+    "recipePatch": {
+      "renderLayout": "overlay",
+      "focusWindows": [
+        {
+          "startMs": 0,
+          "endMs": 4000
+        }
+      ]
+    },
+    "durationMs": 4000,
+    "shots": [
+      {
+        "id": "shot-1",
+        "sourceAssetId": "project-1:asset-a",
+        "sourceRange": {
+          "startMs": 0,
+          "endMs": 1000
+        },
+        "outputRange": {
+          "startMs": 0,
+          "endMs": 1000
+        },
+        "overlayText": "First beat",
+        "beatIndex": 0
+      },
+      {
+        "id": "shot-2",
+        "sourceAssetId": "project-1:asset-a",
+        "sourceRange": {
+          "startMs": 1000,
+          "endMs": 2000
+        },
+        "outputRange": {
+          "startMs": 1000,
+          "endMs": 2000
+        },
+        "overlayText": "Second beat",
+        "beatIndex": 1
+      },
+      {
+        "id": "shot-3",
+        "sourceAssetId": "project-1:asset-b",
+        "sourceRange": {
+          "startMs": 2000,
+          "endMs": 3000
+        },
+        "outputRange": {
+          "startMs": 2000,
+          "endMs": 3000
+        },
+        "overlayText": "Third beat",
+        "beatIndex": 2
+      },
+      {
+        "id": "shot-4",
+        "sourceAssetId": "project-1:asset-b",
+        "sourceRange": {
+          "startMs": 3000,
+          "endMs": 4000
+        },
+        "outputRange": {
+          "startMs": 3000,
+          "endMs": 4000
+        },
+        "overlayText": "Fourth beat",
+        "beatIndex": 3
+      }
+    ],
+    "reusedShotIds": [
+      "shot-1",
+      "shot-2"
+    ]
+  },
+  "inputDigest": "sha256:b5d8ddefed1952e2ff6e74ac6fa1f8f7f96a0b94c45a3e4bb289c23c2cd20397",
+  "idempotencyKey": "nodevideo-resume-shots-v1:hard-failure:rep-02",
+  "outputDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.failed",
+      "unitId": "shot-1"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.failed",
+      "unitId": "shot-2"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.failed",
+      "unitId": "shot-3"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.failed",
+      "unitId": "shot-4"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 0.0,
+    "executionMs": 1088.537,
+    "totalMs": 1088.537,
+    "retryCount": 0,
+    "completedUnits": 0,
+    "failedUnits": 4,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 0,
+    "cpuTimeMs": 0.0
+  },
+  "provenance": {
+    "adapter": "node-suite-langchain",
+    "adapterVersion": "1.0.0",
+    "runtime": "python-langchain",
+    "runtimeVersion": "python=unknown;langchain-core=0.3.86",
+    "appCommit": "bb79bc385de93c90cee89b160fc801d18372d89e",
+    "deterministic": true,
+    "location": "local"
+  },
+  "error": {
+    "code": "injected_hard_failure",
+    "message": "A pre-registered work unit hard-failed.",
+    "retryable": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "baseline-supported-linux-n10",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "LINUX_RUN_ID=linux-20260715T122439Z",
+    "LINUX_EXPORT_ROOT=/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/baseline/linux",
+    "bash",
+    "/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/tools/run_supported_linux.sh"
+  ],
+  "renderedCommand": "wsl.exe -d Ubuntu -- env LINUX_RUN_ID=linux-20260715T122439Z \"LINUX_EXPORT_ROOT=/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/baseline/linux\" bash \"/mnt/d/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-benchmark-study/benchmark-evidence/tools/run_supported_linux.sh\"",
+  "cwd": ".",
+  "environment": {
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "startedAt": "2026-07-15T12:24:39.515355Z",
+  "finishedAt": "2026-07-15T13:36:31.539571Z",
+  "durationSeconds": 4312.015,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/supported-linux-n10.log",
+  "logSha256": "e38a1712066b29bf7e70e16bbc224c9c42bfa32d19387d6b96d52c54bf0d6ff4"
+}

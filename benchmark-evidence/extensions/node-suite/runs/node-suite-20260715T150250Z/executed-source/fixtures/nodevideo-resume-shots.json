@@ -1,0 +1,62 @@
+{
+  "fixtureId": "nodevideo-resume-shots-v1",
+  "app": "nodevideo",
+  "workflow": "parallel-shot-render",
+  "appCommit": "bb79bc385de93c90cee89b160fc801d18372d89e",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "delayMs": 20,
+  "baseVersion": 4,
+  "units": [
+    { "id": "shot-1", "scope": "project-1" },
+    { "id": "shot-2", "scope": "project-1" },
+    { "id": "shot-3", "scope": "project-1" },
+    { "id": "shot-4", "scope": "project-1" }
+  ],
+  "candidate": {
+    "kind": "edit-decision-and-render-manifest",
+    "projectId": "project-1",
+    "recipeId": "recipe-1",
+    "baseRecipeVersion": 4,
+    "recipePatch": {
+      "renderLayout": "overlay",
+      "focusWindows": [{ "startMs": 0, "endMs": 4000 }]
+    },
+    "durationMs": 4000,
+    "shots": [
+      {
+        "id": "shot-1",
+        "sourceAssetId": "project-1:asset-a",
+        "sourceRange": { "startMs": 0, "endMs": 1000 },
+        "outputRange": { "startMs": 0, "endMs": 1000 },
+        "overlayText": "First beat",
+        "beatIndex": 0
+      },
+      {
+        "id": "shot-2",
+        "sourceAssetId": "project-1:asset-a",
+        "sourceRange": { "startMs": 1000, "endMs": 2000 },
+        "outputRange": { "startMs": 1000, "endMs": 2000 },
+        "overlayText": "Second beat",
+        "beatIndex": 1
+      },
+      {
+        "id": "shot-3",
+        "sourceAssetId": "project-1:asset-b",
+        "sourceRange": { "startMs": 2000, "endMs": 3000 },
+        "outputRange": { "startMs": 2000, "endMs": 3000 },
+        "overlayText": "Third beat",
+        "beatIndex": 2
+      },
+      {
+        "id": "shot-4",
+        "sourceAssetId": "project-1:asset-b",
+        "sourceRange": { "startMs": 3000, "endMs": 4000 },
+        "outputRange": { "startMs": 3000, "endMs": 4000 },
+        "overlayText": "Fourth beat",
+        "beatIndex": 3
+      }
+    ],
+    "reusedShotIds": ["shot-1", "shot-2"]
+  }
+}

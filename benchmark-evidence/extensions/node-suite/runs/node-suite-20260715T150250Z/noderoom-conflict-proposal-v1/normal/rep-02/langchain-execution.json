@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "compare-base-current",
+    "reason-business-impact",
+    "classify-review-tier",
+    "build-review-proposal"
+  ],
+  "failed": [],
+  "totalMs": 29.84110001125373,
+  "executionMs": 29.84110001125373,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 59654144,
+  "cpuTimeMs": 0.0,
+  "runtimeVersion": "3.11.9",
+  "langchainCoreVersion": "0.3.86"
+}

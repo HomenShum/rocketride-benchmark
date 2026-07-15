@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "node.rocketride.command-receipt/v1",
+  "commandId": "recorder-self-test",
+  "command": [
+    "python",
+    "-c",
+    "print('recorder-ok')"
+  ],
+  "renderedCommand": "python -c print('recorder-ok')",
+  "cwd": ".",
+  "environment": {},
+  "startedAt": "2026-07-15T09:29:27.326064Z",
+  "finishedAt": "2026-07-15T09:29:27.912719Z",
+  "durationSeconds": 0.578,
+  "exitCode": 0,
+  "passed": true,
+  "detectedFailureSignals": 0,
+  "log": "benchmark-evidence/baseline/logs/recorder-self-test.log",
+  "logSha256": "6a44e6b852e43618fd4d27ed3943e28a94e5f950c3ab6df39885e59fc369d108"
+}

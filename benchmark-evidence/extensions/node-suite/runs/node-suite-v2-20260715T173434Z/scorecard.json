@@ -1,0 +1,2741 @@
+{
+  "schemaVersion": "node.workflow-extension-scorecard/v2",
+  "generatedAt": "2026-07-15T17:40:43.483984Z",
+  "status": "passed",
+  "officialStatus": "separate_application_study_unsubmitted",
+  "profile": "resident-local-v2",
+  "engineColdStartMs": 1569.703,
+  "environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "cpuCount": 32,
+    "memoryBytes": 68434624512,
+    "python": "3.11.9",
+    "node": "v22.22.2",
+    "rocketrideSdk": "1.2.0",
+    "langchainCore": "0.3.86",
+    "engineVersion": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "engineBytes": 84793856,
+    "engineSha256": "b844140ae82cc18e9b5767b44b897aed2f772ea5228cfd053d727324bad7dc5e",
+    "enginePort": 5567
+  },
+  "conditions": {
+    "deterministic": true,
+    "paidModelCalls": 0,
+    "cloudRuns": 0,
+    "sameCandidateDigestRequired": true,
+    "sameResolvedDefinitionRequired": true,
+    "finalWritesAttempted": 0,
+    "requestDeadlineMs": 10000,
+    "unitTimeoutMs": 2000
+  },
+  "v1Result": {
+    "runId": "node-suite-20260715T150250Z",
+    "protocolAdmissionStatus": "failed",
+    "deadlineIssueCount": 30,
+    "superseded": false
+  },
+  "standingRuntime": {
+    "engineColdStartMs": 1569.703,
+    "normalPoolWarmupMs": {
+      "count": 5,
+      "median": 7721.659,
+      "p95": 10399.782,
+      "min": 6976.188,
+      "max": 10734.274
+    },
+    "hardFailureReplacementWarmupMs": {
+      "count": 15,
+      "median": 10109.896,
+      "p95": 11629.173,
+      "min": 7031.598,
+      "max": 11940.908
+    },
+    "poolCount": 20,
+    "requestTotalExcludesRocketRideStartup": true
+  },
+  "rows": [
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "app": "nodebenchai",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 149.334,
+        "p95": 160.864,
+        "min": 138.442,
+        "max": 162.145
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 72.861,
+        "p95": 73.612,
+        "min": 72.416,
+        "max": 73.696
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "app": "nodebenchai",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1047.66,
+        "p95": 1047.715,
+        "min": 1046.384,
+        "max": 1047.721
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 33.492,
+        "p95": 34.662,
+        "min": 28.848,
+        "max": 34.792
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 6976.188,
+        "p95": 6976.188,
+        "min": 6976.188,
+        "max": 6976.188
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "app": "nodebenchai",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 849.079,
+        "p95": 3717.075,
+        "min": 783.483,
+        "max": 4035.741
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 34.097,
+        "p95": 67.923,
+        "min": 31.978,
+        "max": 71.682
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "app": "nodebenchai",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 143.617,
+        "p95": 144.594,
+        "min": 130.393,
+        "max": 144.703
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 68.744,
+        "p95": 69.27,
+        "min": 63.986,
+        "max": 69.329
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "app": "nodebenchai",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 3015.926,
+        "p95": 3020.947,
+        "min": 3011.96,
+        "max": 3021.505
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 2014.777,
+        "p95": 2017.221,
+        "min": 2014.474,
+        "max": 2017.493
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 7516.513,
+        "p95": 9850.558,
+        "min": 7031.598,
+        "max": 10109.896
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "app": "nodebenchai",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 746.131,
+        "p95": 757.176,
+        "min": 710.684,
+        "max": 758.403
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 746.131,
+        "p95": 757.176,
+        "min": 710.684,
+        "max": 758.403
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 154.232,
+        "p95": 171.398,
+        "min": 139.002,
+        "max": 173.305
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 69.412,
+        "p95": 75.473,
+        "min": 57.776,
+        "max": 76.146
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1066.442,
+        "p95": 1117.888,
+        "min": 1050.409,
+        "max": 1123.604
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 62.091,
+        "p95": 104.323,
+        "min": 33.354,
+        "max": 109.016
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 7721.659,
+        "p95": 7721.659,
+        "min": 7721.659,
+        "max": 7721.659
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 790.117,
+        "p95": 837.536,
+        "min": 757.229,
+        "max": 842.805
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 36.003,
+        "p95": 36.593,
+        "min": 32.931,
+        "max": 36.658
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 137.18,
+        "p95": 164.19,
+        "min": 134.943,
+        "max": 167.191
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 72.653,
+        "p95": 80.073,
+        "min": 67.77,
+        "max": 80.897
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 3008.731,
+        "p95": 3020.075,
+        "min": 3004.03,
+        "max": 3021.335
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 2014.284,
+        "p95": 2016.402,
+        "min": 2002.507,
+        "max": 2016.637
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 10270.205,
+        "p95": 10939.694,
+        "min": 8393.78,
+        "max": 11014.082
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 733.217,
+        "p95": 843.463,
+        "min": 701.575,
+        "max": 855.713
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 733.217,
+        "p95": 843.463,
+        "min": 701.575,
+        "max": 855.713
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:58db6899ea58cf2c1678bdc6b04c57841fe80ff476a1e75da663a14d5ee8e96e",
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v2",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 136.618,
+        "p95": 138.367,
+        "min": 130.128,
+        "max": 138.561
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 61.343,
+        "p95": 62.235,
+        "min": 61.304,
+        "max": 62.334
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v2",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1090.228,
+        "p95": 1161.292,
+        "min": 1038.079,
+        "max": 1169.188
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 87.357,
+        "p95": 148.769,
+        "min": 37.083,
+        "max": 155.593
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 7098.088,
+        "p95": 7098.088,
+        "min": 7098.088,
+        "max": 7098.088
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v2",
+      "app": "noderoom",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 813.877,
+        "p95": 861.757,
+        "min": 805.564,
+        "max": 867.077
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 29.625,
+        "p95": 37.54,
+        "min": 27.741,
+        "max": 38.419
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v2",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 161.455,
+        "p95": 183.519,
+        "min": 157.092,
+        "max": 185.97
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 79.373,
+        "p95": 91.69,
+        "min": 75.591,
+        "max": 93.059
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v2",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 3010.899,
+        "p95": 3026.015,
+        "min": 3003.615,
+        "max": 3027.695
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 2011.712,
+        "p95": 2012.323,
+        "min": 1999.651,
+        "max": 2012.391
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 10564.903,
+        "p95": 11803.307,
+        "min": 8714.494,
+        "max": 11940.908
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "noderoom-independent-writes-v2",
+      "app": "noderoom",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 930.532,
+        "p95": 944.139,
+        "min": 819.149,
+        "max": 945.651
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 930.532,
+        "p95": 944.139,
+        "min": 819.149,
+        "max": 945.651
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:62b929bb12a6ea03c1f6f2d23a6d4e31e9dca8172eb102f9285292d1f9e787c8",
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "app": "nodeslide",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 156.006,
+        "p95": 182.081,
+        "min": 145.558,
+        "max": 184.978
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 69.564,
+        "p95": 76.186,
+        "min": 66.833,
+        "max": 76.922
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "app": "nodeslide",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1046.107,
+        "p95": 1715.671,
+        "min": 1038.078,
+        "max": 1790.067
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 41.282,
+        "p95": 703.556,
+        "min": 36.999,
+        "max": 777.142
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 10734.274,
+        "p95": 10734.274,
+        "min": 10734.274,
+        "max": 10734.274
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "app": "nodeslide",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 897.225,
+        "p95": 966.281,
+        "min": 856.423,
+        "max": 973.954
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 36.304,
+        "p95": 39.778,
+        "min": 33.118,
+        "max": 40.164
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "app": "nodeslide",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 161.048,
+        "p95": 170.257,
+        "min": 158.051,
+        "max": 171.28
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 77.294,
+        "p95": 80.958,
+        "min": 74.582,
+        "max": 81.365
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "app": "nodeslide",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 3025.511,
+        "p95": 3033.088,
+        "min": 3009.47,
+        "max": 3033.93
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 2010.326,
+        "p95": 2019.277,
+        "min": 2006.491,
+        "max": 2020.272
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 10816.273,
+        "p95": 11427.642,
+        "min": 10172.269,
+        "max": 11495.572
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "app": "nodeslide",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 905.507,
+        "p95": 909.288,
+        "min": 792.297,
+        "max": 909.708
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 905.507,
+        "p95": 909.288,
+        "min": 792.297,
+        "max": 909.708
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "app": "nodevideo",
+      "variant": "normal",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 149.746,
+        "p95": 155.421,
+        "min": 135.76,
+        "max": 156.052
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 69.548,
+        "p95": 70.566,
+        "min": 64.422,
+        "max": 70.679
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "app": "nodevideo",
+      "variant": "normal",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 1043.073,
+        "p95": 1048.59,
+        "min": 1042.489,
+        "max": 1049.203
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 37.508,
+        "p95": 40.244,
+        "min": 34.89,
+        "max": 40.548
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 9061.812,
+        "p95": 9061.812,
+        "min": 9061.812,
+        "max": 9061.812
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "app": "nodevideo",
+      "variant": "normal",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 817.925,
+        "p95": 948.426,
+        "min": 771.871,
+        "max": 962.926
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 30.293,
+        "p95": 31.786,
+        "min": 25.782,
+        "max": 31.952
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "app": "nodevideo",
+      "variant": "hard-failure",
+      "framework": "native",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 145.608,
+        "p95": 178.383,
+        "min": 144.472,
+        "max": 182.025
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 73.58,
+        "p95": 73.993,
+        "min": 72.854,
+        "max": 74.039
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "app": "nodevideo",
+      "variant": "hard-failure",
+      "framework": "rocketride",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 3024.154,
+        "p95": 3038.027,
+        "min": 3000.076,
+        "max": 3039.568
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 2010.07,
+        "p95": 2015.845,
+        "min": 1999.832,
+        "max": 2016.487
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 8669.367,
+        "p95": 8854.19,
+        "min": 7740.487,
+        "max": 8874.726
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 3.0,
+        "p95": 3.0,
+        "min": 3.0,
+        "max": 3.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 1.0,
+        "p95": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 3,
+        "healthy": 3
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    },
+    {
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "app": "nodevideo",
+      "variant": "hard-failure",
+      "framework": "langchain",
+      "repetitions": 3,
+      "totalMs": {
+        "count": 3,
+        "median": 776.022,
+        "p95": 830.844,
+        "min": 743.404,
+        "max": 836.935
+      },
+      "executionMs": {
+        "count": 3,
+        "median": 776.022,
+        "p95": 830.844,
+        "min": 743.404,
+        "max": 836.935
+      },
+      "warmupMs": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "completedUnits": {
+        "count": 3,
+        "median": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failedUnits": {
+        "count": 3,
+        "median": 4.0,
+        "p95": 4.0,
+        "min": 4.0,
+        "max": 4.0
+      },
+      "runtimeHealthyAfter": {
+        "reported": 0,
+        "healthy": 0
+      },
+      "deadlineMs": 10000,
+      "deadlineOverruns": 0,
+      "candidateDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "modelCalls": 0,
+      "modelCostUsd": 0,
+      "cloudCostUsd": 0
+    }
+  ],
+  "authoring": {
+    "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores.",
+    "sharedHarness": {
+      "files": [
+        {
+          "path": "common/protocol.py",
+          "bytes": 4793,
+          "physicalLines": 145,
+          "nonBlankLines": 131,
+          "sha256": "7fb833ebeb15e066db41cc189d5ef5962b5392a8504f6a84dc77f61f626a87da"
+        },
+        {
+          "path": "common/async_utils.py",
+          "bytes": 1126,
+          "physicalLines": 39,
+          "nonBlankLines": 32,
+          "sha256": "d0fb8a63fd9c4842584079c98bb56dccedc2c59b24178db5fc99723a608621f5"
+        },
+        {
+          "path": "common/resolved_definition.py",
+          "bytes": 7241,
+          "physicalLines": 188,
+          "nonBlankLines": 170,
+          "sha256": "3569868099466cc162d471d9246e185968004c91a2c295e33e6c5d6feb63f6a2"
+        },
+        {
+          "path": "common/run_suite.py",
+          "bytes": 29969,
+          "physicalLines": 773,
+          "nonBlankLines": 702,
+          "sha256": "fe8e6529c320faa7314728347c736a514e8495f72b786795089851bb69c8a524"
+        },
+        {
+          "path": "common/run_suite_v2.py",
+          "bytes": 25628,
+          "physicalLines": 636,
+          "nonBlankLines": 600,
+          "sha256": "a8b9897a255d310ad966f7847ffe60d6c4711cab5bdf731b8a2214666c1d4c60"
+        }
+      ],
+      "physicalLines": 1781,
+      "nonBlankLines": 1635,
+      "bytes": 68757
+    },
+    "native": {
+      "files": [
+        {
+          "path": "common/native_executor.mjs",
+          "bytes": 2378,
+          "physicalLines": 80,
+          "nonBlankLines": 76,
+          "sha256": "6ebd90bed9aa4ad449c8b857102f49b986a78e3052d278fed905257ed28da7c2"
+        }
+      ],
+      "physicalLines": 80,
+      "nonBlankLines": 76,
+      "bytes": 2378
+    },
+    "rocketride": {
+      "files": [
+        {
+          "path": "common/rocketride-node/nodeworkflow/IGlobal.py",
+          "bytes": 188,
+          "physicalLines": 11,
+          "nonBlankLines": 7,
+          "sha256": "51ea5167c1b9060e2106f634d33b4f2fa7cdd86a34f6432ad50077aa28feb9b0"
+        },
+        {
+          "path": "common/rocketride-node/nodeworkflow/IInstance.py",
+          "bytes": 1171,
+          "physicalLines": 42,
+          "nonBlankLines": 36,
+          "sha256": "793b7f137d1e955aad4111bbec0077ca39f86dafc74cdcf03a578493b76bc56a"
+        },
+        {
+          "path": "common/rocketride-node/nodeworkflow/__init__.py",
+          "bytes": 177,
+          "physicalLines": 6,
+          "nonBlankLines": 4,
+          "sha256": "c86dd809099f0c820a1b0776f2c74f2ff5c96de9ab1a0dd8c5b76b1318b2cc47"
+        },
+        {
+          "path": "common/rocketride-node/nodeworkflow/services.json",
+          "bytes": 506,
+          "physicalLines": 23,
+          "nonBlankLines": 23,
+          "sha256": "610bba8884f794ffc8286bae845ba8392343932b2549ffe3ff175154fac2e2a2"
+        }
+      ],
+      "physicalLines": 82,
+      "nonBlankLines": 70,
+      "bytes": 2042
+    },
+    "langchain": {
+      "files": [
+        {
+          "path": "common/langchain_executor.py",
+          "bytes": 2220,
+          "physicalLines": 71,
+          "nonBlankLines": 62,
+          "sha256": "665f34cb4789aa5ccc12ec61f3034e93d90a28b2115766122beec5d5643b2894"
+        }
+      ],
+      "physicalLines": 71,
+      "nonBlankLines": 62,
+      "bytes": 2220
+    },
+    "verification": {
+      "files": [
+        {
+          "path": "common/audit_run_v2.py",
+          "bytes": 19270,
+          "physicalLines": 428,
+          "nonBlankLines": 398,
+          "sha256": "50fefa9b644e1b392b793ce095df2c8f00d00239576334c311e614b47150c73d"
+        },
+        {
+          "path": "common/run_app_verifiers.py",
+          "bytes": 12661,
+          "physicalLines": 340,
+          "nonBlankLines": 318,
+          "sha256": "2d32f30ead0cccd938a84f9c40dafd68d4529965cc2ad00afabb9e63e59ea1e5"
+        },
+        {
+          "path": "common/test_resident_v2.py",
+          "bytes": 5200,
+          "physicalLines": 136,
+          "nonBlankLines": 122,
+          "sha256": "e8f55c44ea29654e16753b2b0c6393b4fcc9a5a3c8689999cc5525aebd7186fe"
+        }
+      ],
+      "physicalLines": 904,
+      "nonBlankLines": 838,
+      "bytes": 37131
+    }
+  },
+  "appVerification": {
+    "schemaVersion": "node.workflow-app-verification/v1",
+    "generatedAt": "2026-07-15T17:30:06.772318Z",
+    "evidenceBundle": {
+      "path": "benchmark-evidence/evidence-bundle.json",
+      "bytes": 132327,
+      "sha256": "9229406698a701457704fb5cece7f59dbed1ddf9c163f7cb2d61a6afbcbc9ee9"
+    },
+    "protocolParity": true,
+    "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+    "status": "passed",
+    "apps": [
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "noderoom",
+        "baseCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
+        "adapterCommit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+        "branch": "main",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npm",
+            "test",
+            "--",
+            "--run",
+            "tests/nodeWorkflowExecutionPort.test.ts"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npm.CMD",
+            "test",
+            "--",
+            "--run",
+            "tests/nodeWorkflowExecutionPort.test.ts"
+          ]
+        ],
+        "startedAt": "2026-07-15T17:29:47.096348Z",
+        "finishedAt": "2026-07-15T17:29:49.544952Z",
+        "exitCodes": [
+          0
+        ],
+        "testPassed": true,
+        "protocol": "src/nodeagent/integrations/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+            "studyFixture": "noderoom-independent-writes.json",
+            "fixtureSha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de",
+            "studyFixtureSha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de",
+            "parity": true
+          },
+          {
+            "appFixture": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+            "studyFixture": "noderoom-conflict-proposal.json",
+            "fixtureSha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482",
+            "studyFixtureSha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+                "bytes": 8528,
+                "physicalLines": 266,
+                "nonBlankLines": 254,
+                "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+              }
+            ],
+            "physicalLines": 266,
+            "nonBlankLines": 254,
+            "bytes": 8528
+          },
+          "domainTools": {
+            "files": [
+              {
+                "path": "src/nodeagent/skills/spreadsheet/algorithmArtifacts.ts",
+                "bytes": 18344,
+                "physicalLines": 529,
+                "nonBlankLines": 483,
+                "sha256": "084eceb7eed51b396eb5e2861ec69a651a9bd9049132e085c4c66aea20babdb6"
+              },
+              {
+                "path": "src/nodeagent/skills/spreadsheet/semanticRebase.ts",
+                "bytes": 13270,
+                "physicalLines": 378,
+                "nonBlankLines": 340,
+                "sha256": "eba7807247825067a7d78a724c8b98c5a5fcbc2e7fb097ec80499064a49a0c03"
+              }
+            ],
+            "physicalLines": 907,
+            "nonBlankLines": 823,
+            "bytes": 31614
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "tests/nodeWorkflowExecutionPort.test.ts",
+                "bytes": 12140,
+                "physicalLines": 367,
+                "nonBlankLines": 336,
+                "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+              },
+              {
+                "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+                "bytes": 2304,
+                "physicalLines": 84,
+                "nonBlankLines": 84,
+                "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+              },
+              {
+                "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+                "bytes": 3512,
+                "physicalLines": 113,
+                "nonBlankLines": 113,
+                "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+              }
+            ],
+            "physicalLines": 564,
+            "nonBlankLines": 533,
+            "bytes": 17956
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-v2-logs/noderoom.log",
+        "logSha256": "a1f5f21cb3aa557dfe55c4b91ab3c12b49f9d65666217dfc55f4150373dc55b9"
+      },
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "nodebenchai",
+        "baseCommit": "6ed0a58eeda993ff2a937ea4bacc2856756dd521",
+        "adapterCommit": "259d78150fd6bf0d670557707af3ddfefcc4fdc5",
+        "branch": "main",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npx",
+            "vitest",
+            "run",
+            "src/shared/nodeBenchWorkflowCandidate.test.ts",
+            "src/shared/rocketRideEvidenceBundle.test.ts"
+          ],
+          [
+            "npx",
+            "tsx",
+            "scripts/verify-rocketride-evidence-bundle.ts",
+            "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\benchmark-evidence\\evidence-bundle.json"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npx.CMD",
+            "vitest",
+            "run",
+            "src/shared/nodeBenchWorkflowCandidate.test.ts",
+            "src/shared/rocketRideEvidenceBundle.test.ts"
+          ],
+          [
+            "C:\\nvm4w\\nodejs\\npx.CMD",
+            "tsx",
+            "scripts/verify-rocketride-evidence-bundle.ts",
+            "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\rocketride-benchmark-study\\benchmark-evidence\\evidence-bundle.json"
+          ]
+        ],
+        "startedAt": "2026-07-15T17:29:49.730525Z",
+        "finishedAt": "2026-07-15T17:29:54.418905Z",
+        "exitCodes": [
+          0,
+          0
+        ],
+        "testPassed": true,
+        "protocol": "src/shared/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+            "studyFixture": "nodebenchai-frozen-sources.json",
+            "fixtureSha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83",
+            "studyFixtureSha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "src/shared/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "src/shared/nodeBenchWorkflowCandidate.ts",
+                "bytes": 3501,
+                "physicalLines": 114,
+                "nonBlankLines": 107,
+                "sha256": "645275bc4e77d7222528ed11fb3c1cebb7c9133295ffc9ba79c04ddf1bee5d11"
+              },
+              {
+                "path": "src/shared/rocketRideEvidenceBundle.ts",
+                "bytes": 7650,
+                "physicalLines": 255,
+                "nonBlankLines": 244,
+                "sha256": "c137b39f7ecc5da837e5627c6f23635797db00fab572054d4da9304588e5ee2e"
+              },
+              {
+                "path": "scripts/verify-rocketride-evidence-bundle.ts",
+                "bytes": 1759,
+                "physicalLines": 57,
+                "nonBlankLines": 53,
+                "sha256": "628366b0ed85f463f57027f9fd36217e80fb1b5dd950320c89d74056d121607a"
+              }
+            ],
+            "physicalLines": 426,
+            "nonBlankLines": 404,
+            "bytes": 12910
+          },
+          "domainTools": {
+            "files": [
+              {
+                "path": "src/shared/agentOutputContract.ts",
+                "bytes": 24107,
+                "physicalLines": 453,
+                "nonBlankLines": 417,
+                "sha256": "cfec4c96fa28d280fdefe406db9f8249201d96fc2a4337f6905a55dd13f81dae"
+              }
+            ],
+            "physicalLines": 453,
+            "nonBlankLines": 417,
+            "bytes": 24107
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "src/shared/nodeBenchWorkflowCandidate.test.ts",
+                "bytes": 4877,
+                "physicalLines": 157,
+                "nonBlankLines": 147,
+                "sha256": "36830f97c4f70b7b2b64507334fc9a0159b6605c7d5e2718d909d07a43f424ea"
+              },
+              {
+                "path": "src/shared/rocketRideEvidenceBundle.test.ts",
+                "bytes": 2781,
+                "physicalLines": 81,
+                "nonBlankLines": 74,
+                "sha256": "6b02f50e090f53d543adb260005aed3525f37d4004c00577fb5413ce28baff72"
+              },
+              {
+                "path": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+                "bytes": 1559,
+                "physicalLines": 45,
+                "nonBlankLines": 45,
+                "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+              }
+            ],
+            "physicalLines": 283,
+            "nonBlankLines": 266,
+            "bytes": 9217
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-v2-logs/nodebenchai.log",
+        "logSha256": "6e46c440f5a1d3a41b9d814c1aaed25f0227f30a464395c15b71ad2620976435"
+      },
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "nodeslide",
+        "baseCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
+        "adapterCommit": "81e0e512cfd4a3d80d24f371bc690810d4f65dd5",
+        "branch": "main",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npm",
+            "test",
+            "--",
+            "--run",
+            "convex/lib/nodeslideWorkflowCandidate.test.ts"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npm.CMD",
+            "test",
+            "--",
+            "--run",
+            "convex/lib/nodeslideWorkflowCandidate.test.ts"
+          ]
+        ],
+        "startedAt": "2026-07-15T17:29:54.577923Z",
+        "finishedAt": "2026-07-15T17:30:01.067013Z",
+        "exitCodes": [
+          0
+        ],
+        "testPassed": true,
+        "protocol": "shared/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+            "studyFixture": "nodeslide-independent-elements.json",
+            "fixtureSha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9",
+            "studyFixtureSha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "shared/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "convex/lib/nodeslideWorkflowCandidate.ts",
+                "bytes": 1481,
+                "physicalLines": 42,
+                "nonBlankLines": 40,
+                "sha256": "46c412d1dae29af1673602eb8e9d998e9fef7632460012e89c85f68088237376"
+              }
+            ],
+            "physicalLines": 42,
+            "nonBlankLines": 40,
+            "bytes": 1481
+          },
+          "domainTools": {
+            "files": [
+              {
+                "path": "shared/nodeslide.ts",
+                "bytes": 30056,
+                "physicalLines": 1011,
+                "nonBlankLines": 944,
+                "sha256": "bc5eaee42600ca182b384166a01f441ddc73cf9d5ea0b79c2f062c584c18e739"
+              },
+              {
+                "path": "convex/lib/nodeslidePatches.ts",
+                "bytes": 48420,
+                "physicalLines": 1217,
+                "nonBlankLines": 1164,
+                "sha256": "eaad1e9b7f88a71d3c9fa1fdf9a2dfc5480c475f0cec96349f2072e4af3e57b7"
+              }
+            ],
+            "physicalLines": 2228,
+            "nonBlankLines": 2108,
+            "bytes": 78476
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "convex/lib/nodeslideWorkflowCandidate.test.ts",
+                "bytes": 5531,
+                "physicalLines": 188,
+                "nonBlankLines": 178,
+                "sha256": "402f044f7d9f88182beb63cebb6f6af947720401933c33b92fa5fed7bf03a9a8"
+              },
+              {
+                "path": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+                "bytes": 972,
+                "physicalLines": 37,
+                "nonBlankLines": 37,
+                "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+              }
+            ],
+            "physicalLines": 225,
+            "nonBlankLines": 215,
+            "bytes": 6503
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-v2-logs/nodeslide.log",
+        "logSha256": "84d65de5041d3567c6c16662783f96def21ed79b8e8e6e822a273c1494df7890"
+      },
+      {
+        "schemaVersion": "node.workflow-app-verifier/v1",
+        "app": "nodevideo",
+        "baseCommit": "bb79bc385de93c90cee89b160fc801d18372d89e",
+        "adapterCommit": "88fab347f853a0d5834eb7559986176ac953d9f8",
+        "branch": "main",
+        "clean": true,
+        "baseCommitIsAncestor": true,
+        "commands": [
+          [
+            "npm",
+            "test",
+            "--",
+            "--run",
+            "src/lib/nodeVideoWorkflowCandidate.test.ts"
+          ]
+        ],
+        "resolvedCommands": [
+          [
+            "C:\\nvm4w\\nodejs\\npm.CMD",
+            "test",
+            "--",
+            "--run",
+            "src/lib/nodeVideoWorkflowCandidate.test.ts"
+          ]
+        ],
+        "startedAt": "2026-07-15T17:30:01.209392Z",
+        "finishedAt": "2026-07-15T17:30:06.611645Z",
+        "exitCodes": [
+          0
+        ],
+        "testPassed": true,
+        "protocol": "src/lib/workflowExecutionPort.ts",
+        "protocolSha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59",
+        "fixtures": [
+          {
+            "appFixture": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+            "studyFixture": "nodevideo-resume-shots.json",
+            "fixtureSha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3",
+            "studyFixtureSha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3",
+            "parity": true
+          }
+        ],
+        "fixtureParity": true,
+        "authoring": {
+          "sharedProtocol": {
+            "files": [
+              {
+                "path": "src/lib/workflowExecutionPort.ts",
+                "bytes": 21146,
+                "physicalLines": 666,
+                "nonBlankLines": 628,
+                "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+              }
+            ],
+            "physicalLines": 666,
+            "nonBlankLines": 628,
+            "bytes": 21146
+          },
+          "applicationAdapter": {
+            "files": [
+              {
+                "path": "src/lib/nodeVideoWorkflowCandidate.ts",
+                "bytes": 6230,
+                "physicalLines": 169,
+                "nonBlankLines": 159,
+                "sha256": "0aac540d0d03ba729eb72f88887116286b7eabefe2ed473a7ed06d30edaa7cbf"
+              }
+            ],
+            "physicalLines": 169,
+            "nonBlankLines": 159,
+            "bytes": 6230
+          },
+          "domainTools": {
+            "files": [
+              {
+                "path": "src/lib/contracts.ts",
+                "bytes": 11082,
+                "physicalLines": 435,
+                "nonBlankLines": 384,
+                "sha256": "caaa2613140f036675e46d2cb87000e712eff78a2b64f8c8061cdadf2da726cc"
+              },
+              {
+                "path": "src/lib/runtime.ts",
+                "bytes": 25285,
+                "physicalLines": 730,
+                "nonBlankLines": 660,
+                "sha256": "8528ae23f640119362b3e9f246a50e9e5ded2594740f32ba6806ad8f7c16199a"
+              }
+            ],
+            "physicalLines": 1165,
+            "nonBlankLines": 1044,
+            "bytes": 36367
+          },
+          "verification": {
+            "files": [
+              {
+                "path": "src/lib/nodeVideoWorkflowCandidate.test.ts",
+                "bytes": 5840,
+                "physicalLines": 168,
+                "nonBlankLines": 156,
+                "sha256": "ccfcea3b296f70da144c70402500cbb277e32c5f3211cc0a977ce8b8dbe3f5f2"
+              },
+              {
+                "path": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+                "bytes": 1864,
+                "physicalLines": 62,
+                "nonBlankLines": 62,
+                "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+              }
+            ],
+            "physicalLines": 230,
+            "nonBlankLines": 218,
+            "bytes": 7704
+          },
+          "interpretation": "Physical and non-blank lines are descriptive, not semantic complexity scores."
+        },
+        "authoringComplete": true,
+        "passed": true,
+        "log": "app-verification-v2-logs/nodevideo.log",
+        "logSha256": "d0c5b46f02ed7db6c098761a32104b15d734d123dce988ce8398b86defbeb493"
+      }
+    ]
+  },
+  "resolvedDefinitions": {
+    "schemaVersion": "node.workflow-resolved-definitions/v1",
+    "profile": "resident-local-v2",
+    "definitions": [
+      {
+        "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+        "definition": {
+          "schemaVersion": "node.workflow-resolved-definition/v1",
+          "profile": "resident-local-v2",
+          "application": {
+            "app": "nodebenchai",
+            "productionCommit": "259d78150fd6bf0d670557707af3ddfefcc4fdc5",
+            "workflow": "frozen-source-report"
+          },
+          "fixture": {
+            "sourceFixtureId": "nodebenchai-frozen-sources-v1",
+            "fixtureId": "nodebenchai-frozen-sources-v2",
+            "sourcePath": "fixtures/nodebenchai-frozen-sources.json",
+            "sha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83"
+          },
+          "protocol": {
+            "schemaVersion": "node.workflow-execution/v1",
+            "path": "src/shared/workflowExecutionPort.ts",
+            "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+          },
+          "sourceBindings": {
+            "applicationAdapter": [
+              {
+                "path": "scripts/verify-rocketride-evidence-bundle.ts",
+                "sha256": "628366b0ed85f463f57027f9fd36217e80fb1b5dd950320c89d74056d121607a"
+              },
+              {
+                "path": "src/shared/nodeBenchWorkflowCandidate.ts",
+                "sha256": "645275bc4e77d7222528ed11fb3c1cebb7c9133295ffc9ba79c04ddf1bee5d11"
+              },
+              {
+                "path": "src/shared/rocketRideEvidenceBundle.ts",
+                "sha256": "c137b39f7ecc5da837e5627c6f23635797db00fab572054d4da9304588e5ee2e"
+              }
+            ],
+            "domainTools": [
+              {
+                "path": "src/shared/agentOutputContract.ts",
+                "sha256": "cfec4c96fa28d280fdefe406db9f8249201d96fc2a4337f6905a55dd13f81dae"
+              }
+            ],
+            "verification": [
+              {
+                "path": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+                "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+              },
+              {
+                "path": "src/shared/nodeBenchWorkflowCandidate.test.ts",
+                "sha256": "36830f97c4f70b7b2b64507334fc9a0159b6605c7d5e2718d909d07a43f424ea"
+              },
+              {
+                "path": "src/shared/rocketRideEvidenceBundle.test.ts",
+                "sha256": "6b02f50e090f53d543adb260005aed3525f37d4004c00577fb5413ce28baff72"
+              }
+            ]
+          },
+          "executionPolicy": {
+            "candidateAuthority": "candidate_only_no_backend_mutation",
+            "concurrency": 4,
+            "deadlineMs": 10000,
+            "delayMs": 20,
+            "engineLifecycle": "run_scoped",
+            "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+            "normalPoolLifecycle": "fixture_variant_resident",
+            "poolSize": 4,
+            "repetitions": 3,
+            "retries": 0,
+            "threadsPerPipe": 1,
+            "traceDrainMs": 1000,
+            "traceLevel": "full",
+            "ttlSeconds": 120,
+            "unitTimeoutMs": 2000,
+            "variants": [
+              "normal",
+              "hard-failure"
+            ]
+          },
+          "costPolicy": {
+            "cloudCalls": 0,
+            "cloudCostUsd": 0,
+            "modelCalls": 0,
+            "modelCostUsd": 0
+          }
+        }
+      },
+      {
+        "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+        "definition": {
+          "schemaVersion": "node.workflow-resolved-definition/v1",
+          "profile": "resident-local-v2",
+          "application": {
+            "app": "noderoom",
+            "productionCommit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+            "workflow": "compare-reason-swap-conflict"
+          },
+          "fixture": {
+            "sourceFixtureId": "noderoom-conflict-proposal-v1",
+            "fixtureId": "noderoom-conflict-proposal-v2",
+            "sourcePath": "fixtures/noderoom-conflict-proposal.json",
+            "sha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482"
+          },
+          "protocol": {
+            "schemaVersion": "node.workflow-execution/v1",
+            "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+            "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+          },
+          "sourceBindings": {
+            "applicationAdapter": [
+              {
+                "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+                "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+              }
+            ],
+            "domainTools": [
+              {
+                "path": "src/nodeagent/skills/spreadsheet/algorithmArtifacts.ts",
+                "sha256": "084eceb7eed51b396eb5e2861ec69a651a9bd9049132e085c4c66aea20babdb6"
+              },
+              {
+                "path": "src/nodeagent/skills/spreadsheet/semanticRebase.ts",
+                "sha256": "eba7807247825067a7d78a724c8b98c5a5fcbc2e7fb097ec80499064a49a0c03"
+              }
+            ],
+            "verification": [
+              {
+                "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+                "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+              },
+              {
+                "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+                "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+              },
+              {
+                "path": "tests/nodeWorkflowExecutionPort.test.ts",
+                "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+              }
+            ]
+          },
+          "executionPolicy": {
+            "candidateAuthority": "candidate_only_no_backend_mutation",
+            "concurrency": 4,
+            "deadlineMs": 10000,
+            "delayMs": 20,
+            "engineLifecycle": "run_scoped",
+            "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+            "normalPoolLifecycle": "fixture_variant_resident",
+            "poolSize": 4,
+            "repetitions": 3,
+            "retries": 0,
+            "threadsPerPipe": 1,
+            "traceDrainMs": 1000,
+            "traceLevel": "full",
+            "ttlSeconds": 120,
+            "unitTimeoutMs": 2000,
+            "variants": [
+              "normal",
+              "hard-failure"
+            ]
+          },
+          "costPolicy": {
+            "cloudCalls": 0,
+            "cloudCostUsd": 0,
+            "modelCalls": 0,
+            "modelCostUsd": 0
+          }
+        }
+      },
+      {
+        "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+        "definition": {
+          "schemaVersion": "node.workflow-resolved-definition/v1",
+          "profile": "resident-local-v2",
+          "application": {
+            "app": "noderoom",
+            "productionCommit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+            "workflow": "independent-cell-enrichment"
+          },
+          "fixture": {
+            "sourceFixtureId": "noderoom-independent-writes-v1",
+            "fixtureId": "noderoom-independent-writes-v2",
+            "sourcePath": "fixtures/noderoom-independent-writes.json",
+            "sha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de"
+          },
+          "protocol": {
+            "schemaVersion": "node.workflow-execution/v1",
+            "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+            "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+          },
+          "sourceBindings": {
+            "applicationAdapter": [
+              {
+                "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+                "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+              }
+            ],
+            "domainTools": [
+              {
+                "path": "src/nodeagent/skills/spreadsheet/algorithmArtifacts.ts",
+                "sha256": "084eceb7eed51b396eb5e2861ec69a651a9bd9049132e085c4c66aea20babdb6"
+              },
+              {
+                "path": "src/nodeagent/skills/spreadsheet/semanticRebase.ts",
+                "sha256": "eba7807247825067a7d78a724c8b98c5a5fcbc2e7fb097ec80499064a49a0c03"
+              }
+            ],
+            "verification": [
+              {
+                "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+                "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+              },
+              {
+                "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+                "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+              },
+              {
+                "path": "tests/nodeWorkflowExecutionPort.test.ts",
+                "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+              }
+            ]
+          },
+          "executionPolicy": {
+            "candidateAuthority": "candidate_only_no_backend_mutation",
+            "concurrency": 4,
+            "deadlineMs": 10000,
+            "delayMs": 20,
+            "engineLifecycle": "run_scoped",
+            "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+            "normalPoolLifecycle": "fixture_variant_resident",
+            "poolSize": 4,
+            "repetitions": 3,
+            "retries": 0,
+            "threadsPerPipe": 1,
+            "traceDrainMs": 1000,
+            "traceLevel": "full",
+            "ttlSeconds": 120,
+            "unitTimeoutMs": 2000,
+            "variants": [
+              "normal",
+              "hard-failure"
+            ]
+          },
+          "costPolicy": {
+            "cloudCalls": 0,
+            "cloudCostUsd": 0,
+            "modelCalls": 0,
+            "modelCostUsd": 0
+          }
+        }
+      },
+      {
+        "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+        "definition": {
+          "schemaVersion": "node.workflow-resolved-definition/v1",
+          "profile": "resident-local-v2",
+          "application": {
+            "app": "nodeslide",
+            "productionCommit": "81e0e512cfd4a3d80d24f371bc690810d4f65dd5",
+            "workflow": "independent-element-edit"
+          },
+          "fixture": {
+            "sourceFixtureId": "nodeslide-independent-elements-v1",
+            "fixtureId": "nodeslide-independent-elements-v2",
+            "sourcePath": "fixtures/nodeslide-independent-elements.json",
+            "sha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9"
+          },
+          "protocol": {
+            "schemaVersion": "node.workflow-execution/v1",
+            "path": "shared/workflowExecutionPort.ts",
+            "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+          },
+          "sourceBindings": {
+            "applicationAdapter": [
+              {
+                "path": "convex/lib/nodeslideWorkflowCandidate.ts",
+                "sha256": "46c412d1dae29af1673602eb8e9d998e9fef7632460012e89c85f68088237376"
+              }
+            ],
+            "domainTools": [
+              {
+                "path": "convex/lib/nodeslidePatches.ts",
+                "sha256": "eaad1e9b7f88a71d3c9fa1fdf9a2dfc5480c475f0cec96349f2072e4af3e57b7"
+              },
+              {
+                "path": "shared/nodeslide.ts",
+                "sha256": "bc5eaee42600ca182b384166a01f441ddc73cf9d5ea0b79c2f062c584c18e739"
+              }
+            ],
+            "verification": [
+              {
+                "path": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+                "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+              },
+              {
+                "path": "convex/lib/nodeslideWorkflowCandidate.test.ts",
+                "sha256": "402f044f7d9f88182beb63cebb6f6af947720401933c33b92fa5fed7bf03a9a8"
+              }
+            ]
+          },
+          "executionPolicy": {
+            "candidateAuthority": "candidate_only_no_backend_mutation",
+            "concurrency": 4,
+            "deadlineMs": 10000,
+            "delayMs": 20,
+            "engineLifecycle": "run_scoped",
+            "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+            "normalPoolLifecycle": "fixture_variant_resident",
+            "poolSize": 4,
+            "repetitions": 3,
+            "retries": 0,
+            "threadsPerPipe": 1,
+            "traceDrainMs": 1000,
+            "traceLevel": "full",
+            "ttlSeconds": 120,
+            "unitTimeoutMs": 2000,
+            "variants": [
+              "normal",
+              "hard-failure"
+            ]
+          },
+          "costPolicy": {
+            "cloudCalls": 0,
+            "cloudCostUsd": 0,
+            "modelCalls": 0,
+            "modelCostUsd": 0
+          }
+        }
+      },
+      {
+        "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+        "definition": {
+          "schemaVersion": "node.workflow-resolved-definition/v1",
+          "profile": "resident-local-v2",
+          "application": {
+            "app": "nodevideo",
+            "productionCommit": "88fab347f853a0d5834eb7559986176ac953d9f8",
+            "workflow": "parallel-shot-render"
+          },
+          "fixture": {
+            "sourceFixtureId": "nodevideo-resume-shots-v1",
+            "fixtureId": "nodevideo-resume-shots-v2",
+            "sourcePath": "fixtures/nodevideo-resume-shots.json",
+            "sha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3"
+          },
+          "protocol": {
+            "schemaVersion": "node.workflow-execution/v1",
+            "path": "src/lib/workflowExecutionPort.ts",
+            "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+          },
+          "sourceBindings": {
+            "applicationAdapter": [
+              {
+                "path": "src/lib/nodeVideoWorkflowCandidate.ts",
+                "sha256": "0aac540d0d03ba729eb72f88887116286b7eabefe2ed473a7ed06d30edaa7cbf"
+              }
+            ],
+            "domainTools": [
+              {
+                "path": "src/lib/contracts.ts",
+                "sha256": "caaa2613140f036675e46d2cb87000e712eff78a2b64f8c8061cdadf2da726cc"
+              },
+              {
+                "path": "src/lib/runtime.ts",
+                "sha256": "8528ae23f640119362b3e9f246a50e9e5ded2594740f32ba6806ad8f7c16199a"
+              }
+            ],
+            "verification": [
+              {
+                "path": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+                "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+              },
+              {
+                "path": "src/lib/nodeVideoWorkflowCandidate.test.ts",
+                "sha256": "ccfcea3b296f70da144c70402500cbb277e32c5f3211cc0a977ce8b8dbe3f5f2"
+              }
+            ]
+          },
+          "executionPolicy": {
+            "candidateAuthority": "candidate_only_no_backend_mutation",
+            "concurrency": 4,
+            "deadlineMs": 10000,
+            "delayMs": 20,
+            "engineLifecycle": "run_scoped",
+            "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+            "normalPoolLifecycle": "fixture_variant_resident",
+            "poolSize": 4,
+            "repetitions": 3,
+            "retries": 0,
+            "threadsPerPipe": 1,
+            "traceDrainMs": 1000,
+            "traceLevel": "full",
+            "ttlSeconds": 120,
+            "unitTimeoutMs": 2000,
+            "variants": [
+              "normal",
+              "hard-failure"
+            ]
+          },
+          "costPolicy": {
+            "cloudCalls": 0,
+            "cloudCostUsd": 0,
+            "modelCalls": 0,
+            "modelCostUsd": 0
+          }
+        }
+      }
+    ]
+  },
+  "gateIssues": []
+}

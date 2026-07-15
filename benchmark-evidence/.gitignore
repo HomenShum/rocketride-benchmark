@@ -1,0 +1,6 @@
+# Credentials and account-specific cloud state never enter the public fork.
+*.env
+*.key
+*.token
+cloud/credentials/
+cloud/session/

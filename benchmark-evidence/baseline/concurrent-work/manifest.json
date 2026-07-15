@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "node.rocketride.evidence-manifest/v1",
+  "files": [
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-01/results.json",
+      "bytes": 1784,
+      "sha256": "4e1ba2a829481a87715e7c378daeec8859b0b71ce4265ed49a94903e59d6aa38"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-01/run.log",
+      "bytes": 282,
+      "sha256": "af021e1555abdc5fa1e39a39bc4074b268b56772e79d3bcf80874c38a15a5d07"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-02/results.json",
+      "bytes": 1784,
+      "sha256": "4e1ba2a829481a87715e7c378daeec8859b0b71ce4265ed49a94903e59d6aa38"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-02/run.log",
+      "bytes": 282,
+      "sha256": "af021e1555abdc5fa1e39a39bc4074b268b56772e79d3bcf80874c38a15a5d07"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-03/results.json",
+      "bytes": 1785,
+      "sha256": "fdafba554760fa65f912700d67bd9fa9af07d699c2567dbc0cec4365def34c2b"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-03/run.log",
+      "bytes": 283,
+      "sha256": "bde6e2d8957f59e9dc1b0ca14b441a6dc20f699c9f1a2f918b0171c1271f0a49"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-04/results.json",
+      "bytes": 1785,
+      "sha256": "fdafba554760fa65f912700d67bd9fa9af07d699c2567dbc0cec4365def34c2b"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-04/run.log",
+      "bytes": 283,
+      "sha256": "bde6e2d8957f59e9dc1b0ca14b441a6dc20f699c9f1a2f918b0171c1271f0a49"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-05/results.json",
+      "bytes": 1785,
+      "sha256": "fdafba554760fa65f912700d67bd9fa9af07d699c2567dbc0cec4365def34c2b"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-05/run.log",
+      "bytes": 283,
+      "sha256": "bde6e2d8957f59e9dc1b0ca14b441a6dc20f699c9f1a2f918b0171c1271f0a49"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-06/results.json",
+      "bytes": 1784,
+      "sha256": "4e1ba2a829481a87715e7c378daeec8859b0b71ce4265ed49a94903e59d6aa38"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-06/run.log",
+      "bytes": 282,
+      "sha256": "af021e1555abdc5fa1e39a39bc4074b268b56772e79d3bcf80874c38a15a5d07"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-07/results.json",
+      "bytes": 1785,
+      "sha256": "fdafba554760fa65f912700d67bd9fa9af07d699c2567dbc0cec4365def34c2b"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-07/run.log",
+      "bytes": 283,
+      "sha256": "bde6e2d8957f59e9dc1b0ca14b441a6dc20f699c9f1a2f918b0171c1271f0a49"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-08/results.json",
+      "bytes": 1784,
+      "sha256": "4e1ba2a829481a87715e7c378daeec8859b0b71ce4265ed49a94903e59d6aa38"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-08/run.log",
+      "bytes": 282,
+      "sha256": "af021e1555abdc5fa1e39a39bc4074b268b56772e79d3bcf80874c38a15a5d07"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-09/results.json",
+      "bytes": 1784,
+      "sha256": "4e1ba2a829481a87715e7c378daeec8859b0b71ce4265ed49a94903e59d6aa38"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-09/run.log",
+      "bytes": 282,
+      "sha256": "af021e1555abdc5fa1e39a39bc4074b268b56772e79d3bcf80874c38a15a5d07"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-10/results.json",
+      "bytes": 1784,
+      "sha256": "4e1ba2a829481a87715e7c378daeec8859b0b71ce4265ed49a94903e59d6aa38"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/fault-isolation/run-10/run.log",
+      "bytes": 282,
+      "sha256": "af021e1555abdc5fa1e39a39bc4074b268b56772e79d3bcf80874c38a15a5d07"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-01/results.json",
+      "bytes": 5267,
+      "sha256": "08cd4ffb736f49eeaa3fe7030eb340e27b4c1b01ef3e143a377bccd5855e2dc3"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-01/run.log",
+      "bytes": 1016,
+      "sha256": "07da985489e5dad0e0413a6fed08e62e0d0ba58dd3bb82ea0c7a33bf9724b542"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-01/trace/rr.appendix_t4.jsonl.gz",
+      "bytes": 10224,
+      "sha256": "ab810959e52f19e7b104be71265884df2ae846276d93d545f42b0cc5fb6a7615"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-01/trace/rr.m16.jsonl.gz",
+      "bytes": 131624,
+      "sha256": "7c90c7350be671572a15c06043926719897fec1febf93121c5e3efd252dca5b0"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-01/trace/rr.m8.jsonl.gz",
+      "bytes": 52771,
+      "sha256": "87ad7ade963156e44771c2113066690c0b403aa24e4aec833f591b1f2b6f60aa"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-02/results.json",
+      "bytes": 5267,
+      "sha256": "40185c5c4c630cf9abd08a8360e87c9d9d9d2b8f917e16b1d11c3092125182c4"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-02/run.log",
+      "bytes": 1017,
+      "sha256": "8f599dcf78ed4ea6b2ad8de82aa1edd20cd9a56546c0648e211ff6583e994160"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-03/results.json",
+      "bytes": 5267,
+      "sha256": "c2fb8a63e7a63334aedba6858074175224c30e3a4a25e7dc84efed86879a38cd"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-03/run.log",
+      "bytes": 1017,
+      "sha256": "a1dbc243c9f7c235c9173695c9f281730ecbee38ca2905b05df2c5ac18847510"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-04/results.json",
+      "bytes": 5266,
+      "sha256": "193a4b15382907e32c2342d958cadeb2083341e4367e6c22e51f5d52e432541e"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-04/run.log",
+      "bytes": 1016,
+      "sha256": "d8a94758b94c180607147b02e6ecee809099017d87f64fe7553d7b8cdd4497f1"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-05/results.json",
+      "bytes": 5268,
+      "sha256": "116705c6120076f047001a3eb6c365163792d21a1c97a61c8a65cf17bb9c5e47"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-05/run.log",
+      "bytes": 1016,
+      "sha256": "ace1451d1d8bab1ced46a593df26fcbcd731cb8e2e17e6e90176f5b0c1fe9da2"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-06/results.json",
+      "bytes": 5267,
+      "sha256": "92e21be5c8a2b11c81c856e5d6923ef8f19ade81d86f9250162dc7aa567232b0"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-06/run.log",
+      "bytes": 1016,
+      "sha256": "d655015a39414a9a28855ccb8502d9bcb9f1762c310acde77a12caf2fa4ff83e"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-07/results.json",
+      "bytes": 5265,
+      "sha256": "75fb225eb2758a378fb9f5e14c725aaca7708cf32db22d31d52b498e46a5f678"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-07/run.log",
+      "bytes": 1016,
+      "sha256": "be41856ace2544fe0a0658dbe433f5b34b240ca87aea76a4f499a5a1cbe2ab8b"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-08/results.json",
+      "bytes": 5266,
+      "sha256": "11bf60126144215343bcd5dca6d5570c45d5e929bbe37400e4977a05fe6eb23d"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-08/run.log",
+      "bytes": 1016,
+      "sha256": "e076a3272c03430354029c2e36ed5097344b16ad651f14e405c2abf3b1d0cb78"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-09/results.json",
+      "bytes": 5267,
+      "sha256": "d50aa1eac51b89f3d9e029277fd7881f8104b7e61b99b8217f0ec8bf6a6a3406"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-09/run.log",
+      "bytes": 1016,
+      "sha256": "e44dbe4fcd6dd233eec46eaf6590177a84c345ad980c3e865c348b7efe342a4c"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-10/results.json",
+      "bytes": 5269,
+      "sha256": "2f5c3454376f7f63ef201d381bc4c8e79dc83e35a42699a4a17107f46ecd5709"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/concurrent-processing/run-10/run.log",
+      "bytes": 1016,
+      "sha256": "436a2bc50b0f95f2825fabf3de5f0f8069562a093bcde1608cfdece8e7f5f9f3"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/data-isolation/run-01/run.log",
+      "bytes": 24,
+      "sha256": "7f196103678637cbf1e003a87355ebe20f43ee25e3325baddb4d65446a5992ae"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/authoring-effort/results.json",
+      "bytes": 3066,
+      "sha256": "d9097bf3d0f04f4f0f13296a21dc51287cf7a02375439fd43e9b337c0b13ef85"
+    },
+    {
+      "path": "benchmark-evidence/baseline/concurrent-work/raw-runs/authoring-effort/run.log",
+      "bytes": 598,
+      "sha256": "5319937252420c62de199920cbbada6122358e038f8c3993db48e7e0ea725e17"
+    }
+  ]
+}

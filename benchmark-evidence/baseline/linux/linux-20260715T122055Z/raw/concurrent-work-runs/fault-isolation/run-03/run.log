@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/rocketride/core/transport_websocket.py", line 378, in connect
+    self._websocket = await websockets.connect(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/websockets/asyncio/client.py", line 555, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/websockets/asyncio/client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1086, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1070, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 974, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 638, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 678, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 5565)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/groups/robustness-and-isolation/fault-isolation/run.py", line 158, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/groups/robustness-and-isolation/fault-isolation/run.py", line 76, in main
+    c = await rrclient.connect()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/harness/client.py", line 15, in connect
+    await client.connect()
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/rocketride/mixins/connection.py", line 347, in connect
+    await self.attach(timeout=timeout)
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/rocketride/mixins/connection.py", line 257, in attach
+    await self._internal_attach(timeout)
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/rocketride/mixins/connection.py", line 134, in _internal_attach
+    await DAPClient.connect(self, timeout)
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/rocketride/core/dap_client.py", line 307, in connect
+    await self._transport.connect(timeout)
+  File "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122055Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/rocketride/core/transport_websocket.py", line 411, in connect
+    raise ConnectionError(f'{e}')
+ConnectionError: [Errno 111] Connect call failed ('127.0.0.1', 5565)

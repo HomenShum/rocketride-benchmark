@@ -1,0 +1,16 @@
+$ C:\nvm4w\nodejs\npm.CMD test -- --run tests/nodeWorkflowExecutionPort.test.ts
+
+> noderoom@0.1.1 test
+> vitest run --run tests/nodeWorkflowExecutionPort.test.ts
+
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mD:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/rocketride-node-apps/NodeRoom[39m
+
+ [32m✓[39m tests/nodeWorkflowExecutionPort.test.ts [2m([22m[2m8 tests[22m[2m)[22m[90m 73[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m8 passed[39m[22m[90m (8)[39m
+[2m   Start at [22m 08:43:21
+[2m   Duration [22m 2.31s[2m (transform 453ms, setup 38ms, collect 1.26s, tests 73ms, environment 0ms, prepare 197ms)[22m
+
+

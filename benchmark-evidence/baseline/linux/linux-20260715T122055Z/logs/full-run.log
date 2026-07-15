@@ -1,0 +1,14 @@
+=== fault-isolation x10 (back-to-back, no restart) ===
+  FAIL fault-isolation run-01
+  FAIL fault-isolation run-02
+  FAIL fault-isolation run-03
+  FAIL fault-isolation run-04
+  FAIL fault-isolation run-05
+  FAIL fault-isolation run-06
+  FAIL fault-isolation run-07
+  FAIL fault-isolation run-08
+  FAIL fault-isolation run-09
+  FAIL fault-isolation run-10
+=== authoring-effort x1 (static / deterministic — reps N/A) ===
+  OK   authoring-effort
+=== concurrent-processing x10  @ M={8,16}  (restart+prime+retry) ===

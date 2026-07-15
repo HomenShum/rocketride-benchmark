@@ -1,0 +1,16 @@
+parity gate: PASS (per-doc work AST-identical both sides)
+real LangChain proven: 0.3.86 (D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\.venv\Scripts\python.exe)
+
+RR warm pools (N=64 docs, 100 ms work):
+  M= 8 wall=39.147s p50=5017.8ms p99=5446.8ms markers=72/72 errs=0 rows=72/72 [ok]
+  M=16 wall=61.950s p50=15445.1ms p99=16508.1ms markers=80/80 errs=0 rows=152/80 [check]
+
+LangChain (same chain object, n=64, io=100 ms, mc=64):
+  LC batch_shared    status=crash wall=  0.04s ok= 0 err=64 sqlite3.ProgrammingError
+  LC abatch_blocking status=ok    wall=  7.29s ok=64 err= 0 
+  LC seq             status=ok    wall=  7.48s ok=64 err= 0 
+wrote: canvas.mmd canvas.dot
+
+appendix (1 pipe x threads=4, shared module conn): markers=32 tids=4 errors=30
+
+VERDICT @ top M: RR(top M) 61.95s CHECK (node errors — see rocketride[].status) | LC .batch(shared) crash (sqlite3.ProgrammingError) | LC .abatch(blocking) 7.3s | LC seq 7.5s

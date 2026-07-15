@@ -1,0 +1,102 @@
+{
+  "benchmark": "data-isolation",
+  "hypothesis": "per-pipe instance data is isolated by construction; a naive shared GLOBAL dict under 64 LangChain workers silently loses updates",
+  "provenance": {
+    "engine_dir": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/engine",
+    "engine_version": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "uri": "ws://localhost:5565",
+    "cpu_brand": "x86_64",
+    "machine": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "arch": "x86_64",
+    "physical_cores": 16,
+    "logical_cores": 32,
+    "total_ram_gib": 31.21,
+    "python": "3.11.15",
+    "engine_sha256": "cf1fbf9ce72d15fef0257daaf0bfef130a263535be08c7160a0e0dada0371316",
+    "engine_size_bytes": 229626976
+  },
+  "langchain_provenance": {
+    "lc_version": "0.3.86",
+    "lc_python": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/bin/python",
+    "langchain_core_file": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/langchain_core/__init__.py",
+    "kind": "probe"
+  },
+  "params": {
+    "n_docs": 256,
+    "M": 32,
+    "gaps": [
+      20000,
+      50000,
+      100000
+    ],
+    "rr_routing": "round-robin doc i -> pipe i % M; identity from objinfo name"
+  },
+  "rocketride": {
+    "M": 32,
+    "n_docs": 256,
+    "wall_s": 6.507,
+    "warm_s": 37.02,
+    "pipes_reporting": 32,
+    "pipes_with_clean_partition": 32,
+    "docs_lost": 0,
+    "docs_duplicated_or_leaked": 0,
+    "status": "ok"
+  },
+  "langchain": [
+    {
+      "n": 256,
+      "max_concurrency": 32,
+      "gap_iters": 20000,
+      "wall_s": 0.27273099599960915,
+      "expected": 256,
+      "observed_counter": 71,
+      "lost_updates": 185,
+      "items_len": 256,
+      "lc_version": "0.3.86",
+      "kind": "probe",
+      "lc_python": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/bin/python",
+      "langchain_core_file": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/langchain_core/__init__.py"
+    },
+    {
+      "n": 256,
+      "max_concurrency": 32,
+      "gap_iters": 50000,
+      "wall_s": 0.723138612999719,
+      "expected": 256,
+      "observed_counter": 80,
+      "lost_updates": 176,
+      "items_len": 256,
+      "lc_version": "0.3.86",
+      "kind": "probe",
+      "lc_python": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/bin/python",
+      "langchain_core_file": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/langchain_core/__init__.py"
+    },
+    {
+      "n": 256,
+      "max_concurrency": 32,
+      "gap_iters": 100000,
+      "wall_s": 1.4079069360000176,
+      "expected": 256,
+      "observed_counter": 70,
+      "lost_updates": 186,
+      "items_len": 256,
+      "lc_version": "0.3.86",
+      "kind": "probe",
+      "lc_python": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/bin/python",
+      "langchain_core_file": "/home/homen_ubuntu/.cache/rocketride-node-study/linux-20260715T122439Z/rocketride-benchmark/concurrent-work/harness/rocketride-bench/.venv/lib/python3.11/site-packages/langchain_core/__init__.py"
+    }
+  ],
+  "verdict_metrics": {
+    "rr_docs_lost": 0,
+    "rr_docs_duplicated_or_leaked": 0,
+    "rr_clean": true,
+    "lc_max_lost_updates": 186,
+    "lc_max_lost_gap_iters": 100000,
+    "lc_lost_by_gap": {
+      "20000": 185,
+      "50000": 176,
+      "100000": 186
+    },
+    "lc_version": "0.3.86"
+  }
+}

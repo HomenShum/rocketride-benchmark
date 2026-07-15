@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "node.workflow-post-run-audit/v1",
+  "generatedAt": "2026-07-15T15:51:53.453205Z",
+  "runId": "node-suite-20260715T150250Z",
+  "evidenceStatus": "complete",
+  "orchestrationGateStatus": "passed",
+  "protocolAdmissionStatus": "failed",
+  "promotionStatus": "blocked",
+  "officialStatus": "separate_application_study_unsubmitted",
+  "preAuditManifestSha256": "2f4df768546446800109229ffce34ed4630ce4d78a8a8a1a625104dabbbf1d8d",
+  "sourceManifestSha256": "5102042c4184fc6b06621e3aa581167de605d87c63d0f6e8d6b0fc92806ca035",
+  "integrityIssues": [],
+  "protocolIssues": [
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 27890.281 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 28933.830 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/normal/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 22901.926 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 35377.662 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 29573.603 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodebenchai-frozen-sources-v1/hard-failure/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 33572.497 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-conflict-proposal-v1/normal/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 31951.467 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-conflict-proposal-v1/normal/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 25604.498 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-conflict-proposal-v1/normal/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 25966.952 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-conflict-proposal-v1/hard-failure/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 31139.096 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-conflict-proposal-v1/hard-failure/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 34611.496 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-conflict-proposal-v1/hard-failure/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 31934.275 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-independent-writes-v1/normal/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 29586.421 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-independent-writes-v1/normal/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 27075.736 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-independent-writes-v1/normal/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 31953.143 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-independent-writes-v1/hard-failure/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 37342.213 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-independent-writes-v1/hard-failure/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 38807.484 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "noderoom-independent-writes-v1/hard-failure/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 37909.386 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodeslide-independent-elements-v1/normal/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 31814.868 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodeslide-independent-elements-v1/normal/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 26298.047 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodeslide-independent-elements-v1/normal/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 32409.171 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodeslide-independent-elements-v1/hard-failure/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 30554.299 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodeslide-independent-elements-v1/hard-failure/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 34287.676 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodeslide-independent-elements-v1/hard-failure/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 36012.417 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodevideo-resume-shots-v1/normal/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 26099.987 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodevideo-resume-shots-v1/normal/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 28076.692 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodevideo-resume-shots-v1/normal/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 17337.722 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodevideo-resume-shots-v1/hard-failure/rep-01/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 32593.960 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodevideo-resume-shots-v1/hard-failure/rep-02/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 37150.474 exceeds deadlineMs 10000"
+    },
+    {
+      "path": "nodevideo-resume-shots-v1/hard-failure/rep-03/rocketride-result.json",
+      "code": "deadline_exceeded",
+      "message": "totalMs 27014.821 exceeds deadlineMs 10000"
+    }
+  ],
+  "counts": {
+    "fixtures": 5,
+    "repetitionCells": 30,
+    "requests": 30,
+    "results": 90,
+    "resultsByFramework": {
+      "native": 30,
+      "rocketride": 30,
+      "langchain": 30
+    },
+    "rocketrideTraces": 30,
+    "aggregateRows": 30
+  },
+  "observations": {
+    "rocketrideNormalMedianTotalMsRange": [
+      25966.952,
+      31814.868
+    ],
+    "rocketrideHardFailureMedianTotalMsRange": [
+      31934.275,
+      37909.386
+    ],
+    "engineWebsocket403Count": 0
+  },
+  "negativeFindings": [
+    "30 result envelopes exceeded the fixed 10000 ms request deadline and would be rejected by the shared app protocol.",
+    "RocketRide normal median total time ranged from 25966.952 to 31814.868 ms.",
+    "RocketRide hard-failure median total time ranged from 31934.275 to 37909.386 ms."
+  ],
+  "costs": {
+    "modelUsd": 0,
+    "cloudUsd": 0
+  }
+}

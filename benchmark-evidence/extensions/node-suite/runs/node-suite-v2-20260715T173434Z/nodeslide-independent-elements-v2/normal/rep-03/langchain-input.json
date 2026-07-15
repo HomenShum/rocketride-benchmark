@@ -1,0 +1,23 @@
+{
+  "units": [
+    {
+      "id": "slide-1-headline",
+      "scope": "deck-1"
+    },
+    {
+      "id": "slide-1-chart",
+      "scope": "deck-1"
+    },
+    {
+      "id": "slide-2-headline",
+      "scope": "deck-1"
+    },
+    {
+      "id": "deck-validation",
+      "scope": "deck-1"
+    }
+  ],
+  "concurrency": 4,
+  "delayMs": 20,
+  "failureUnit": null
+}

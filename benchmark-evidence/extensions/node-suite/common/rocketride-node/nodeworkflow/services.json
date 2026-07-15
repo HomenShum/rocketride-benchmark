@@ -1,0 +1,23 @@
+{
+  "title": "Node Workflow Study",
+  "protocol": "nodeworkflow://",
+  "classType": ["preprocessor"],
+  "capabilities": [],
+  "register": "filter",
+  "node": "python",
+  "path": "nodes.nodeworkflow",
+  "prefix": "NodeWorkflow",
+  "description": [
+    "Study-only deterministic candidate executor for the pre-registered Node workflow extension."
+  ],
+  "lanes": {
+    "tags": ["tags"]
+  },
+  "shape": [
+    {
+      "section": "Pipe",
+      "title": "Node Workflow Study",
+      "properties": []
+    }
+  ]
+}

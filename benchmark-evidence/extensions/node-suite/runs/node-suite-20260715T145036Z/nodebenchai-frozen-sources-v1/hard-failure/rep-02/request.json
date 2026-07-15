@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "nodebenchai",
+  "workflow": "frozen-source-report",
+  "fixtureId": "nodebenchai-frozen-sources-v1",
+  "traceId": "trace:nodebenchai-frozen-sources-v1:hard-failure:rep-02",
+  "inputDigest": "sha256:4fa6d6024c7fcab9d6c5f59917a5cc7951c3a02ff4ba027fd705403c2fdfc9e0",
+  "idempotencyKey": "nodebenchai-frozen-sources-v1:hard-failure:rep-02",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "failureSeed": "source-frozen-1"
+}
