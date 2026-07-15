@@ -61,6 +61,40 @@ when a nonzero exit is required unless every promotion condition passes.
 Re-run the matrix with the same fixtures only when the pre-registered rerun policy
 allows it. Do not replace unfavorable results.
 
+## Resident-Runtime V2
+
+V1 remains immutable and failed protocol admission because all 30 RocketRide
+results exceeded the fixed request deadline. V2 is a separately pre-registered
+resident-runtime experiment; read `PRE_REGISTRATION_V2.md` before running it.
+
+First verify the merged production commits and write a separate V2 receipt:
+
+```powershell
+python benchmark-evidence/extensions/node-suite/common/run_app_verifiers.py `
+  --apps-root ..\rocketride-node-apps `
+  --evidence-bundle benchmark-evidence/evidence-bundle.json `
+  --output benchmark-evidence/extensions/node-suite/app-verification-v2.json `
+  --logs-dir benchmark-evidence/extensions/node-suite/app-verification-v2-logs
+```
+
+Then run and independently audit the fixed three-repetition matrix:
+
+```powershell
+python benchmark-evidence/extensions/node-suite/common/run_suite_v2.py
+python benchmark-evidence/extensions/node-suite/common/audit_run_v2.py `
+  benchmark-evidence/extensions/node-suite/runs/<v2-run-id> --write-receipt
+python benchmark-evidence/extensions/node-suite/common/audit_run_v2.py `
+  benchmark-evidence/extensions/node-suite/runs/<v2-run-id> `
+  --require-promotion-ready
+```
+
+V2 binds every request and result to a canonical resolved definition containing
+the merged app commit and hashes for the protocol, candidate adapter, domain
+tools, validators, and fixture. RocketRide engine and pool readiness costs are
+reported separately from the prewarmed request clock. Native and LangChain keep
+their conservative subprocess wall-clock measurement. Local gate success means
+eligible for external submission, not official or accepted.
+
 ## Interpretation
 
 The native control is additive benchmark code, not a claim about every production

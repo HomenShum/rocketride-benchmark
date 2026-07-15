@@ -23,6 +23,10 @@ APPS = {
         "baseCommit": "ca25e347dc467bc37f06918e1a18656f7336ee28",
         "protocol": "src/nodeagent/integrations/workflowExecutionPort.ts",
         "adapters": ["src/nodeagent/integrations/roomWorkflowCandidate.ts"],
+        "domainTools": [
+            "src/nodeagent/skills/spreadsheet/algorithmArtifacts.ts",
+            "src/nodeagent/skills/spreadsheet/semanticRebase.ts",
+        ],
         "tests": ["tests/nodeWorkflowExecutionPort.test.ts"],
         "fixtures": [
             {
@@ -45,6 +49,7 @@ APPS = {
             "src/shared/rocketRideEvidenceBundle.ts",
             "scripts/verify-rocketride-evidence-bundle.ts",
         ],
+        "domainTools": ["src/shared/agentOutputContract.ts"],
         "tests": [
             "src/shared/nodeBenchWorkflowCandidate.test.ts",
             "src/shared/rocketRideEvidenceBundle.test.ts",
@@ -68,6 +73,10 @@ APPS = {
         "baseCommit": "dd67e4c642c40e6bb414af617a67a31dbed507c5",
         "protocol": "shared/workflowExecutionPort.ts",
         "adapters": ["convex/lib/nodeslideWorkflowCandidate.ts"],
+        "domainTools": [
+            "shared/nodeslide.ts",
+            "convex/lib/nodeslidePatches.ts",
+        ],
         "tests": ["convex/lib/nodeslideWorkflowCandidate.test.ts"],
         "fixtures": [
             {
@@ -82,6 +91,10 @@ APPS = {
         "baseCommit": "bb79bc385de93c90cee89b160fc801d18372d89e",
         "protocol": "src/lib/workflowExecutionPort.ts",
         "adapters": ["src/lib/nodeVideoWorkflowCandidate.ts"],
+        "domainTools": [
+            "src/lib/contracts.ts",
+            "src/lib/runtime.ts",
+        ],
         "tests": ["src/lib/nodeVideoWorkflowCandidate.test.ts"],
         "fixtures": [
             {
@@ -251,6 +264,7 @@ def main() -> int:
         authoring = {
             "sharedProtocol": source_metrics(repo, [config["protocol"]]),
             "applicationAdapter": source_metrics(repo, config["adapters"]),
+            "domainTools": source_metrics(repo, config["domainTools"]),
             "verification": source_metrics(
                 repo, [*config["tests"], *(pair["app"] for pair in config["fixtures"])]
             ),
@@ -258,7 +272,12 @@ def main() -> int:
         }
         authoring_complete = all(
             not item.get("missing", False)
-            for group in ("sharedProtocol", "applicationAdapter", "verification")
+            for group in (
+                "sharedProtocol",
+                "applicationAdapter",
+                "domainTools",
+                "verification",
+            )
             for item in authoring[group]["files"]
         )
         receipt = {
