@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodebenchai-frozen-sources-v2:normal:rep-01:rocketride",
+  "traceId": "trace:nodebenchai-frozen-sources-v2:normal:rep-01",
+  "framework": "rocketride",
+  "candidate": {
+    "kind": "answer-report-packet",
+    "outputs": [
+      {
+        "id": "report-1",
+        "l1": "generated_artifact",
+        "l2": "meeting_brief",
+        "l3": "artifact.team_meeting_summary",
+        "target": {
+          "artifactId": "candidate-report-1",
+          "traceId": "trace-1"
+        },
+        "visibility": "workspace",
+        "sourceRefs": [
+          "source:frozen-1",
+          "source:frozen-2"
+        ],
+        "citationRefs": [
+          "source:frozen-1",
+          "source:frozen-2"
+        ],
+        "traceRef": "trace-1",
+        "producedBy": {
+          "runId": "nodebenchai-study",
+          "skill": "frozen-source-report",
+          "toolChain": [
+            "retrieve_frozen_source",
+            "compile_report"
+          ]
+        },
+        "version": {},
+        "output": {
+          "summary": "The frozen sources support the benchmark finding.",
+          "actionItems": [
+            "Review the evidence bindings before persistence."
+          ]
+        }
+      }
+    ],
+    "evidenceBindings": [
+      {
+        "claimId": "claim-1",
+        "sourceRefs": [
+          "source:frozen-1"
+        ]
+      },
+      {
+        "claimId": "claim-2",
+        "sourceRefs": [
+          "source:frozen-2"
+        ]
+      }
+    ]
+  },
+  "inputDigest": "sha256:63439c81580adf1a5daf12a95c502ce80a61d787fc3be970bed82cf34f72c80d",
+  "idempotencyKey": "nodebenchai-frozen-sources-v2:normal:rep-01",
+  "outputDigest": "sha256:f04e2eb02b2a80e777820704a3edd476dda2f0b0312a1bc3d7ecaf28aa39be15",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "claim-extraction"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "report-compilation"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "source-frozen-1"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "source-frozen-2"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 6976.188,
+    "executionMs": 28.848,
+    "totalMs": 1046.384,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 571129856,
+    "cpuTimeMs": 2937.5,
+    "runtimeHealthyAfter": true
+  },
+  "provenance": {
+    "adapter": "node-suite-rocketride",
+    "adapterVersion": "2.0.0",
+    "runtime": "rocketride-engine",
+    "runtimeVersion": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "appCommit": "259d78150fd6bf0d670557707af3ddfefcc4fdc5",
+    "deterministic": true,
+    "location": "local",
+    "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+    "servingProfile": "resident-local-v2"
+  },
+  "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+  "runtimeLifecycle": {
+    "profile": "resident-local-v2",
+    "startupExcludedFromTotalMs": true,
+    "poolId": "nodebenchai-frozen-sources-v2:normal:resident",
+    "poolLifecycle": "fixture_variant_resident",
+    "unitTimeoutMs": 2000,
+    "sendDurationsMs": {
+      "claim-extraction": 28.739900008076802,
+      "source-frozen-2": 28.756300001987256,
+      "source-frozen-1": 28.79199999733828,
+      "report-compilation": 28.74310000333935
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodevideo-resume-shots-v2:normal:rep-01:native",
+  "traceId": "trace:nodevideo-resume-shots-v2:normal:rep-01",
+  "framework": "native",
+  "candidate": {
+    "kind": "edit-decision-and-render-manifest",
+    "projectId": "project-1",
+    "recipeId": "recipe-1",
+    "baseRecipeVersion": 4,
+    "recipePatch": {
+      "renderLayout": "overlay",
+      "focusWindows": [
+        {
+          "startMs": 0,
+          "endMs": 4000
+        }
+      ]
+    },
+    "durationMs": 4000,
+    "shots": [
+      {
+        "id": "shot-1",
+        "sourceAssetId": "project-1:asset-a",
+        "sourceRange": {
+          "startMs": 0,
+          "endMs": 1000
+        },
+        "outputRange": {
+          "startMs": 0,
+          "endMs": 1000
+        },
+        "overlayText": "First beat",
+        "beatIndex": 0
+      },
+      {
+        "id": "shot-2",
+        "sourceAssetId": "project-1:asset-a",
+        "sourceRange": {
+          "startMs": 1000,
+          "endMs": 2000
+        },
+        "outputRange": {
+          "startMs": 1000,
+          "endMs": 2000
+        },
+        "overlayText": "Second beat",
+        "beatIndex": 1
+      },
+      {
+        "id": "shot-3",
+        "sourceAssetId": "project-1:asset-b",
+        "sourceRange": {
+          "startMs": 2000,
+          "endMs": 3000
+        },
+        "outputRange": {
+          "startMs": 2000,
+          "endMs": 3000
+        },
+        "overlayText": "Third beat",
+        "beatIndex": 2
+      },
+      {
+        "id": "shot-4",
+        "sourceAssetId": "project-1:asset-b",
+        "sourceRange": {
+          "startMs": 3000,
+          "endMs": 4000
+        },
+        "outputRange": {
+          "startMs": 3000,
+          "endMs": 4000
+        },
+        "overlayText": "Fourth beat",
+        "beatIndex": 3
+      }
+    ],
+    "reusedShotIds": [
+      "shot-1",
+      "shot-2"
+    ]
+  },
+  "inputDigest": "sha256:3f3935625274e0fc72d63f8cb1ff060e59407a9080c1ddaa5e86c230d1c6e71b",
+  "idempotencyKey": "nodevideo-resume-shots-v2:normal:rep-01",
+  "outputDigest": "sha256:dfff1e53c3cdef926f93ad01233d2016beb6ff7d199c44b91031af80f1051664",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "shot-3"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "shot-2"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "shot-4"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "shot-1"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 86.504,
+    "warmupMs": 0.0,
+    "executionMs": 69.548,
+    "totalMs": 156.052,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 106283008,
+    "cpuTimeMs": 172.0
+  },
+  "provenance": {
+    "adapter": "node-suite-native",
+    "adapterVersion": "2.0.0",
+    "runtime": "node-worker-threads",
+    "runtimeVersion": "v22.22.2",
+    "appCommit": "88fab347f853a0d5834eb7559986176ac953d9f8",
+    "deterministic": true,
+    "location": "local",
+    "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+    "servingProfile": "resident-local-v2"
+  },
+  "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+  "runtimeLifecycle": {
+    "profile": "resident-local-v2",
+    "startupExcludedFromTotalMs": false,
+    "poolId": null,
+    "poolLifecycle": "subprocess_per_request",
+    "unitTimeoutMs": 2000
+  }
+}

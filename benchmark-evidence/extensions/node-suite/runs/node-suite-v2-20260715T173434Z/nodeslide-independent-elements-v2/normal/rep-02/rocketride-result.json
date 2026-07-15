@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodeslide-independent-elements-v2:normal:rep-02:rocketride",
+  "traceId": "trace:nodeslide-independent-elements-v2:normal:rep-02",
+  "framework": "rocketride",
+  "candidate": {
+    "deckId": "deck-1",
+    "baseDeckVersion": 3,
+    "baseSlideVersions": {
+      "slide-1": 2
+    },
+    "baseElementVersions": {
+      "headline": 1
+    },
+    "scope": {
+      "kind": "elements",
+      "deckId": "deck-1",
+      "slideIds": [
+        "slide-1"
+      ],
+      "elementIds": [
+        "headline"
+      ],
+      "operationMode": "copy"
+    },
+    "operations": [
+      {
+        "op": "replace_text",
+        "slideId": "slide-1",
+        "elementId": "headline",
+        "text": "After"
+      }
+    ]
+  },
+  "inputDigest": "sha256:515e1424f7ec7b35b8342917ae05fb47627b0cba498660106167e7674cbe224f",
+  "idempotencyKey": "nodeslide-independent-elements-v2:normal:rep-02",
+  "outputDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "deck-validation"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "slide-1-chart"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "slide-1-headline"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "slide-2-headline"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 0.0,
+    "warmupMs": 10734.274,
+    "executionMs": 777.142,
+    "totalMs": 1790.067,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 584835072,
+    "cpuTimeMs": 5484.375,
+    "runtimeHealthyAfter": true
+  },
+  "provenance": {
+    "adapter": "node-suite-rocketride",
+    "adapterVersion": "2.0.0",
+    "runtime": "rocketride-engine",
+    "runtimeVersion": "Version: 3.2.1.30 hash: 114509c6 stamp: 2026-05-29T19:19:06Z",
+    "appCommit": "81e0e512cfd4a3d80d24f371bc690810d4f65dd5",
+    "deterministic": true,
+    "location": "local",
+    "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+    "servingProfile": "resident-local-v2"
+  },
+  "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+  "runtimeLifecycle": {
+    "profile": "resident-local-v2",
+    "startupExcludedFromTotalMs": true,
+    "poolId": "nodeslide-independent-elements-v2:normal:resident",
+    "poolLifecycle": "fixture_variant_resident",
+    "unitTimeoutMs": 2000,
+    "sendDurationsMs": {
+      "slide-1-headline": 777.0433999976376,
+      "deck-validation": 776.9626999943284,
+      "slide-1-chart": 777.0166999980574,
+      "slide-2-headline": 776.9977999996627
+    }
+  }
+}

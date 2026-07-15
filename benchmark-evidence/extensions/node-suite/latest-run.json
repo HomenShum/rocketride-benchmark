@@ -1,9 +1,11 @@
 {
-  "runId": "node-suite-20260715T150250Z",
-  "path": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T150250Z",
+  "runId": "node-suite-v2-20260715T173434Z",
+  "path": "benchmark-evidence/extensions/node-suite/runs/node-suite-v2-20260715T173434Z",
   "status": "passed",
+  "profile": "resident-local-v2",
   "orchestrationStatus": "passed",
-  "protocolAdmissionStatus": "failed",
-  "promotionStatus": "blocked",
-  "auditPath": "benchmark-evidence/extensions/node-suite/runs/node-suite-20260715T150250Z/audit.json"
+  "protocolAdmissionStatus": "passed",
+  "promotionStatus": "eligible_for_external_submission",
+  "v1ProtocolFailurePreserved": true,
+  "auditPath": "benchmark-evidence/extensions/node-suite/runs/node-suite-v2-20260715T173434Z/audit.json"
 }

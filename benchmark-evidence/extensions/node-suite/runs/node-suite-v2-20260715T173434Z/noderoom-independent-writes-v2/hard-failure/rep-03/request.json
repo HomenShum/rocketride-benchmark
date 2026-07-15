@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "app": "noderoom",
+  "workflow": "independent-cell-enrichment",
+  "fixtureId": "noderoom-independent-writes-v2",
+  "traceId": "trace:noderoom-independent-writes-v2:hard-failure:rep-03",
+  "inputDigest": "sha256:7d806b33f9d350b5ab6d96a01e0961376cfed066de496ec7887708d38ce55b86",
+  "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+  "idempotencyKey": "noderoom-independent-writes-v2:hard-failure:rep-03",
+  "concurrency": 4,
+  "deadlineMs": 10000,
+  "unitTimeoutMs": 2000,
+  "failureSeed": "cell-r_rev__q2"
+}

@@ -1,0 +1,23 @@
+{
+  "units": [
+    {
+      "id": "compare-base-current",
+      "scope": "room-1"
+    },
+    {
+      "id": "reason-business-impact",
+      "scope": "room-1"
+    },
+    {
+      "id": "classify-review-tier",
+      "scope": "room-1"
+    },
+    {
+      "id": "build-review-proposal",
+      "scope": "room-1"
+    }
+  ],
+  "concurrency": 4,
+  "delayMs": 20,
+  "failureUnit": null
+}

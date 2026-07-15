@@ -3,8 +3,10 @@
 ## Claim Status
 
 - **Track A:** evidence complete, independent unsubmitted reproduction.
-- **Track B:** evidence complete, orchestration gate passed, protocol admission
-  failed, promotion blocked.
+- **Track B V1:** evidence complete, orchestration gate passed, protocol
+  admission failed, promotion blocked.
+- **Track B V2:** evidence complete, orchestration and protocol admission
+  passed, eligible for external submission.
 - **Official status:** no external RocketRide acceptance or publication receipt.
 - **Paid spend:** USD 0 model cost and USD 0 cloud cost.
 
@@ -38,7 +40,7 @@ completed, but data-isolation repetition 1 timed out on all five unchanged
   inference, not a patched or promoted result.
 - This appendix cannot replace the supported Linux reproduction.
 
-## Track B: Node Applications
+## Track B V1: Node Applications
 
 The app verifier passed all four immutable adapter commits, base ancestry,
 canonical fixture parity, application tests, and shared protocol hash
@@ -76,3 +78,36 @@ but the tested local resident-pool lifecycle is too slow for the pre-registered
 application contract. The appropriate next experiment is a newly pre-registered
 warm-service topology or deadline budget study, not retroactively changing this
 run.
+
+## Track B V2: Resident Runtime
+
+V2 was separately pre-registered and committed before implementation. It keeps
+the five frozen candidates and 10,000 ms request deadline, adds a fixed 2,000 ms
+per-unit failure-detection budget, and binds every request and result to one
+resolved-definition digest containing the merged app commit plus protocol,
+adapter, domain-tool, validator, and fixture hashes.
+
+The completed V2 matrix again contains 30 requests, 90 results, 30 RocketRide
+traces, and 30 aggregate rows. The independent audit reports complete evidence,
+passed protocol admission, and `eligible_for_external_submission`.
+
+| Dimension | Native | RocketRide | LangChain |
+|---|---|---|---|
+| Normal correctness | 4/4 in all 15 runs | 4/4 in all 15 runs | 4/4 in all 15 runs |
+| Injected hard failure | 3 unaffected units in all 15 runs | 3 unaffected units in all 15 runs; engine healthy after every run | Shared interpreter completed 0/4 in all 15 runs |
+| Normal total median range | 136.618-156.006 ms | 1,043.073-1,090.228 ms | 790.117-897.225 ms |
+| Hard-failure total median range | 137.180-161.455 ms | 3,008.731-3,025.511 ms | 733.217-930.532 ms before process loss was recorded |
+| Deadline overruns | 0/30 | 0/30 | 0/30 |
+| Model/cloud API cost | USD 0 / USD 0 | USD 0 / USD 0 | USD 0 / USD 0 |
+
+RocketRide standing cost remains material and is not hidden: engine cold start
+was 1,569.703 ms, normal pool warmup median was 7,721.659 ms, and replacement
+pool warmup after destructive fault median was 10,109.896 ms. Native and
+LangChain totals conservatively retain subprocess startup while RocketRide V2
+uses the pre-registered prewarmed request clock, so V2 supports protocol
+admission and fault-isolation claims, not a raw speed-winner claim.
+
+All four adapter PRs are merged, their post-merge checks passed, and the exact
+main revisions are deployed to production. Deployment IDs, immutable URLs,
+aliases, and HTTP checks are recorded in
+`extensions/node-suite/production-deployment-v2.json`.

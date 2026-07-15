@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "node.workflow-runtime-lifecycle/v2",
+  "profile": "resident-local-v2",
+  "rocketridePools": [
+    {
+      "poolId": "nodebenchai-frozen-sources-v2:normal:resident",
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "variant": "normal",
+      "repetitionScope": "all",
+      "warmupMs": 6976.188,
+      "retiredReason": "fixture_complete"
+    },
+    {
+      "poolId": "nodebenchai-frozen-sources-v2:hard-failure:rep-01",
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-01",
+      "warmupMs": 7031.598,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodebenchai-frozen-sources-v2:hard-failure:rep-02",
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-02",
+      "warmupMs": 10109.896,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodebenchai-frozen-sources-v2:hard-failure:rep-03",
+      "fixtureId": "nodebenchai-frozen-sources-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-03",
+      "warmupMs": 7516.513,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "noderoom-conflict-proposal-v2:normal:resident",
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "variant": "normal",
+      "repetitionScope": "all",
+      "warmupMs": 7721.659,
+      "retiredReason": "fixture_complete"
+    },
+    {
+      "poolId": "noderoom-conflict-proposal-v2:hard-failure:rep-01",
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-01",
+      "warmupMs": 10270.205,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "noderoom-conflict-proposal-v2:hard-failure:rep-02",
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-02",
+      "warmupMs": 11014.082,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "noderoom-conflict-proposal-v2:hard-failure:rep-03",
+      "fixtureId": "noderoom-conflict-proposal-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-03",
+      "warmupMs": 8393.78,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "noderoom-independent-writes-v2:normal:resident",
+      "fixtureId": "noderoom-independent-writes-v2",
+      "variant": "normal",
+      "repetitionScope": "all",
+      "warmupMs": 7098.088,
+      "retiredReason": "fixture_complete"
+    },
+    {
+      "poolId": "noderoom-independent-writes-v2:hard-failure:rep-01",
+      "fixtureId": "noderoom-independent-writes-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-01",
+      "warmupMs": 8714.494,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "noderoom-independent-writes-v2:hard-failure:rep-02",
+      "fixtureId": "noderoom-independent-writes-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-02",
+      "warmupMs": 10564.903,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "noderoom-independent-writes-v2:hard-failure:rep-03",
+      "fixtureId": "noderoom-independent-writes-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-03",
+      "warmupMs": 11940.908,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodeslide-independent-elements-v2:normal:resident",
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "variant": "normal",
+      "repetitionScope": "all",
+      "warmupMs": 10734.274,
+      "retiredReason": "fixture_complete"
+    },
+    {
+      "poolId": "nodeslide-independent-elements-v2:hard-failure:rep-01",
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-01",
+      "warmupMs": 10816.273,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodeslide-independent-elements-v2:hard-failure:rep-02",
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-02",
+      "warmupMs": 10172.269,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodeslide-independent-elements-v2:hard-failure:rep-03",
+      "fixtureId": "nodeslide-independent-elements-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-03",
+      "warmupMs": 11495.572,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodevideo-resume-shots-v2:normal:resident",
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "variant": "normal",
+      "repetitionScope": "all",
+      "warmupMs": 9061.812,
+      "retiredReason": "fixture_complete"
+    },
+    {
+      "poolId": "nodevideo-resume-shots-v2:hard-failure:rep-01",
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-01",
+      "warmupMs": 8874.726,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodevideo-resume-shots-v2:hard-failure:rep-02",
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-02",
+      "warmupMs": 8669.367,
+      "retiredReason": "injected_worker_exit"
+    },
+    {
+      "poolId": "nodevideo-resume-shots-v2:hard-failure:rep-03",
+      "fixtureId": "nodevideo-resume-shots-v2",
+      "variant": "hard-failure",
+      "repetitionScope": "rep-03",
+      "warmupMs": 7740.487,
+      "retiredReason": "injected_worker_exit"
+    }
+  ],
+  "engineColdStartMs": 1569.703
+}

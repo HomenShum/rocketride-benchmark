@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "node.workflow-resolved-definitions/v1",
+  "profile": "resident-local-v2",
+  "definitions": [
+    {
+      "definitionDigest": "sha256:81b2602a34e9ba1c2f44e6b3ced0a0a4df6d9d9e0730ef8f9866493100908c63",
+      "definition": {
+        "schemaVersion": "node.workflow-resolved-definition/v1",
+        "profile": "resident-local-v2",
+        "application": {
+          "app": "nodebenchai",
+          "productionCommit": "259d78150fd6bf0d670557707af3ddfefcc4fdc5",
+          "workflow": "frozen-source-report"
+        },
+        "fixture": {
+          "sourceFixtureId": "nodebenchai-frozen-sources-v1",
+          "fixtureId": "nodebenchai-frozen-sources-v2",
+          "sourcePath": "fixtures/nodebenchai-frozen-sources.json",
+          "sha256": "f000a85189f4f3091e429e9b293752d2f67bc3938a02e3e79ccfad117c3bbe83"
+        },
+        "protocol": {
+          "schemaVersion": "node.workflow-execution/v1",
+          "path": "src/shared/workflowExecutionPort.ts",
+          "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+        },
+        "sourceBindings": {
+          "applicationAdapter": [
+            {
+              "path": "scripts/verify-rocketride-evidence-bundle.ts",
+              "sha256": "628366b0ed85f463f57027f9fd36217e80fb1b5dd950320c89d74056d121607a"
+            },
+            {
+              "path": "src/shared/nodeBenchWorkflowCandidate.ts",
+              "sha256": "645275bc4e77d7222528ed11fb3c1cebb7c9133295ffc9ba79c04ddf1bee5d11"
+            },
+            {
+              "path": "src/shared/rocketRideEvidenceBundle.ts",
+              "sha256": "c137b39f7ecc5da837e5627c6f23635797db00fab572054d4da9304588e5ee2e"
+            }
+          ],
+          "domainTools": [
+            {
+              "path": "src/shared/agentOutputContract.ts",
+              "sha256": "cfec4c96fa28d280fdefe406db9f8249201d96fc2a4337f6905a55dd13f81dae"
+            }
+          ],
+          "verification": [
+            {
+              "path": "src/shared/fixtures/rocketride-nodebenchai-frozen-sources.json",
+              "sha256": "6973cee73106e2d38aa46a0a89abe0e9d5588315968e72e1f7ce1e6ad2312698"
+            },
+            {
+              "path": "src/shared/nodeBenchWorkflowCandidate.test.ts",
+              "sha256": "36830f97c4f70b7b2b64507334fc9a0159b6605c7d5e2718d909d07a43f424ea"
+            },
+            {
+              "path": "src/shared/rocketRideEvidenceBundle.test.ts",
+              "sha256": "6b02f50e090f53d543adb260005aed3525f37d4004c00577fb5413ce28baff72"
+            }
+          ]
+        },
+        "executionPolicy": {
+          "candidateAuthority": "candidate_only_no_backend_mutation",
+          "concurrency": 4,
+          "deadlineMs": 10000,
+          "delayMs": 20,
+          "engineLifecycle": "run_scoped",
+          "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+          "normalPoolLifecycle": "fixture_variant_resident",
+          "poolSize": 4,
+          "repetitions": 3,
+          "retries": 0,
+          "threadsPerPipe": 1,
+          "traceDrainMs": 1000,
+          "traceLevel": "full",
+          "ttlSeconds": 120,
+          "unitTimeoutMs": 2000,
+          "variants": [
+            "normal",
+            "hard-failure"
+          ]
+        },
+        "costPolicy": {
+          "cloudCalls": 0,
+          "cloudCostUsd": 0,
+          "modelCalls": 0,
+          "modelCostUsd": 0
+        }
+      }
+    },
+    {
+      "definitionDigest": "sha256:89d49440b7420d87bb9048327f7c4a290865390dc19899e6ef6defc03f648edd",
+      "definition": {
+        "schemaVersion": "node.workflow-resolved-definition/v1",
+        "profile": "resident-local-v2",
+        "application": {
+          "app": "noderoom",
+          "productionCommit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+          "workflow": "compare-reason-swap-conflict"
+        },
+        "fixture": {
+          "sourceFixtureId": "noderoom-conflict-proposal-v1",
+          "fixtureId": "noderoom-conflict-proposal-v2",
+          "sourcePath": "fixtures/noderoom-conflict-proposal.json",
+          "sha256": "df1684f9a7f0b20d20d5c1602bf06f7d5a1b73a343dc68f9deb9f0d60f2df482"
+        },
+        "protocol": {
+          "schemaVersion": "node.workflow-execution/v1",
+          "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+          "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+        },
+        "sourceBindings": {
+          "applicationAdapter": [
+            {
+              "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+              "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+            }
+          ],
+          "domainTools": [
+            {
+              "path": "src/nodeagent/skills/spreadsheet/algorithmArtifacts.ts",
+              "sha256": "084eceb7eed51b396eb5e2861ec69a651a9bd9049132e085c4c66aea20babdb6"
+            },
+            {
+              "path": "src/nodeagent/skills/spreadsheet/semanticRebase.ts",
+              "sha256": "eba7807247825067a7d78a724c8b98c5a5fcbc2e7fb097ec80499064a49a0c03"
+            }
+          ],
+          "verification": [
+            {
+              "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+              "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+            },
+            {
+              "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+              "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+            },
+            {
+              "path": "tests/nodeWorkflowExecutionPort.test.ts",
+              "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+            }
+          ]
+        },
+        "executionPolicy": {
+          "candidateAuthority": "candidate_only_no_backend_mutation",
+          "concurrency": 4,
+          "deadlineMs": 10000,
+          "delayMs": 20,
+          "engineLifecycle": "run_scoped",
+          "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+          "normalPoolLifecycle": "fixture_variant_resident",
+          "poolSize": 4,
+          "repetitions": 3,
+          "retries": 0,
+          "threadsPerPipe": 1,
+          "traceDrainMs": 1000,
+          "traceLevel": "full",
+          "ttlSeconds": 120,
+          "unitTimeoutMs": 2000,
+          "variants": [
+            "normal",
+            "hard-failure"
+          ]
+        },
+        "costPolicy": {
+          "cloudCalls": 0,
+          "cloudCostUsd": 0,
+          "modelCalls": 0,
+          "modelCostUsd": 0
+        }
+      }
+    },
+    {
+      "definitionDigest": "sha256:ae9af1c9ae0a011e40bf5ea9eab3e37b84467f0f9bb9eaa8b2e3b76833288a6b",
+      "definition": {
+        "schemaVersion": "node.workflow-resolved-definition/v1",
+        "profile": "resident-local-v2",
+        "application": {
+          "app": "noderoom",
+          "productionCommit": "2ba12a33a9f77a5152096ccf1277d355948b78f6",
+          "workflow": "independent-cell-enrichment"
+        },
+        "fixture": {
+          "sourceFixtureId": "noderoom-independent-writes-v1",
+          "fixtureId": "noderoom-independent-writes-v2",
+          "sourcePath": "fixtures/noderoom-independent-writes.json",
+          "sha256": "e28e7e6c8da5b8504f7e6476bdb038924d79ee768b8a1fccf285b7859f1915de"
+        },
+        "protocol": {
+          "schemaVersion": "node.workflow-execution/v1",
+          "path": "src/nodeagent/integrations/workflowExecutionPort.ts",
+          "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+        },
+        "sourceBindings": {
+          "applicationAdapter": [
+            {
+              "path": "src/nodeagent/integrations/roomWorkflowCandidate.ts",
+              "sha256": "979ef09dc3d9a68335dcab378c210cc708df1c89f24aa7fc9936c827276a6148"
+            }
+          ],
+          "domainTools": [
+            {
+              "path": "src/nodeagent/skills/spreadsheet/algorithmArtifacts.ts",
+              "sha256": "084eceb7eed51b396eb5e2861ec69a651a9bd9049132e085c4c66aea20babdb6"
+            },
+            {
+              "path": "src/nodeagent/skills/spreadsheet/semanticRebase.ts",
+              "sha256": "eba7807247825067a7d78a724c8b98c5a5fcbc2e7fb097ec80499064a49a0c03"
+            }
+          ],
+          "verification": [
+            {
+              "path": "tests/fixtures/rocketride-noderoom-conflict-proposal.json",
+              "sha256": "1488582624bc5411c57a881e73e8dc9dbdf21a6ad575842b7e9a860ccd4ae2bb"
+            },
+            {
+              "path": "tests/fixtures/rocketride-noderoom-independent-writes.json",
+              "sha256": "78b660bcd21df9b5d80cd2388e7c33717328e98ef0883ca5bee4d56328be10bc"
+            },
+            {
+              "path": "tests/nodeWorkflowExecutionPort.test.ts",
+              "sha256": "759a24489c7037c3ad136e92c1a2be600cfd3f8599908aab9b3c8fa0d89b4141"
+            }
+          ]
+        },
+        "executionPolicy": {
+          "candidateAuthority": "candidate_only_no_backend_mutation",
+          "concurrency": 4,
+          "deadlineMs": 10000,
+          "delayMs": 20,
+          "engineLifecycle": "run_scoped",
+          "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+          "normalPoolLifecycle": "fixture_variant_resident",
+          "poolSize": 4,
+          "repetitions": 3,
+          "retries": 0,
+          "threadsPerPipe": 1,
+          "traceDrainMs": 1000,
+          "traceLevel": "full",
+          "ttlSeconds": 120,
+          "unitTimeoutMs": 2000,
+          "variants": [
+            "normal",
+            "hard-failure"
+          ]
+        },
+        "costPolicy": {
+          "cloudCalls": 0,
+          "cloudCostUsd": 0,
+          "modelCalls": 0,
+          "modelCostUsd": 0
+        }
+      }
+    },
+    {
+      "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+      "definition": {
+        "schemaVersion": "node.workflow-resolved-definition/v1",
+        "profile": "resident-local-v2",
+        "application": {
+          "app": "nodeslide",
+          "productionCommit": "81e0e512cfd4a3d80d24f371bc690810d4f65dd5",
+          "workflow": "independent-element-edit"
+        },
+        "fixture": {
+          "sourceFixtureId": "nodeslide-independent-elements-v1",
+          "fixtureId": "nodeslide-independent-elements-v2",
+          "sourcePath": "fixtures/nodeslide-independent-elements.json",
+          "sha256": "d865e9e47f62f0c4672ad37c16e94533bb8b4cea0664bf880acd3d8b8bb76cd9"
+        },
+        "protocol": {
+          "schemaVersion": "node.workflow-execution/v1",
+          "path": "shared/workflowExecutionPort.ts",
+          "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+        },
+        "sourceBindings": {
+          "applicationAdapter": [
+            {
+              "path": "convex/lib/nodeslideWorkflowCandidate.ts",
+              "sha256": "46c412d1dae29af1673602eb8e9d998e9fef7632460012e89c85f68088237376"
+            }
+          ],
+          "domainTools": [
+            {
+              "path": "convex/lib/nodeslidePatches.ts",
+              "sha256": "eaad1e9b7f88a71d3c9fa1fdf9a2dfc5480c475f0cec96349f2072e4af3e57b7"
+            },
+            {
+              "path": "shared/nodeslide.ts",
+              "sha256": "bc5eaee42600ca182b384166a01f441ddc73cf9d5ea0b79c2f062c584c18e739"
+            }
+          ],
+          "verification": [
+            {
+              "path": "convex/lib/fixtures/rocketride-nodeslide-independent-elements.json",
+              "sha256": "7350846e2c23dbbccc02c59d101234dd4b5406b1e62a9e09b2d497b4414e0385"
+            },
+            {
+              "path": "convex/lib/nodeslideWorkflowCandidate.test.ts",
+              "sha256": "402f044f7d9f88182beb63cebb6f6af947720401933c33b92fa5fed7bf03a9a8"
+            }
+          ]
+        },
+        "executionPolicy": {
+          "candidateAuthority": "candidate_only_no_backend_mutation",
+          "concurrency": 4,
+          "deadlineMs": 10000,
+          "delayMs": 20,
+          "engineLifecycle": "run_scoped",
+          "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+          "normalPoolLifecycle": "fixture_variant_resident",
+          "poolSize": 4,
+          "repetitions": 3,
+          "retries": 0,
+          "threadsPerPipe": 1,
+          "traceDrainMs": 1000,
+          "traceLevel": "full",
+          "ttlSeconds": 120,
+          "unitTimeoutMs": 2000,
+          "variants": [
+            "normal",
+            "hard-failure"
+          ]
+        },
+        "costPolicy": {
+          "cloudCalls": 0,
+          "cloudCostUsd": 0,
+          "modelCalls": 0,
+          "modelCostUsd": 0
+        }
+      }
+    },
+    {
+      "definitionDigest": "sha256:4024aa24abb4e96d8d034ce1980ad77b53cdf7255a7fb8042d1eae6a3062b837",
+      "definition": {
+        "schemaVersion": "node.workflow-resolved-definition/v1",
+        "profile": "resident-local-v2",
+        "application": {
+          "app": "nodevideo",
+          "productionCommit": "88fab347f853a0d5834eb7559986176ac953d9f8",
+          "workflow": "parallel-shot-render"
+        },
+        "fixture": {
+          "sourceFixtureId": "nodevideo-resume-shots-v1",
+          "fixtureId": "nodevideo-resume-shots-v2",
+          "sourcePath": "fixtures/nodevideo-resume-shots.json",
+          "sha256": "fc98dc7b79bbf6cbf3c8ff550a547d17b552f68aa6134c46964711bbcfad5ec3"
+        },
+        "protocol": {
+          "schemaVersion": "node.workflow-execution/v1",
+          "path": "src/lib/workflowExecutionPort.ts",
+          "sha256": "b9b8b9f293c486fcd68f532f177e40f86c07c9310f31a64aa316ba469c1b1d59"
+        },
+        "sourceBindings": {
+          "applicationAdapter": [
+            {
+              "path": "src/lib/nodeVideoWorkflowCandidate.ts",
+              "sha256": "0aac540d0d03ba729eb72f88887116286b7eabefe2ed473a7ed06d30edaa7cbf"
+            }
+          ],
+          "domainTools": [
+            {
+              "path": "src/lib/contracts.ts",
+              "sha256": "caaa2613140f036675e46d2cb87000e712eff78a2b64f8c8061cdadf2da726cc"
+            },
+            {
+              "path": "src/lib/runtime.ts",
+              "sha256": "8528ae23f640119362b3e9f246a50e9e5ded2594740f32ba6806ad8f7c16199a"
+            }
+          ],
+          "verification": [
+            {
+              "path": "src/lib/fixtures/rocketride-nodevideo-resume-shots.json",
+              "sha256": "3b88f6cb9652fef6943abc7075a535c0cc338901932a58ece92c980f00e46e5d"
+            },
+            {
+              "path": "src/lib/nodeVideoWorkflowCandidate.test.ts",
+              "sha256": "ccfcea3b296f70da144c70402500cbb277e32c5f3211cc0a977ce8b8dbe3f5f2"
+            }
+          ]
+        },
+        "executionPolicy": {
+          "candidateAuthority": "candidate_only_no_backend_mutation",
+          "concurrency": 4,
+          "deadlineMs": 10000,
+          "delayMs": 20,
+          "engineLifecycle": "run_scoped",
+          "hardFailurePoolLifecycle": "request_prewarmed_then_retired",
+          "normalPoolLifecycle": "fixture_variant_resident",
+          "poolSize": 4,
+          "repetitions": 3,
+          "retries": 0,
+          "threadsPerPipe": 1,
+          "traceDrainMs": 1000,
+          "traceLevel": "full",
+          "ttlSeconds": 120,
+          "unitTimeoutMs": 2000,
+          "variants": [
+            "normal",
+            "hard-failure"
+          ]
+        },
+        "costPolicy": {
+          "cloudCalls": 0,
+          "cloudCostUsd": 0,
+          "modelCalls": 0,
+          "modelCostUsd": 0
+        }
+      }
+    }
+  ]
+}

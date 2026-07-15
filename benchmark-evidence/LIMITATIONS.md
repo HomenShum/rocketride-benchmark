@@ -12,9 +12,16 @@
 - Broader cancellation, checkpoint/resume, duplicate callback, and malformed
   candidate scenarios remain outside the scored V1 matrix even where app verifier
   tests cover related invariants.
-- Track B's `totalMs` includes RocketRide pool warmup. That is consistent with the
-  shared result validator and fixed request deadline, but a separately
-  pre-registered always-warm service study could answer a different question.
+- Track B V1's `totalMs` includes RocketRide pool warmup and remains protocol
+  blocked. V2 is the separately pre-registered always-warm study and cannot
+  replace that unfavorable result.
+- V2 excludes RocketRide engine and pool readiness from the request clock while
+  retaining those values as standing and recovery metrics. Native and LangChain
+  retain subprocess startup in their totals, so cross-framework speed rankings
+  are not symmetric and are not claimed.
+- V2 pool warmup remained substantial: 6,976.188-11,940.908 ms across the 20
+  provisioned pools. Meeting the request deadline therefore does not erase
+  deployment and failed-worker replacement cost.
 - Native controls are additive deterministic workers, not a claim about every
   production deployment topology in the four applications.
 - Application validation, version checks, CAS, proposals, and review are

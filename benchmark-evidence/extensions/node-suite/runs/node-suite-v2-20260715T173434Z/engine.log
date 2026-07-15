@@ -1,0 +1,287 @@
+
+        _____            _        _   _____  _     _
+       |  __ \          | |      | | |  __ \(_)   | |
+       | |__) |___   ___| | _____| |_| |__) |_  __| | ___
+       |  _  // _ \ / __| |/ / _ \ __|  _  /| |/ _` |/ _ \
+       | | \ \ (_) | (__|   <  __/ |_| | \ \| | (_| |  __/
+       |_|  \_\___/ \___|_|\_\___|\__|_|  \_\_|\__,_|\___|
+
+
+            Copyright (c) 2026 Aparavi Software AG
+                    All rights reserved
+    
+INFO:     Started server process [66020]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:5567 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51679 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53610 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51777 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57976 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57979 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57980 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57981 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56343 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56793 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53309 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59773 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60361 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57951 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59904 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59905 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59906 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59907 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:61093 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60448 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50077 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50087 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50088 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50090 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50266 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59475 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49786 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49787 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49788 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49789 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52412 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50155 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55973 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55974 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55975 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55976 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49788 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:64014 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52289 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54486 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52591 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59237 - "GET /ping HTTP/1.1" 401 Unauthorized
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\engine\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\engine\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     127.0.0.1:55117 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55118 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55119 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55121 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53483 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55236 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51335 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51336 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51337 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51338 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58664 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59423 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57633 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57634 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57636 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57637 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63773 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60377 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55174 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55176 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55177 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55178 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65504 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55106 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62956 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56177 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59443 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63894 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51755 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51756 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51757 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51758 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59232 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59622 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53124 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53125 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53126 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53128 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50479 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49725 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57351 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57352 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57353 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57354 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53798 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49325 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50922 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50923 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50088 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50089 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51466 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49197 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50589 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52872 - "GET /ping HTTP/1.1" 401 Unauthorized
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\engine\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\VSCode Projects\cafecorner_nodebench\nodebench_ai4\rocketride-benchmark-study\concurrent-work\harness\rocketride-bench\engine\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     127.0.0.1:63202 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58713 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53174 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53175 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53182 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53185 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50091 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49803 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60859 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60861 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60862 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50206 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52749 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65523 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51302 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51304 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51307 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51309 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58332 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50868 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53058 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53059 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53060 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53061 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54207 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:61442 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50230 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52494 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52271 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57240 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50620 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50621 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50628 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50631 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62416 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59121 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50802 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50803 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50804 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50807 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52990 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60207 - "GET /ping HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58987 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58988 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58989 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58990 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60889 - "WebSocket /task/service" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63739 - "GET /ping HTTP/1.1" 401 Unauthorized

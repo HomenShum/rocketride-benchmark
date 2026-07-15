@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "node.workflow-execution/v1",
+  "runId": "nodeslide-independent-elements-v2:normal:rep-01:langchain",
+  "traceId": "trace:nodeslide-independent-elements-v2:normal:rep-01",
+  "framework": "langchain",
+  "candidate": {
+    "deckId": "deck-1",
+    "baseDeckVersion": 3,
+    "baseSlideVersions": {
+      "slide-1": 2
+    },
+    "baseElementVersions": {
+      "headline": 1
+    },
+    "scope": {
+      "kind": "elements",
+      "deckId": "deck-1",
+      "slideIds": [
+        "slide-1"
+      ],
+      "elementIds": [
+        "headline"
+      ],
+      "operationMode": "copy"
+    },
+    "operations": [
+      {
+        "op": "replace_text",
+        "slideId": "slide-1",
+        "elementId": "headline",
+        "text": "After"
+      }
+    ]
+  },
+  "inputDigest": "sha256:515e1424f7ec7b35b8342917ae05fb47627b0cba498660106167e7674cbe224f",
+  "idempotencyKey": "nodeslide-independent-elements-v2:normal:rep-01",
+  "outputDigest": "sha256:e28304b30dd347e5b26d5d620ba30bfed3738ef241b389c5a28a199758b5aed2",
+  "events": [
+    {
+      "sequence": 1,
+      "atMs": 0,
+      "kind": "run.started"
+    },
+    {
+      "sequence": 2,
+      "atMs": 1,
+      "kind": "unit.completed",
+      "unitId": "slide-1-headline"
+    },
+    {
+      "sequence": 3,
+      "atMs": 2,
+      "kind": "unit.completed",
+      "unitId": "slide-1-chart"
+    },
+    {
+      "sequence": 4,
+      "atMs": 3,
+      "kind": "unit.completed",
+      "unitId": "slide-2-headline"
+    },
+    {
+      "sequence": 5,
+      "atMs": 4,
+      "kind": "unit.completed",
+      "unitId": "deck-validation"
+    }
+  ],
+  "metrics": {
+    "coldStartMs": 933.79,
+    "warmupMs": 0.0,
+    "executionMs": 40.164,
+    "totalMs": 973.954,
+    "retryCount": 0,
+    "completedUnits": 4,
+    "failedUnits": 0,
+    "duplicateUnits": 0,
+    "leakedUnits": 0,
+    "peakRssBytes": 59600896,
+    "cpuTimeMs": 0.0
+  },
+  "provenance": {
+    "adapter": "node-suite-langchain",
+    "adapterVersion": "2.0.0",
+    "runtime": "python-langchain",
+    "runtimeVersion": "python=3.11.9;langchain-core=0.3.86",
+    "appCommit": "81e0e512cfd4a3d80d24f371bc690810d4f65dd5",
+    "deterministic": true,
+    "location": "local",
+    "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+    "servingProfile": "resident-local-v2"
+  },
+  "definitionDigest": "sha256:1a998d3b402c6d4e872e0196baf52f65735d470bd24d5289ee7b01c1341e601f",
+  "runtimeLifecycle": {
+    "profile": "resident-local-v2",
+    "startupExcludedFromTotalMs": false,
+    "poolId": null,
+    "poolLifecycle": "subprocess_per_request",
+    "unitTimeoutMs": 2000
+  }
+}

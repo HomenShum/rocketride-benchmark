@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "cell-r_rev__variance",
+    "notebook-summary",
+    "cell-r_rev__q3"
+  ],
+  "failed": [
+    "cell-r_rev__q2"
+  ],
+  "totalMs": 79.3734,
+  "executionMs": 79.3734,
+  "coldStartMs": 0,
+  "warmupMs": 0,
+  "peakRssBytes": 79495168,
+  "cpuTimeMs": 188,
+  "runtimeVersion": "v22.22.2"
+}
