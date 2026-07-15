@@ -2,3 +2,5 @@
 # macOS AppleDouble in-progress turds
 .!*!*
 .gstack/
+__pycache__/
+*.pyc

@@ -48,6 +48,7 @@ USE_TIMEOUT_SECONDS = 180
 SOURCE_FILES = (
     "PRE_REGISTRATION.md",
     "SETUP_ATTEMPTS.md",
+    "RUN_HISTORY.md",
     "README.md",
     "cloud-control.pipe",
     "run_cloud_appendix.py",
@@ -72,6 +73,7 @@ SENSITIVE_KEY_PARTS = (
     "team_id",
     "subscriptionid",
     "subscription_id",
+    "promotioncodeid",
     "customer",
 )
 
@@ -120,7 +122,9 @@ def sanitize(value: Any, forbidden_values: tuple[str, ...] = ()) -> Any:
         result: dict[str, Any] = {}
         for key, item in value.items():
             normalized = key.lower().replace("-", "_")
-            if any(part in normalized for part in SENSITIVE_KEY_PARTS):
+            if normalized != "tokens" and any(
+                part in normalized for part in SENSITIVE_KEY_PARTS
+            ):
                 if item in (None, "", [], {}):
                     result[key] = item
                 else:
@@ -563,11 +567,50 @@ def first_matching(mapping: Any, keys: tuple[str, ...]) -> Any:
     return None
 
 
+def account_organizations(account: Any) -> list[dict[str, Any]]:
+    """Accept both the documented plural and current Cloud singular shape."""
+    if not isinstance(account, dict):
+        return []
+    plural = account.get("organizations")
+    if isinstance(plural, list):
+        return [item for item in plural if isinstance(item, dict)]
+    singular = account.get("organization")
+    if isinstance(singular, dict):
+        return [singular]
+    return []
+
+
+def starter_monthly_price(plans: Any) -> dict[str, Any] | None:
+    if not isinstance(plans, list):
+        return None
+    for plan in plans:
+        if not isinstance(plan, dict):
+            continue
+        label = plan.get("label", plan.get("nickname"))
+        if str(label).lower() != "starter":
+            continue
+        if str(plan.get("interval", "")).lower() != "month":
+            continue
+        price_id = plan.get("priceId", plan.get("stripePriceId"))
+        cents = plan.get("cents", plan.get("amountCents"))
+        if not price_id or not isinstance(cents, int):
+            continue
+        return {
+            "label": label,
+            "amount": plan.get("amount", f"${cents / 100:g}"),
+            "cents": cents,
+            "currency": plan.get("currency"),
+            "interval": plan.get("interval"),
+            "priceId": price_id,
+        }
+    return None
+
+
 async def billing_snapshot(uri: str, key: str, label: str) -> dict[str, Any]:
     client = None
     try:
         client, account = await connect_client(uri, key)
-        organizations = account.get("organizations", []) if isinstance(account, dict) else []
+        organizations = account_organizations(account)
         if not organizations:
             raise RuntimeError("connected account did not expose an organization")
         organization = organizations[0]
@@ -585,22 +628,14 @@ async def billing_snapshot(uri: str, key: str, label: str) -> dict[str, Any]:
         app_id = str(app["id"])
         subscriptions = json_ready(await client.billing.get_details(org_id))
         prices = json_ready(await client.billing.get_product_prices(app_id))
-        starter = next(
-            (
-                plan
-                for plan in prices
-                if str(plan.get("label", "")).lower() == "starter"
-                and str(plan.get("interval", "")).lower() == "month"
-            ),
-            None,
-        )
+        starter = starter_monthly_price(prices)
         if not isinstance(starter, dict):
             raise RuntimeError("Starter monthly price was not returned")
         promo_arguments = {
             "orgId": org_id,
             "appId": app_id,
             "priceId": starter["priceId"],
-            "promoCode": PROMO_CODE,
+            "code": PROMO_CODE,
         }
         promo = await client.call(
             "rrext_account_billing", subcommand="promo_validate", **promo_arguments
@@ -669,7 +704,14 @@ def billing_gate(snapshot: dict[str, Any]) -> tuple[bool, list[str]]:
     percent = all_numbers(promo, ("percentOff", "percent_off", "discountPercent"))
     due = all_numbers(
         promo,
-        ("discountedAmount", "discounted_amount", "amountDue", "amount_due", "finalAmount"),
+        (
+            "discountedAmount",
+            "discounted_amount",
+            "discountedAmountCents",
+            "amountDue",
+            "amount_due",
+            "finalAmount",
+        ),
     )
     if valid is not True:
         issues.append("promotion validation did not report valid=true")
