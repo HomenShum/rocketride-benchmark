@@ -1,0 +1,208 @@
+{
+  "billingAfter": {
+    "appId": "rocketride.pipeBuilder",
+    "capturedAt": "2026-07-15T23:07:40.759830Z",
+    "creditBalance": {
+      "balances": {
+        "tokens": 9969.3
+      },
+      "consumed": {
+        "tokens": 30.7
+      },
+      "granted": {
+        "tokens": 10000.0
+      },
+      "labels": {
+        "tokens": "tokens"
+      }
+    },
+    "label": "after",
+    "organizationIdHash": "37b465a355bc4a9ab8aff751eb013808d642d2f99b22c0fd3ee1e54ab0160a41",
+    "promoValidation": {
+      "amountCents": 5000,
+      "amountOffCents": null,
+      "appId": null,
+      "code": "JULY2026BENCHMARK",
+      "creditsGranted": null,
+      "currency": null,
+      "description": "Discount \u2014 JULY2026BENCHMARK",
+      "discountedAmountCents": 0,
+      "duration": "once",
+      "durationInMonths": null,
+      "percentOff": 100.0,
+      "promotionCodeId": "sha256:66c8e1de85d1026a91ca5c4d33593a01938653fe2727b04370cabe4dd3c3c292",
+      "valid": true
+    },
+    "promotionCode": "JULY2026BENCHMARK",
+    "starterPrice": {
+      "amount": "$50",
+      "cents": 5000,
+      "currency": "usd",
+      "interval": "month",
+      "label": "Starter",
+      "priceIdHash": "eca033ad47759b993abc21d2045fea14fe9d9e4c192405b089ac211a93327b1d"
+    },
+    "subscription": {
+      "appId": "rocketride.pipeBuilder",
+      "billingInterval": "month",
+      "cancelAtPeriodEnd": true,
+      "credits": {
+        "recurring": {
+          "tokens": 2500
+        }
+      },
+      "currentPeriodEnd": null,
+      "currentPeriodStart": null,
+      "labels": {
+        "tokens": "tokens"
+      },
+      "planNickname": "Starter",
+      "status": "active",
+      "stripePriceId": "price_1TjmTf2O4DGQArFa5fGPWSEm",
+      "stripeSubscriptionId": "sha256:4dfd2ee2f3f853dc958b11ff59a6e678dfe962d063551db17c8429f58b981df3",
+      "unitAmount": 5000
+    }
+  },
+  "billingBefore": {
+    "appId": "rocketride.pipeBuilder",
+    "capturedAt": "2026-07-15T23:03:58.202177Z",
+    "creditBalance": {
+      "balances": {
+        "tokens": 9984.6
+      },
+      "consumed": {
+        "tokens": 15.4
+      },
+      "granted": {
+        "tokens": 10000.0
+      },
+      "labels": {
+        "tokens": "tokens"
+      }
+    },
+    "label": "before",
+    "organizationIdHash": "37b465a355bc4a9ab8aff751eb013808d642d2f99b22c0fd3ee1e54ab0160a41",
+    "promoValidation": {
+      "amountCents": 5000,
+      "amountOffCents": null,
+      "appId": null,
+      "code": "JULY2026BENCHMARK",
+      "creditsGranted": null,
+      "currency": null,
+      "description": "Discount \u2014 JULY2026BENCHMARK",
+      "discountedAmountCents": 0,
+      "duration": "once",
+      "durationInMonths": null,
+      "percentOff": 100.0,
+      "promotionCodeId": "sha256:66c8e1de85d1026a91ca5c4d33593a01938653fe2727b04370cabe4dd3c3c292",
+      "valid": true
+    },
+    "promotionCode": "JULY2026BENCHMARK",
+    "starterPrice": {
+      "amount": "$50",
+      "cents": 5000,
+      "currency": "usd",
+      "interval": "month",
+      "label": "Starter",
+      "priceIdHash": "eca033ad47759b993abc21d2045fea14fe9d9e4c192405b089ac211a93327b1d"
+    },
+    "subscription": {
+      "appId": "rocketride.pipeBuilder",
+      "billingInterval": "month",
+      "cancelAtPeriodEnd": true,
+      "credits": {
+        "recurring": {
+          "tokens": 2500
+        }
+      },
+      "currentPeriodEnd": null,
+      "currentPeriodStart": null,
+      "labels": {
+        "tokens": "tokens"
+      },
+      "planNickname": "Starter",
+      "status": "active",
+      "stripePriceId": "price_1TjmTf2O4DGQArFa5fGPWSEm",
+      "stripeSubscriptionId": "sha256:4dfd2ee2f3f853dc958b11ff59a6e678dfe962d063551db17c8429f58b981df3",
+      "unitAmount": 5000
+    }
+  },
+  "claimBoundary": "Cloud-native operational control only; not an upstream benchmark score and not an official RocketRide result.",
+  "controlAdmissionStatus": "passed",
+  "controlSummary": {
+    "billingGatePassed": true,
+    "counts": {
+      "cleanupRecords": 12,
+      "crossTaskLeaks": 0,
+      "normalRequests": 48,
+      "normalSucceededCorrectly": 48,
+      "repetitions": 3,
+      "residentTasksCreated": 12,
+      "targetedTerminatedRequests": 3,
+      "targetedTerminatedRequestsFailed": 3,
+      "terminateCallsSucceeded": 12,
+      "unaffectedFailureRequests": 9,
+      "unaffectedFailureSucceededCorrectly": 9
+    },
+    "issues": [],
+    "latencyMs": {
+      "normal": {
+        "max": 1202.201200008858,
+        "median": 827.9900499910582,
+        "min": 345.8386000129394,
+        "p95": 1109.5282000023872
+      },
+      "unaffectedFailurePhase": {
+        "max": 845.0401999871247,
+        "median": 520.8237000042573,
+        "min": 340.8147000009194,
+        "p95": 844.9975000112318
+      }
+    },
+    "passed": true
+  },
+  "endedAt": "2026-07-15T23:07:40.963472Z",
+  "evidenceStatus": "complete",
+  "exactUpstreamAttempt": {
+    "durationMs": 7220.0823000166565,
+    "error": "The service workload was not found",
+    "errorSha256": "f4d6cbae80865cf389d3fc7fb1c169f3e0cc66177492a65450803781496c2a1a",
+    "errorType": "RuntimeError",
+    "exactUpstreamCloudStatus": "blocked_missing_workload_service",
+    "pipelinePath": "concurrent-work/harness/rocketride-bench/groups/robustness-and-isolation/fault-isolation/pipeline.pipe",
+    "pipelineSha256": "93634fda53aacb9ec5569608e76e108e4c36e61cc5c576cfc3d61f2e238caf74",
+    "startedAt": "2026-07-15T23:03:58.355074Z",
+    "status": "blocked"
+  },
+  "exactUpstreamCloudStatus": "blocked_missing_workload_service",
+  "officialStatus": "cloud_operational_appendix_unsubmitted",
+  "protocol": {
+    "cloudCheckoutChargeUsd": 0,
+    "documentsPerRepetition": 16,
+    "measuredRetries": 0,
+    "modelCalls": 0,
+    "paidModelCostUsd": 0,
+    "poolSize": 4,
+    "repetitions": 3
+  },
+  "provenance": {
+    "credentialFingerprint": "7f0c57bf90af1cb564c6069367c3df671f320e993669b49f78f5d7a4fc2c2bdf",
+    "credentialStoredOutsideRepository": true,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "preRegistrationCommit": "572f651",
+    "python": "3.11.9",
+    "rocketrideSdk": "1.2.0",
+    "runnerCommit": "5f4a099eac37a1e3c4861bbf2700aa36f9a09f57",
+    "upstreamCommit": "43be41acb58558dfae8e2e3deb86d8a00cb1b1c8",
+    "uri": "https://api.rocketride.ai"
+  },
+  "repetitionFiles": [
+    "repetition-01.json",
+    "repetition-02.json",
+    "repetition-03.json"
+  ],
+  "runErrors": [],
+  "runId": "cloud-20260715T230356Z",
+  "schemaVersion": 1,
+  "startedAt": "2026-07-15T23:03:56.816395Z"
+}

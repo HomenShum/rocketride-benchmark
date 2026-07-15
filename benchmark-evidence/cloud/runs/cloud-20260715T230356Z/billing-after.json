@@ -1,0 +1,64 @@
+{
+  "appId": "rocketride.pipeBuilder",
+  "capturedAt": "2026-07-15T23:07:40.759830Z",
+  "creditBalance": {
+    "balances": {
+      "tokens": 9969.3
+    },
+    "consumed": {
+      "tokens": 30.7
+    },
+    "granted": {
+      "tokens": 10000.0
+    },
+    "labels": {
+      "tokens": "tokens"
+    }
+  },
+  "label": "after",
+  "organizationIdHash": "37b465a355bc4a9ab8aff751eb013808d642d2f99b22c0fd3ee1e54ab0160a41",
+  "promoValidation": {
+    "amountCents": 5000,
+    "amountOffCents": null,
+    "appId": null,
+    "code": "JULY2026BENCHMARK",
+    "creditsGranted": null,
+    "currency": null,
+    "description": "Discount \u2014 JULY2026BENCHMARK",
+    "discountedAmountCents": 0,
+    "duration": "once",
+    "durationInMonths": null,
+    "percentOff": 100.0,
+    "promotionCodeId": "sha256:66c8e1de85d1026a91ca5c4d33593a01938653fe2727b04370cabe4dd3c3c292",
+    "valid": true
+  },
+  "promotionCode": "JULY2026BENCHMARK",
+  "starterPrice": {
+    "amount": "$50",
+    "cents": 5000,
+    "currency": "usd",
+    "interval": "month",
+    "label": "Starter",
+    "priceIdHash": "eca033ad47759b993abc21d2045fea14fe9d9e4c192405b089ac211a93327b1d"
+  },
+  "subscription": {
+    "appId": "rocketride.pipeBuilder",
+    "billingInterval": "month",
+    "cancelAtPeriodEnd": true,
+    "credits": {
+      "recurring": {
+        "tokens": 2500
+      }
+    },
+    "currentPeriodEnd": null,
+    "currentPeriodStart": null,
+    "labels": {
+      "tokens": "tokens"
+    },
+    "planNickname": "Starter",
+    "status": "active",
+    "stripePriceId": "price_1TjmTf2O4DGQArFa5fGPWSEm",
+    "stripeSubscriptionId": "sha256:4dfd2ee2f3f853dc958b11ff59a6e678dfe962d063551db17c8429f58b981df3",
+    "unitAmount": 5000
+  }
+}

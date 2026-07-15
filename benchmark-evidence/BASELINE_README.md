@@ -1,12 +1,13 @@
 # Independent RocketRide Benchmark Study
 
-This bundle contains two deliberately separate tracks at upstream commit
+This bundle contains three deliberately separate tracks at upstream commit
 `43be41acb58558dfae8e2e3deb86d8a00cb1b1c8`.
 
 | Track | Evidence status | Promotion status |
 |---|---|---|
 | A: unchanged upstream reproduction | Complete on supported Linux; Windows appendix incomplete | Independent, unsubmitted |
 | B: Node application extension | Complete, 90 results and 30 RocketRide traces | Blocked by the fixed 10 s protocol deadline |
+| C: RocketRide Cloud appendix | Control complete and audited; exact upstream pipe blocked | Operational, unsubmitted |
 
 ## Track A
 
@@ -33,6 +34,19 @@ hard-failure variants. Its orchestration gate passed, but the post-run protocol
 audit found that all 30 RocketRide envelopes exceeded the fixed 10,000 ms total
 deadline. Evidence is complete; protocol admission and promotion are blocked.
 
+## Track C
+
+The `JULY2026BENCHMARK` promotion was redeemed for Starter at 100 percent off.
+The subscription readback reports active Starter, USD 0 due at checkout, and
+renewal disabled at period end. A pre-registered Cloud-native control passed 48
+normal requests, 9 unaffected failure-phase requests, 3 expected requests to a
+terminated task, and 0 cross-task leaks across 12 resident tasks.
+
+The unchanged upstream fault-isolation pipeline did not run on Cloud because
+the hosted catalog lacks its custom `workload` service. Track C is therefore an
+operational control, not an upstream benchmark score and not a comparison with
+LangChain. The failed first receipt and passing rerun are both retained.
+
 ## Frozen Applications
 
 | App | Frozen base | Adapter commit |
@@ -51,8 +65,13 @@ deadline. Evidence is complete; protocol admission and promotion are blocked.
 - Post-run app verifier: `extensions/node-suite/app-verification-post-run.json`
 - Track B original scorecard: `extensions/node-suite/runs/node-suite-20260715T150250Z/scorecard.json`
 - Track B superseding protocol audit: `extensions/node-suite/runs/node-suite-20260715T150250Z/audit.json`
+- Track C pre-registration: `cloud/PRE_REGISTRATION.md`
+- Track C failed first run: `cloud/runs/cloud-20260715T225614Z/audit.json`
+- Track C passing control audit: `cloud/runs/cloud-20260715T230356Z/audit.json`
+- Track C refreshed billing UI receipt: `cloud/ui-verification.json`
 - Rerun history: `failures.jsonl` and `deviations.json`
 
-No model or cloud API was called. Model and cloud spend are both USD 0. Raw
-credentials, promotion codes, cloud tokens, and local environment files are not
-included.
+No model API was called. RocketRide Cloud was called only in Track C under the
+redeemed promotion. Paid model cost and Cloud checkout charge are both USD 0;
+the passing control consumed 15.3 promotional compute tokens. Raw credentials,
+task tokens, account identifiers, and local environment files are not included.

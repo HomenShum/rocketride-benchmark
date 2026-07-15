@@ -1,8 +1,8 @@
 {
-  "controlAdmissionStatus": "failed",
+  "controlAdmissionStatus": "passed",
   "exactUpstreamCloudStatus": "blocked_missing_workload_service",
   "officialStatus": "cloud_operational_appendix_unsubmitted",
-  "path": "runs/cloud-20260715T225614Z",
-  "receiptSha256": "c749fff360a2b153dca31619f9178493c3c354740120cb9bf5289f92283627f7",
-  "runId": "cloud-20260715T225614Z"
+  "path": "runs/cloud-20260715T230356Z",
+  "receiptSha256": "9cca12fff31780fd08fbee29385d20b5cb42f671e70a5f1743650f53dfca660b",
+  "runId": "cloud-20260715T230356Z"
 }

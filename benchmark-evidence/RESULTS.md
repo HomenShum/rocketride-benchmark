@@ -7,6 +7,8 @@
   admission failed, promotion blocked.
 - **Track B V2:** evidence complete, orchestration and protocol admission
   passed, eligible for external submission.
+- **Track C:** Cloud-native operational control passed and independently
+  audited; exact upstream Cloud execution blocked by missing `workload` service.
 - **Official status:** no external RocketRide acceptance or publication receipt.
 - **Paid spend:** USD 0 model cost and USD 0 cloud cost.
 
@@ -111,3 +113,35 @@ All four adapter PRs are merged, their post-merge checks passed, and the exact
 main revisions are deployed to production. Deployment IDs, immutable URLs,
 aliases, and HTTP checks are recorded in
 `extensions/node-suite/production-deployment-v2.json`.
+
+## Track C: RocketRide Cloud
+
+Track C was pre-registered before its measured hosted run. It uses the official
+Cloud endpoint and a deterministic built-in `webhook -> parse -> response_text`
+pipeline with no model provider. Each of three repetitions created four
+resident tasks, warmed them, processed 16 unique documents, terminated task 0,
+and then sent one unique failure-phase request to every task.
+
+| Check | Audited result |
+|---|---:|
+| Normal requests correct | 48/48 |
+| Unaffected failure-phase requests correct | 9/9 |
+| Terminated-task requests failed as expected | 3/3 |
+| Cross-task leaks | 0 |
+| Successful termination calls | 12/12 |
+| Normal response latency | 827.990 ms median; 1,109.528 ms p95 |
+| Unaffected failure response latency | 520.824 ms median; 844.998 ms p95 |
+| Hosted task start time | 25.867-44.476 s; 35.319 s median |
+| Warm-up response time | 1.539-2.414 s; 1.920 s median |
+
+Hosted startup is therefore material and is not hidden by the request-latency
+figures. The unchanged upstream fault-isolation `.pipe` was also attempted and
+failed after 7.823 seconds with `The service workload was not found`. Hosted
+validation had accepted the pipeline during setup, so this is a catalog/runtime
+portability issue rather than a successful official benchmark cell.
+
+Billing readback after the passing run reports `JULY2026BENCHMARK` valid at 100
+percent off, zero cents due, Starter active, and `cancelAtPeriodEnd=true`. The
+passing control consumed 15.3 promotional compute tokens, leaving 9,969.3. Its
+audit reports complete evidence and passed control admission, while retaining
+`cloud_operational_appendix_unsubmitted` as the official status.

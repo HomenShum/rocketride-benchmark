@@ -14,12 +14,8 @@ No credential or private account identifier is included.
 | 6 | Execute a built-in-service control smoke | `webhook -> parse -> response_text` started in 11878.294 ms and returned a 294-byte response in 640.951 ms. This setup smoke is not a scored repetition. |
 | 7 | Validate and redeem `JULY2026BENCHMARK` for Starter | Validation returned 100 percent off and USD 0 due at checkout. Starter became active. |
 | 8 | Disable paid renewal | The cancellation call returned `Internal error: 'str' object has no attribute 'tzinfo'`; immediate billing readback nevertheless reported `cancelAtPeriodEnd=true`. The measured receipt must verify this state again. |
-| 9 | Re-open the already-mounted Billing panel after the run | The panel initially retained pre-redemption Pay-as-you-go data. A full page reload refreshed it to Starter, 10,000 granted tokens, 30.7 consumed, and `Ends at period end`. |
 
 The Development-scoped key failure, hosted `workload` absence, endpoint drift,
 timeout-unit ambiguity, and cancellation response error remain reportable
 RocketRide findings even if the Cloud-native control passes.
 
-After the passing run, the failed Development-scoped key was explicitly
-revoked. The all-team benchmark key remained active and authenticated again;
-it expires on 2026-08-14 and remains stored outside the repositories.

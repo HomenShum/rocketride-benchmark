@@ -20,13 +20,3 @@ concurrent-work/harness/rocketride-bench/.venv/Scripts/python.exe benchmark-evid
 
 See `PRE_REGISTRATION.md` for the frozen protocol and
 `SETUP_ATTEMPTS.md` for excluded setup probes.
-
-The latest audited run is `runs/cloud-20260715T230356Z`. Its Cloud-native
-control passed, while the unchanged upstream pipeline remains classified as
-`blocked_missing_workload_service`. Neither status is an official RocketRide
-score until maintainers accept or publish the submission.
-
-`ui-verification.json` is a sanitized transcription of the fully refreshed
-RocketRide Billing panel. It corroborates the API receipt's active Starter plan,
-credit usage, and end-of-period cancellation without storing account identity or
-credentials.

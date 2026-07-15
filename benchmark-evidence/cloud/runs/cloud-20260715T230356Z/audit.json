@@ -1,0 +1,24 @@
+{
+  "controlAdmissionStatus": "passed",
+  "counts": {
+    "cleanupRecords": 12,
+    "crossTaskLeaks": 0,
+    "normalRequests": 48,
+    "normalSucceededCorrectly": 48,
+    "repetitions": 3,
+    "residentTasksCreated": 12,
+    "targetedTerminatedRequests": 3,
+    "targetedTerminatedRequestsFailed": 3,
+    "terminateCallsSucceeded": 12,
+    "unaffectedFailureRequests": 9,
+    "unaffectedFailureSucceededCorrectly": 9
+  },
+  "evidenceStatus": "complete",
+  "exactUpstreamCloudStatus": "blocked_missing_workload_service",
+  "integrityIssues": [],
+  "officialStatus": "cloud_operational_appendix_unsubmitted",
+  "receiptSha256": "9cca12fff31780fd08fbee29385d20b5cb42f671e70a5f1743650f53dfca660b",
+  "schemaVersion": 1,
+  "semanticIssues": [],
+  "status": "passed"
+}

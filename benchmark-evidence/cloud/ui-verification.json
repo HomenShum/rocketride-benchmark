@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-15T23:11:30.112Z",
+  "source": "RocketRide Cloud Pipeline Builder billing panel after full page reload",
+  "subscription": {
+    "app": "Pipeline Builder",
+    "plan": "Starter",
+    "price": "$50.00 / month",
+    "billingCycle": "Monthly",
+    "includedTokens": 2500,
+    "status": "Active",
+    "renewalState": "Ends at period end"
+  },
+  "creditWallet": {
+    "resource": "tokens",
+    "granted": 10000,
+    "consumed": 30.7,
+    "balance": 9969.3
+  },
+  "usageEvidence": {
+    "totalTransactions": 52,
+    "leaderboardTokens": 30.7,
+    "observedRunContexts": [
+      "proofloop-cloud-r1-t2",
+      "proofloop-cloud-r1-t3",
+      "proofloop-cloud-r2-t0",
+      "proofloop-cloud-r2-t1",
+      "proofloop-cloud-r2-t2",
+      "proofloop-cloud-r2-t3",
+      "proofloop-cloud-r3-t0",
+      "proofloop-cloud-r3-t1",
+      "proofloop-cloud-r3-t2",
+      "proofloop-cloud-r3-t3"
+    ]
+  },
+  "keyCleanup": {
+    "workingAllTeamBenchmarkKey": "Active",
+    "failedDevelopmentScopedKey": "Expired after explicit revocation",
+    "activeApiKeyCountAfterCleanup": 2,
+    "workingKeyReauthenticatedAfterCleanup": true
+  },
+  "privacy": {
+    "accountIdentityIncluded": false,
+    "credentialIncluded": false,
+    "taskTokenIncluded": false
+  },
+  "interpretation": "Corroborates the post-run API billing receipt. The page initially showed cached pre-redemption data; a full reload produced this state."
+}
